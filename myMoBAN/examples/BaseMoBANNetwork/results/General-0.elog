@@ -1,0 +1,3261 @@
+MC id 1 c cCompoundModule t moban.examples.BaseMoBANNetwork.BaseMoBANNetwork n BaseMoBANNetwork cm 1
+MS id 1 d bgb=$playgroundSizeX,$playgroundSizeY,white;bgp=0,0
+MC id 2 c ConnectionManager t org.mixim.base.connectionManager.ConnectionManager pid 1 n connectionManager
+MS id 2 d is=vs;p=70,0;i=abstract/multicast
+MC id 3 c BaseWorldUtility t org.mixim.base.modules.BaseWorldUtility pid 1 n world
+MS id 3 d is=vs;p=100,0;i=misc/globe
+GC m 4 g 0 n radioIn o 0
+GC m 4 g 2 n in24-1 o 0
+GC m 4 g 5 n out24-1 o 1
+GC m 4 g 6 n in24-2 o 0
+GC m 4 g 9 n out24-2 o 1
+GC m 4 g 10 n in24-3 o 0
+GC m 4 g 13 n out24-3 o 1
+GC m 4 g 14 n in24-4 o 0
+GC m 4 g 17 n out24-4 o 1
+GC m 4 g 18 n in24-5 o 0
+GC m 4 g 21 n out24-5 o 1
+GC m 4 g 22 n in24-6 o 0
+GC m 4 g 25 n out24-6 o 1
+GC m 4 g 26 n in24-7 o 0
+GC m 4 g 29 n out24-7 o 1
+GC m 4 g 30 n in24-8 o 0
+GC m 4 g 33 n out24-8 o 1
+GC m 4 g 34 n in24-9 o 0
+GC m 4 g 37 n out24-9 o 1
+GC m 4 g 38 n in24-10 o 0
+GC m 4 g 41 n out24-10 o 1
+GC m 4 g 42 n in24-11 o 0
+GC m 4 g 45 n out24-11 o 1
+GC m 4 g 46 n in24-12 o 0
+GC m 4 g 49 n out24-12 o 1
+GC m 4 g 50 n in24-13 o 0
+GC m 4 g 53 n out24-13 o 1
+MC id 4 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[0] cm 1
+MS id 4 d b=8,8,oval,red;p=200,678;bgb=,,white,,
+MC id 19 c BaseUtility t org.mixim.base.modules.BaseUtility pid 4 n utility
+MS id 19 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 20 c BaseArp t org.mixim.base.modules.BaseArp pid 4 n arp
+MS id 20 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 21 c MoBANLocal t moban.mobility.MoBANLocal pid 4 n mobility
+MS id 21 d p=130,172;i=block/cogwheel
+GC m 22 g 0 n lowerGateIn o 0
+GC m 22 g 3 n lowerGateOut o 1
+GC m 22 g 4 n lowerControlIn o 0
+GC m 22 g 7 n lowerControlOut o 1
+MC id 22 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 4 n appl
+MS id 22 d p=60,50;i=app
+GC m 23 g 0 n upperGateIn o 0
+GC m 23 g 3 n upperGateOut o 1
+GC m 23 g 4 n upperControlIn o 0
+GC m 23 g 7 n upperControlOut o 1
+GC m 23 g 8 n lowerGateIn o 0
+GC m 23 g 11 n lowerGateOut o 1
+GC m 23 g 12 n lowerControlIn o 0
+GC m 23 g 15 n lowerControlOut o 1
+MC id 23 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 4 n net
+MS id 23 d p=60,108;i=block/layer
+GC m 24 g 0 n upperGateIn o 0
+GC m 24 g 3 n upperGateOut o 1
+GC m 24 g 5 n upperControlOut o 1
+GC m 24 g 6 n upperControlIn o 0
+GC m 24 g 8 n radioIn o 0
+GC m 24 g 10 n in24-1 o 0
+GC m 24 g 13 n out24-1 o 1
+GC m 24 g 14 n in24-2 o 0
+GC m 24 g 17 n out24-2 o 1
+GC m 24 g 18 n in24-3 o 0
+GC m 24 g 21 n out24-3 o 1
+GC m 24 g 22 n in24-4 o 0
+GC m 24 g 25 n out24-4 o 1
+GC m 24 g 26 n in24-5 o 0
+GC m 24 g 29 n out24-5 o 1
+GC m 24 g 30 n in24-6 o 0
+GC m 24 g 33 n out24-6 o 1
+GC m 24 g 34 n in24-7 o 0
+GC m 24 g 37 n out24-7 o 1
+GC m 24 g 38 n in24-8 o 0
+GC m 24 g 41 n out24-8 o 1
+GC m 24 g 42 n in24-9 o 0
+GC m 24 g 45 n out24-9 o 1
+GC m 24 g 46 n in24-10 o 0
+GC m 24 g 49 n out24-10 o 1
+GC m 24 g 50 n in24-11 o 0
+GC m 24 g 53 n out24-11 o 1
+GC m 24 g 54 n in24-12 o 0
+GC m 24 g 57 n out24-12 o 1
+GC m 24 g 58 n in24-13 o 0
+GC m 24 g 61 n out24-13 o 1
+MC id 24 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 4 n nic cm 1
+MS id 24 d p=60,166;i=block/ifcard
+GC m 25 g 0 n upperGateIn o 0
+GC m 25 g 3 n upperGateOut o 1
+GC m 25 g 4 n upperControlIn o 0
+GC m 25 g 7 n upperControlOut o 1
+GC m 25 g 8 n lowerGateIn o 0
+GC m 25 g 11 n lowerGateOut o 1
+GC m 25 g 12 n lowerControlIn o 0
+GC m 25 g 15 n lowerControlOut o 1
+MC id 25 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 24 n mac
+MS id 25 d p=96,87;i=block/layer
+GC m 26 g 0 n upperGateIn o 0
+GC m 26 g 3 n upperGateOut o 1
+GC m 26 g 4 n upperControlIn o 0
+GC m 26 g 7 n upperControlOut o 1
+GC m 26 g 8 n radioIn o 0
+GC m 26 g 10 n in24-1 o 0
+GC m 26 g 13 n out24-1 o 1
+GC m 26 g 14 n in24-2 o 0
+GC m 26 g 17 n out24-2 o 1
+GC m 26 g 18 n in24-3 o 0
+GC m 26 g 21 n out24-3 o 1
+GC m 26 g 22 n in24-4 o 0
+GC m 26 g 25 n out24-4 o 1
+GC m 26 g 26 n in24-5 o 0
+GC m 26 g 29 n out24-5 o 1
+GC m 26 g 30 n in24-6 o 0
+GC m 26 g 33 n out24-6 o 1
+GC m 26 g 34 n in24-7 o 0
+GC m 26 g 37 n out24-7 o 1
+GC m 26 g 38 n in24-8 o 0
+GC m 26 g 41 n out24-8 o 1
+GC m 26 g 42 n in24-9 o 0
+GC m 26 g 45 n out24-9 o 1
+GC m 26 g 46 n in24-10 o 0
+GC m 26 g 49 n out24-10 o 1
+GC m 26 g 50 n in24-11 o 0
+GC m 26 g 53 n out24-11 o 1
+GC m 26 g 54 n in24-12 o 0
+GC m 26 g 57 n out24-12 o 1
+GC m 26 g 58 n in24-13 o 0
+GC m 26 g 61 n out24-13 o 1
+MC id 26 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 24 n phy
+MS id 26 d p=96,157;i=block/process_s
+GC m 5 g 0 n radioIn o 0
+GC m 5 g 3 n out32-1 o 1
+GC m 5 g 4 n in32-1 o 0
+GC m 5 g 6 n in32-2 o 0
+GC m 5 g 9 n out32-2 o 1
+GC m 5 g 10 n in32-3 o 0
+GC m 5 g 13 n out32-3 o 1
+GC m 5 g 14 n in32-4 o 0
+GC m 5 g 17 n out32-4 o 1
+GC m 5 g 18 n in32-5 o 0
+GC m 5 g 21 n out32-5 o 1
+GC m 5 g 22 n in32-6 o 0
+GC m 5 g 25 n out32-6 o 1
+GC m 5 g 26 n in32-7 o 0
+GC m 5 g 29 n out32-7 o 1
+GC m 5 g 30 n in32-8 o 0
+GC m 5 g 33 n out32-8 o 1
+GC m 5 g 34 n in32-9 o 0
+GC m 5 g 37 n out32-9 o 1
+GC m 5 g 38 n in32-10 o 0
+GC m 5 g 41 n out32-10 o 1
+GC m 5 g 42 n in32-11 o 0
+GC m 5 g 45 n out32-11 o 1
+GC m 5 g 46 n in32-12 o 0
+GC m 5 g 49 n out32-12 o 1
+GC m 5 g 50 n in32-13 o 0
+GC m 5 g 53 n out32-13 o 1
+MC id 5 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[1] cm 1
+MS id 5 d b=8,8,oval,red;p=201,617;bgb=,,white,,
+MC id 27 c BaseUtility t org.mixim.base.modules.BaseUtility pid 5 n utility
+MS id 27 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 28 c BaseArp t org.mixim.base.modules.BaseArp pid 5 n arp
+MS id 28 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 29 c MoBANLocal t moban.mobility.MoBANLocal pid 5 n mobility
+MS id 29 d p=130,172;i=block/cogwheel
+GC m 30 g 0 n lowerGateIn o 0
+GC m 30 g 3 n lowerGateOut o 1
+GC m 30 g 4 n lowerControlIn o 0
+GC m 30 g 7 n lowerControlOut o 1
+MC id 30 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 5 n appl
+MS id 30 d p=60,50;i=app
+GC m 31 g 0 n upperGateIn o 0
+GC m 31 g 3 n upperGateOut o 1
+GC m 31 g 4 n upperControlIn o 0
+GC m 31 g 7 n upperControlOut o 1
+GC m 31 g 8 n lowerGateIn o 0
+GC m 31 g 11 n lowerGateOut o 1
+GC m 31 g 12 n lowerControlIn o 0
+GC m 31 g 15 n lowerControlOut o 1
+MC id 31 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 5 n net
+MS id 31 d p=60,108;i=block/layer
+GC m 32 g 0 n upperGateIn o 0
+GC m 32 g 3 n upperGateOut o 1
+GC m 32 g 5 n upperControlOut o 1
+GC m 32 g 6 n upperControlIn o 0
+GC m 32 g 8 n radioIn o 0
+GC m 32 g 11 n out32-1 o 1
+GC m 32 g 12 n in32-1 o 0
+GC m 32 g 14 n in32-2 o 0
+GC m 32 g 17 n out32-2 o 1
+GC m 32 g 18 n in32-3 o 0
+GC m 32 g 21 n out32-3 o 1
+GC m 32 g 22 n in32-4 o 0
+GC m 32 g 25 n out32-4 o 1
+GC m 32 g 26 n in32-5 o 0
+GC m 32 g 29 n out32-5 o 1
+GC m 32 g 30 n in32-6 o 0
+GC m 32 g 33 n out32-6 o 1
+GC m 32 g 34 n in32-7 o 0
+GC m 32 g 37 n out32-7 o 1
+GC m 32 g 38 n in32-8 o 0
+GC m 32 g 41 n out32-8 o 1
+GC m 32 g 42 n in32-9 o 0
+GC m 32 g 45 n out32-9 o 1
+GC m 32 g 46 n in32-10 o 0
+GC m 32 g 49 n out32-10 o 1
+GC m 32 g 50 n in32-11 o 0
+GC m 32 g 53 n out32-11 o 1
+GC m 32 g 54 n in32-12 o 0
+GC m 32 g 57 n out32-12 o 1
+GC m 32 g 58 n in32-13 o 0
+GC m 32 g 61 n out32-13 o 1
+MC id 32 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 5 n nic cm 1
+MS id 32 d p=60,166;i=block/ifcard
+GC m 33 g 0 n upperGateIn o 0
+GC m 33 g 3 n upperGateOut o 1
+GC m 33 g 4 n upperControlIn o 0
+GC m 33 g 7 n upperControlOut o 1
+GC m 33 g 8 n lowerGateIn o 0
+GC m 33 g 11 n lowerGateOut o 1
+GC m 33 g 12 n lowerControlIn o 0
+GC m 33 g 15 n lowerControlOut o 1
+MC id 33 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 32 n mac
+MS id 33 d p=96,87;i=block/layer
+GC m 34 g 0 n upperGateIn o 0
+GC m 34 g 3 n upperGateOut o 1
+GC m 34 g 4 n upperControlIn o 0
+GC m 34 g 7 n upperControlOut o 1
+GC m 34 g 8 n radioIn o 0
+GC m 34 g 11 n out32-1 o 1
+GC m 34 g 12 n in32-1 o 0
+GC m 34 g 14 n in32-2 o 0
+GC m 34 g 17 n out32-2 o 1
+GC m 34 g 18 n in32-3 o 0
+GC m 34 g 21 n out32-3 o 1
+GC m 34 g 22 n in32-4 o 0
+GC m 34 g 25 n out32-4 o 1
+GC m 34 g 26 n in32-5 o 0
+GC m 34 g 29 n out32-5 o 1
+GC m 34 g 30 n in32-6 o 0
+GC m 34 g 33 n out32-6 o 1
+GC m 34 g 34 n in32-7 o 0
+GC m 34 g 37 n out32-7 o 1
+GC m 34 g 38 n in32-8 o 0
+GC m 34 g 41 n out32-8 o 1
+GC m 34 g 42 n in32-9 o 0
+GC m 34 g 45 n out32-9 o 1
+GC m 34 g 46 n in32-10 o 0
+GC m 34 g 49 n out32-10 o 1
+GC m 34 g 50 n in32-11 o 0
+GC m 34 g 53 n out32-11 o 1
+GC m 34 g 54 n in32-12 o 0
+GC m 34 g 57 n out32-12 o 1
+GC m 34 g 58 n in32-13 o 0
+GC m 34 g 61 n out32-13 o 1
+MC id 34 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 32 n phy
+MS id 34 d p=96,157;i=block/process_s
+GC m 6 g 0 n radioIn o 0
+GC m 6 g 3 n out40-1 o 1
+GC m 6 g 4 n in40-1 o 0
+GC m 6 g 7 n out40-2 o 1
+GC m 6 g 8 n in40-2 o 0
+GC m 6 g 10 n in40-3 o 0
+GC m 6 g 13 n out40-3 o 1
+GC m 6 g 14 n in40-4 o 0
+GC m 6 g 17 n out40-4 o 1
+GC m 6 g 18 n in40-5 o 0
+GC m 6 g 21 n out40-5 o 1
+GC m 6 g 22 n in40-6 o 0
+GC m 6 g 25 n out40-6 o 1
+GC m 6 g 26 n in40-7 o 0
+GC m 6 g 29 n out40-7 o 1
+GC m 6 g 30 n in40-8 o 0
+GC m 6 g 33 n out40-8 o 1
+GC m 6 g 34 n in40-9 o 0
+GC m 6 g 37 n out40-9 o 1
+GC m 6 g 38 n in40-10 o 0
+GC m 6 g 41 n out40-10 o 1
+GC m 6 g 42 n in40-11 o 0
+GC m 6 g 45 n out40-11 o 1
+GC m 6 g 46 n in40-12 o 0
+GC m 6 g 49 n out40-12 o 1
+GC m 6 g 50 n in40-13 o 0
+GC m 6 g 53 n out40-13 o 1
+MC id 6 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[2] cm 1
+MS id 6 d b=8,8,oval,red;p=200,618;bgb=,,white,,
+MC id 35 c BaseUtility t org.mixim.base.modules.BaseUtility pid 6 n utility
+MS id 35 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 36 c BaseArp t org.mixim.base.modules.BaseArp pid 6 n arp
+MS id 36 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 37 c MoBANLocal t moban.mobility.MoBANLocal pid 6 n mobility
+MS id 37 d p=130,172;i=block/cogwheel
+GC m 38 g 0 n lowerGateIn o 0
+GC m 38 g 3 n lowerGateOut o 1
+GC m 38 g 4 n lowerControlIn o 0
+GC m 38 g 7 n lowerControlOut o 1
+MC id 38 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 6 n appl
+MS id 38 d p=60,50;i=app
+GC m 39 g 0 n upperGateIn o 0
+GC m 39 g 3 n upperGateOut o 1
+GC m 39 g 4 n upperControlIn o 0
+GC m 39 g 7 n upperControlOut o 1
+GC m 39 g 8 n lowerGateIn o 0
+GC m 39 g 11 n lowerGateOut o 1
+GC m 39 g 12 n lowerControlIn o 0
+GC m 39 g 15 n lowerControlOut o 1
+MC id 39 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 6 n net
+MS id 39 d p=60,108;i=block/layer
+GC m 40 g 0 n upperGateIn o 0
+GC m 40 g 3 n upperGateOut o 1
+GC m 40 g 5 n upperControlOut o 1
+GC m 40 g 6 n upperControlIn o 0
+GC m 40 g 8 n radioIn o 0
+GC m 40 g 11 n out40-1 o 1
+GC m 40 g 12 n in40-1 o 0
+GC m 40 g 15 n out40-2 o 1
+GC m 40 g 16 n in40-2 o 0
+GC m 40 g 18 n in40-3 o 0
+GC m 40 g 21 n out40-3 o 1
+GC m 40 g 22 n in40-4 o 0
+GC m 40 g 25 n out40-4 o 1
+GC m 40 g 26 n in40-5 o 0
+GC m 40 g 29 n out40-5 o 1
+GC m 40 g 30 n in40-6 o 0
+GC m 40 g 33 n out40-6 o 1
+GC m 40 g 34 n in40-7 o 0
+GC m 40 g 37 n out40-7 o 1
+GC m 40 g 38 n in40-8 o 0
+GC m 40 g 41 n out40-8 o 1
+GC m 40 g 42 n in40-9 o 0
+GC m 40 g 45 n out40-9 o 1
+GC m 40 g 46 n in40-10 o 0
+GC m 40 g 49 n out40-10 o 1
+GC m 40 g 50 n in40-11 o 0
+GC m 40 g 53 n out40-11 o 1
+GC m 40 g 54 n in40-12 o 0
+GC m 40 g 57 n out40-12 o 1
+GC m 40 g 58 n in40-13 o 0
+GC m 40 g 61 n out40-13 o 1
+MC id 40 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 6 n nic cm 1
+MS id 40 d p=60,166;i=block/ifcard
+GC m 41 g 0 n upperGateIn o 0
+GC m 41 g 3 n upperGateOut o 1
+GC m 41 g 4 n upperControlIn o 0
+GC m 41 g 7 n upperControlOut o 1
+GC m 41 g 8 n lowerGateIn o 0
+GC m 41 g 11 n lowerGateOut o 1
+GC m 41 g 12 n lowerControlIn o 0
+GC m 41 g 15 n lowerControlOut o 1
+MC id 41 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 40 n mac
+MS id 41 d p=96,87;i=block/layer
+GC m 42 g 0 n upperGateIn o 0
+GC m 42 g 3 n upperGateOut o 1
+GC m 42 g 4 n upperControlIn o 0
+GC m 42 g 7 n upperControlOut o 1
+GC m 42 g 8 n radioIn o 0
+GC m 42 g 11 n out40-1 o 1
+GC m 42 g 12 n in40-1 o 0
+GC m 42 g 15 n out40-2 o 1
+GC m 42 g 16 n in40-2 o 0
+GC m 42 g 18 n in40-3 o 0
+GC m 42 g 21 n out40-3 o 1
+GC m 42 g 22 n in40-4 o 0
+GC m 42 g 25 n out40-4 o 1
+GC m 42 g 26 n in40-5 o 0
+GC m 42 g 29 n out40-5 o 1
+GC m 42 g 30 n in40-6 o 0
+GC m 42 g 33 n out40-6 o 1
+GC m 42 g 34 n in40-7 o 0
+GC m 42 g 37 n out40-7 o 1
+GC m 42 g 38 n in40-8 o 0
+GC m 42 g 41 n out40-8 o 1
+GC m 42 g 42 n in40-9 o 0
+GC m 42 g 45 n out40-9 o 1
+GC m 42 g 46 n in40-10 o 0
+GC m 42 g 49 n out40-10 o 1
+GC m 42 g 50 n in40-11 o 0
+GC m 42 g 53 n out40-11 o 1
+GC m 42 g 54 n in40-12 o 0
+GC m 42 g 57 n out40-12 o 1
+GC m 42 g 58 n in40-13 o 0
+GC m 42 g 61 n out40-13 o 1
+MC id 42 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 40 n phy
+MS id 42 d p=96,157;i=block/process_s
+GC m 7 g 0 n radioIn o 0
+GC m 7 g 3 n out48-1 o 1
+GC m 7 g 4 n in48-1 o 0
+GC m 7 g 7 n out48-2 o 1
+GC m 7 g 8 n in48-2 o 0
+GC m 7 g 11 n out48-3 o 1
+GC m 7 g 12 n in48-3 o 0
+GC m 7 g 14 n in48-4 o 0
+GC m 7 g 17 n out48-4 o 1
+GC m 7 g 18 n in48-5 o 0
+GC m 7 g 21 n out48-5 o 1
+GC m 7 g 22 n in48-6 o 0
+GC m 7 g 25 n out48-6 o 1
+GC m 7 g 26 n in48-7 o 0
+GC m 7 g 29 n out48-7 o 1
+GC m 7 g 30 n in48-8 o 0
+GC m 7 g 33 n out48-8 o 1
+GC m 7 g 34 n in48-9 o 0
+GC m 7 g 37 n out48-9 o 1
+GC m 7 g 38 n in48-10 o 0
+GC m 7 g 41 n out48-10 o 1
+GC m 7 g 42 n in48-11 o 0
+GC m 7 g 45 n out48-11 o 1
+GC m 7 g 46 n in48-12 o 0
+GC m 7 g 49 n out48-12 o 1
+GC m 7 g 50 n in48-13 o 0
+GC m 7 g 53 n out48-13 o 1
+MC id 7 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[3] cm 1
+MS id 7 d b=8,8,oval,red;p=200,682;bgb=,,white,,
+MC id 43 c BaseUtility t org.mixim.base.modules.BaseUtility pid 7 n utility
+MS id 43 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 44 c BaseArp t org.mixim.base.modules.BaseArp pid 7 n arp
+MS id 44 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 45 c MoBANLocal t moban.mobility.MoBANLocal pid 7 n mobility
+MS id 45 d p=130,172;i=block/cogwheel
+GC m 46 g 0 n lowerGateIn o 0
+GC m 46 g 3 n lowerGateOut o 1
+GC m 46 g 4 n lowerControlIn o 0
+GC m 46 g 7 n lowerControlOut o 1
+MC id 46 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 7 n appl
+MS id 46 d p=60,50;i=app
+GC m 47 g 0 n upperGateIn o 0
+GC m 47 g 3 n upperGateOut o 1
+GC m 47 g 4 n upperControlIn o 0
+GC m 47 g 7 n upperControlOut o 1
+GC m 47 g 8 n lowerGateIn o 0
+GC m 47 g 11 n lowerGateOut o 1
+GC m 47 g 12 n lowerControlIn o 0
+GC m 47 g 15 n lowerControlOut o 1
+MC id 47 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 7 n net
+MS id 47 d p=60,108;i=block/layer
+GC m 48 g 0 n upperGateIn o 0
+GC m 48 g 3 n upperGateOut o 1
+GC m 48 g 5 n upperControlOut o 1
+GC m 48 g 6 n upperControlIn o 0
+GC m 48 g 8 n radioIn o 0
+GC m 48 g 11 n out48-1 o 1
+GC m 48 g 12 n in48-1 o 0
+GC m 48 g 15 n out48-2 o 1
+GC m 48 g 16 n in48-2 o 0
+GC m 48 g 19 n out48-3 o 1
+GC m 48 g 20 n in48-3 o 0
+GC m 48 g 22 n in48-4 o 0
+GC m 48 g 25 n out48-4 o 1
+GC m 48 g 26 n in48-5 o 0
+GC m 48 g 29 n out48-5 o 1
+GC m 48 g 30 n in48-6 o 0
+GC m 48 g 33 n out48-6 o 1
+GC m 48 g 34 n in48-7 o 0
+GC m 48 g 37 n out48-7 o 1
+GC m 48 g 38 n in48-8 o 0
+GC m 48 g 41 n out48-8 o 1
+GC m 48 g 42 n in48-9 o 0
+GC m 48 g 45 n out48-9 o 1
+GC m 48 g 46 n in48-10 o 0
+GC m 48 g 49 n out48-10 o 1
+GC m 48 g 50 n in48-11 o 0
+GC m 48 g 53 n out48-11 o 1
+GC m 48 g 54 n in48-12 o 0
+GC m 48 g 57 n out48-12 o 1
+GC m 48 g 58 n in48-13 o 0
+GC m 48 g 61 n out48-13 o 1
+MC id 48 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 7 n nic cm 1
+MS id 48 d p=60,166;i=block/ifcard
+GC m 49 g 0 n upperGateIn o 0
+GC m 49 g 3 n upperGateOut o 1
+GC m 49 g 4 n upperControlIn o 0
+GC m 49 g 7 n upperControlOut o 1
+GC m 49 g 8 n lowerGateIn o 0
+GC m 49 g 11 n lowerGateOut o 1
+GC m 49 g 12 n lowerControlIn o 0
+GC m 49 g 15 n lowerControlOut o 1
+MC id 49 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 48 n mac
+MS id 49 d p=96,87;i=block/layer
+GC m 50 g 0 n upperGateIn o 0
+GC m 50 g 3 n upperGateOut o 1
+GC m 50 g 4 n upperControlIn o 0
+GC m 50 g 7 n upperControlOut o 1
+GC m 50 g 8 n radioIn o 0
+GC m 50 g 11 n out48-1 o 1
+GC m 50 g 12 n in48-1 o 0
+GC m 50 g 15 n out48-2 o 1
+GC m 50 g 16 n in48-2 o 0
+GC m 50 g 19 n out48-3 o 1
+GC m 50 g 20 n in48-3 o 0
+GC m 50 g 22 n in48-4 o 0
+GC m 50 g 25 n out48-4 o 1
+GC m 50 g 26 n in48-5 o 0
+GC m 50 g 29 n out48-5 o 1
+GC m 50 g 30 n in48-6 o 0
+GC m 50 g 33 n out48-6 o 1
+GC m 50 g 34 n in48-7 o 0
+GC m 50 g 37 n out48-7 o 1
+GC m 50 g 38 n in48-8 o 0
+GC m 50 g 41 n out48-8 o 1
+GC m 50 g 42 n in48-9 o 0
+GC m 50 g 45 n out48-9 o 1
+GC m 50 g 46 n in48-10 o 0
+GC m 50 g 49 n out48-10 o 1
+GC m 50 g 50 n in48-11 o 0
+GC m 50 g 53 n out48-11 o 1
+GC m 50 g 54 n in48-12 o 0
+GC m 50 g 57 n out48-12 o 1
+GC m 50 g 58 n in48-13 o 0
+GC m 50 g 61 n out48-13 o 1
+MC id 50 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 48 n phy
+MS id 50 d p=96,157;i=block/process_s
+GC m 8 g 0 n radioIn o 0
+GC m 8 g 3 n out56-1 o 1
+GC m 8 g 4 n in56-1 o 0
+GC m 8 g 7 n out56-2 o 1
+GC m 8 g 8 n in56-2 o 0
+GC m 8 g 11 n out56-3 o 1
+GC m 8 g 12 n in56-3 o 0
+GC m 8 g 15 n out56-4 o 1
+GC m 8 g 16 n in56-4 o 0
+GC m 8 g 18 n in56-5 o 0
+GC m 8 g 21 n out56-5 o 1
+GC m 8 g 22 n in56-6 o 0
+GC m 8 g 25 n out56-6 o 1
+GC m 8 g 26 n in56-7 o 0
+GC m 8 g 29 n out56-7 o 1
+GC m 8 g 30 n in56-8 o 0
+GC m 8 g 33 n out56-8 o 1
+GC m 8 g 34 n in56-9 o 0
+GC m 8 g 37 n out56-9 o 1
+GC m 8 g 38 n in56-10 o 0
+GC m 8 g 41 n out56-10 o 1
+GC m 8 g 42 n in56-11 o 0
+GC m 8 g 45 n out56-11 o 1
+GC m 8 g 46 n in56-12 o 0
+GC m 8 g 49 n out56-12 o 1
+GC m 8 g 50 n in56-13 o 0
+GC m 8 g 53 n out56-13 o 1
+MC id 8 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[4] cm 1
+MS id 8 d b=8,8,oval,red;p=199,682;bgb=,,white,,
+MC id 51 c BaseUtility t org.mixim.base.modules.BaseUtility pid 8 n utility
+MS id 51 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 52 c BaseArp t org.mixim.base.modules.BaseArp pid 8 n arp
+MS id 52 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 53 c MoBANLocal t moban.mobility.MoBANLocal pid 8 n mobility
+MS id 53 d p=130,172;i=block/cogwheel
+GC m 54 g 0 n lowerGateIn o 0
+GC m 54 g 3 n lowerGateOut o 1
+GC m 54 g 4 n lowerControlIn o 0
+GC m 54 g 7 n lowerControlOut o 1
+MC id 54 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 8 n appl
+MS id 54 d p=60,50;i=app
+GC m 55 g 0 n upperGateIn o 0
+GC m 55 g 3 n upperGateOut o 1
+GC m 55 g 4 n upperControlIn o 0
+GC m 55 g 7 n upperControlOut o 1
+GC m 55 g 8 n lowerGateIn o 0
+GC m 55 g 11 n lowerGateOut o 1
+GC m 55 g 12 n lowerControlIn o 0
+GC m 55 g 15 n lowerControlOut o 1
+MC id 55 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 8 n net
+MS id 55 d p=60,108;i=block/layer
+GC m 56 g 0 n upperGateIn o 0
+GC m 56 g 3 n upperGateOut o 1
+GC m 56 g 5 n upperControlOut o 1
+GC m 56 g 6 n upperControlIn o 0
+GC m 56 g 8 n radioIn o 0
+GC m 56 g 11 n out56-1 o 1
+GC m 56 g 12 n in56-1 o 0
+GC m 56 g 15 n out56-2 o 1
+GC m 56 g 16 n in56-2 o 0
+GC m 56 g 19 n out56-3 o 1
+GC m 56 g 20 n in56-3 o 0
+GC m 56 g 23 n out56-4 o 1
+GC m 56 g 24 n in56-4 o 0
+GC m 56 g 26 n in56-5 o 0
+GC m 56 g 29 n out56-5 o 1
+GC m 56 g 30 n in56-6 o 0
+GC m 56 g 33 n out56-6 o 1
+GC m 56 g 34 n in56-7 o 0
+GC m 56 g 37 n out56-7 o 1
+GC m 56 g 38 n in56-8 o 0
+GC m 56 g 41 n out56-8 o 1
+GC m 56 g 42 n in56-9 o 0
+GC m 56 g 45 n out56-9 o 1
+GC m 56 g 46 n in56-10 o 0
+GC m 56 g 49 n out56-10 o 1
+GC m 56 g 50 n in56-11 o 0
+GC m 56 g 53 n out56-11 o 1
+GC m 56 g 54 n in56-12 o 0
+GC m 56 g 57 n out56-12 o 1
+GC m 56 g 58 n in56-13 o 0
+GC m 56 g 61 n out56-13 o 1
+MC id 56 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 8 n nic cm 1
+MS id 56 d p=60,166;i=block/ifcard
+GC m 57 g 0 n upperGateIn o 0
+GC m 57 g 3 n upperGateOut o 1
+GC m 57 g 4 n upperControlIn o 0
+GC m 57 g 7 n upperControlOut o 1
+GC m 57 g 8 n lowerGateIn o 0
+GC m 57 g 11 n lowerGateOut o 1
+GC m 57 g 12 n lowerControlIn o 0
+GC m 57 g 15 n lowerControlOut o 1
+MC id 57 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 56 n mac
+MS id 57 d p=96,87;i=block/layer
+GC m 58 g 0 n upperGateIn o 0
+GC m 58 g 3 n upperGateOut o 1
+GC m 58 g 4 n upperControlIn o 0
+GC m 58 g 7 n upperControlOut o 1
+GC m 58 g 8 n radioIn o 0
+GC m 58 g 11 n out56-1 o 1
+GC m 58 g 12 n in56-1 o 0
+GC m 58 g 15 n out56-2 o 1
+GC m 58 g 16 n in56-2 o 0
+GC m 58 g 19 n out56-3 o 1
+GC m 58 g 20 n in56-3 o 0
+GC m 58 g 23 n out56-4 o 1
+GC m 58 g 24 n in56-4 o 0
+GC m 58 g 26 n in56-5 o 0
+GC m 58 g 29 n out56-5 o 1
+GC m 58 g 30 n in56-6 o 0
+GC m 58 g 33 n out56-6 o 1
+GC m 58 g 34 n in56-7 o 0
+GC m 58 g 37 n out56-7 o 1
+GC m 58 g 38 n in56-8 o 0
+GC m 58 g 41 n out56-8 o 1
+GC m 58 g 42 n in56-9 o 0
+GC m 58 g 45 n out56-9 o 1
+GC m 58 g 46 n in56-10 o 0
+GC m 58 g 49 n out56-10 o 1
+GC m 58 g 50 n in56-11 o 0
+GC m 58 g 53 n out56-11 o 1
+GC m 58 g 54 n in56-12 o 0
+GC m 58 g 57 n out56-12 o 1
+GC m 58 g 58 n in56-13 o 0
+GC m 58 g 61 n out56-13 o 1
+MC id 58 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 56 n phy
+MS id 58 d p=96,157;i=block/process_s
+GC m 9 g 0 n radioIn o 0
+GC m 9 g 3 n out64-1 o 1
+GC m 9 g 4 n in64-1 o 0
+GC m 9 g 7 n out64-2 o 1
+GC m 9 g 8 n in64-2 o 0
+GC m 9 g 11 n out64-3 o 1
+GC m 9 g 12 n in64-3 o 0
+GC m 9 g 15 n out64-4 o 1
+GC m 9 g 16 n in64-4 o 0
+GC m 9 g 19 n out64-5 o 1
+GC m 9 g 20 n in64-5 o 0
+GC m 9 g 22 n in64-6 o 0
+GC m 9 g 25 n out64-6 o 1
+GC m 9 g 26 n in64-7 o 0
+GC m 9 g 29 n out64-7 o 1
+GC m 9 g 30 n in64-8 o 0
+GC m 9 g 33 n out64-8 o 1
+GC m 9 g 34 n in64-9 o 0
+GC m 9 g 37 n out64-9 o 1
+GC m 9 g 38 n in64-10 o 0
+GC m 9 g 41 n out64-10 o 1
+GC m 9 g 42 n in64-11 o 0
+GC m 9 g 45 n out64-11 o 1
+GC m 9 g 46 n in64-12 o 0
+GC m 9 g 49 n out64-12 o 1
+GC m 9 g 50 n in64-13 o 0
+GC m 9 g 53 n out64-13 o 1
+MC id 9 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[5] cm 1
+MS id 9 d b=8,8,oval,red;p=213,649;bgb=,,white,,
+MC id 59 c BaseUtility t org.mixim.base.modules.BaseUtility pid 9 n utility
+MS id 59 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 60 c BaseArp t org.mixim.base.modules.BaseArp pid 9 n arp
+MS id 60 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 61 c MoBANLocal t moban.mobility.MoBANLocal pid 9 n mobility
+MS id 61 d p=130,172;i=block/cogwheel
+GC m 62 g 0 n lowerGateIn o 0
+GC m 62 g 3 n lowerGateOut o 1
+GC m 62 g 4 n lowerControlIn o 0
+GC m 62 g 7 n lowerControlOut o 1
+MC id 62 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 9 n appl
+MS id 62 d p=60,50;i=app
+GC m 63 g 0 n upperGateIn o 0
+GC m 63 g 3 n upperGateOut o 1
+GC m 63 g 4 n upperControlIn o 0
+GC m 63 g 7 n upperControlOut o 1
+GC m 63 g 8 n lowerGateIn o 0
+GC m 63 g 11 n lowerGateOut o 1
+GC m 63 g 12 n lowerControlIn o 0
+GC m 63 g 15 n lowerControlOut o 1
+MC id 63 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 9 n net
+MS id 63 d p=60,108;i=block/layer
+GC m 64 g 0 n upperGateIn o 0
+GC m 64 g 3 n upperGateOut o 1
+GC m 64 g 5 n upperControlOut o 1
+GC m 64 g 6 n upperControlIn o 0
+GC m 64 g 8 n radioIn o 0
+GC m 64 g 11 n out64-1 o 1
+GC m 64 g 12 n in64-1 o 0
+GC m 64 g 15 n out64-2 o 1
+GC m 64 g 16 n in64-2 o 0
+GC m 64 g 19 n out64-3 o 1
+GC m 64 g 20 n in64-3 o 0
+GC m 64 g 23 n out64-4 o 1
+GC m 64 g 24 n in64-4 o 0
+GC m 64 g 27 n out64-5 o 1
+GC m 64 g 28 n in64-5 o 0
+GC m 64 g 30 n in64-6 o 0
+GC m 64 g 33 n out64-6 o 1
+GC m 64 g 34 n in64-7 o 0
+GC m 64 g 37 n out64-7 o 1
+GC m 64 g 38 n in64-8 o 0
+GC m 64 g 41 n out64-8 o 1
+GC m 64 g 42 n in64-9 o 0
+GC m 64 g 45 n out64-9 o 1
+GC m 64 g 46 n in64-10 o 0
+GC m 64 g 49 n out64-10 o 1
+GC m 64 g 50 n in64-11 o 0
+GC m 64 g 53 n out64-11 o 1
+GC m 64 g 54 n in64-12 o 0
+GC m 64 g 57 n out64-12 o 1
+GC m 64 g 58 n in64-13 o 0
+GC m 64 g 61 n out64-13 o 1
+MC id 64 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 9 n nic cm 1
+MS id 64 d p=60,166;i=block/ifcard
+GC m 65 g 0 n upperGateIn o 0
+GC m 65 g 3 n upperGateOut o 1
+GC m 65 g 4 n upperControlIn o 0
+GC m 65 g 7 n upperControlOut o 1
+GC m 65 g 8 n lowerGateIn o 0
+GC m 65 g 11 n lowerGateOut o 1
+GC m 65 g 12 n lowerControlIn o 0
+GC m 65 g 15 n lowerControlOut o 1
+MC id 65 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 64 n mac
+MS id 65 d p=96,87;i=block/layer
+GC m 66 g 0 n upperGateIn o 0
+GC m 66 g 3 n upperGateOut o 1
+GC m 66 g 4 n upperControlIn o 0
+GC m 66 g 7 n upperControlOut o 1
+GC m 66 g 8 n radioIn o 0
+GC m 66 g 11 n out64-1 o 1
+GC m 66 g 12 n in64-1 o 0
+GC m 66 g 15 n out64-2 o 1
+GC m 66 g 16 n in64-2 o 0
+GC m 66 g 19 n out64-3 o 1
+GC m 66 g 20 n in64-3 o 0
+GC m 66 g 23 n out64-4 o 1
+GC m 66 g 24 n in64-4 o 0
+GC m 66 g 27 n out64-5 o 1
+GC m 66 g 28 n in64-5 o 0
+GC m 66 g 30 n in64-6 o 0
+GC m 66 g 33 n out64-6 o 1
+GC m 66 g 34 n in64-7 o 0
+GC m 66 g 37 n out64-7 o 1
+GC m 66 g 38 n in64-8 o 0
+GC m 66 g 41 n out64-8 o 1
+GC m 66 g 42 n in64-9 o 0
+GC m 66 g 45 n out64-9 o 1
+GC m 66 g 46 n in64-10 o 0
+GC m 66 g 49 n out64-10 o 1
+GC m 66 g 50 n in64-11 o 0
+GC m 66 g 53 n out64-11 o 1
+GC m 66 g 54 n in64-12 o 0
+GC m 66 g 57 n out64-12 o 1
+GC m 66 g 58 n in64-13 o 0
+GC m 66 g 61 n out64-13 o 1
+MC id 66 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 64 n phy
+MS id 66 d p=96,157;i=block/process_s
+GC m 10 g 0 n radioIn o 0
+GC m 10 g 3 n out72-1 o 1
+GC m 10 g 4 n in72-1 o 0
+GC m 10 g 7 n out72-2 o 1
+GC m 10 g 8 n in72-2 o 0
+GC m 10 g 11 n out72-3 o 1
+GC m 10 g 12 n in72-3 o 0
+GC m 10 g 15 n out72-4 o 1
+GC m 10 g 16 n in72-4 o 0
+GC m 10 g 19 n out72-5 o 1
+GC m 10 g 20 n in72-5 o 0
+GC m 10 g 23 n out72-6 o 1
+GC m 10 g 24 n in72-6 o 0
+GC m 10 g 26 n in72-7 o 0
+GC m 10 g 29 n out72-7 o 1
+GC m 10 g 30 n in72-8 o 0
+GC m 10 g 33 n out72-8 o 1
+GC m 10 g 34 n in72-9 o 0
+GC m 10 g 37 n out72-9 o 1
+GC m 10 g 38 n in72-10 o 0
+GC m 10 g 41 n out72-10 o 1
+GC m 10 g 42 n in72-11 o 0
+GC m 10 g 45 n out72-11 o 1
+GC m 10 g 46 n in72-12 o 0
+GC m 10 g 49 n out72-12 o 1
+GC m 10 g 50 n in72-13 o 0
+GC m 10 g 53 n out72-13 o 1
+MC id 10 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[6] cm 1
+MS id 10 d b=8,8,oval,red;p=191,647;bgb=,,white,,
+MC id 67 c BaseUtility t org.mixim.base.modules.BaseUtility pid 10 n utility
+MS id 67 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 68 c BaseArp t org.mixim.base.modules.BaseArp pid 10 n arp
+MS id 68 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 69 c MoBANLocal t moban.mobility.MoBANLocal pid 10 n mobility
+MS id 69 d p=130,172;i=block/cogwheel
+GC m 70 g 0 n lowerGateIn o 0
+GC m 70 g 3 n lowerGateOut o 1
+GC m 70 g 4 n lowerControlIn o 0
+GC m 70 g 7 n lowerControlOut o 1
+MC id 70 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 10 n appl
+MS id 70 d p=60,50;i=app
+GC m 71 g 0 n upperGateIn o 0
+GC m 71 g 3 n upperGateOut o 1
+GC m 71 g 4 n upperControlIn o 0
+GC m 71 g 7 n upperControlOut o 1
+GC m 71 g 8 n lowerGateIn o 0
+GC m 71 g 11 n lowerGateOut o 1
+GC m 71 g 12 n lowerControlIn o 0
+GC m 71 g 15 n lowerControlOut o 1
+MC id 71 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 10 n net
+MS id 71 d p=60,108;i=block/layer
+GC m 72 g 0 n upperGateIn o 0
+GC m 72 g 3 n upperGateOut o 1
+GC m 72 g 5 n upperControlOut o 1
+GC m 72 g 6 n upperControlIn o 0
+GC m 72 g 8 n radioIn o 0
+GC m 72 g 11 n out72-1 o 1
+GC m 72 g 12 n in72-1 o 0
+GC m 72 g 15 n out72-2 o 1
+GC m 72 g 16 n in72-2 o 0
+GC m 72 g 19 n out72-3 o 1
+GC m 72 g 20 n in72-3 o 0
+GC m 72 g 23 n out72-4 o 1
+GC m 72 g 24 n in72-4 o 0
+GC m 72 g 27 n out72-5 o 1
+GC m 72 g 28 n in72-5 o 0
+GC m 72 g 31 n out72-6 o 1
+GC m 72 g 32 n in72-6 o 0
+GC m 72 g 34 n in72-7 o 0
+GC m 72 g 37 n out72-7 o 1
+GC m 72 g 38 n in72-8 o 0
+GC m 72 g 41 n out72-8 o 1
+GC m 72 g 42 n in72-9 o 0
+GC m 72 g 45 n out72-9 o 1
+GC m 72 g 46 n in72-10 o 0
+GC m 72 g 49 n out72-10 o 1
+GC m 72 g 50 n in72-11 o 0
+GC m 72 g 53 n out72-11 o 1
+GC m 72 g 54 n in72-12 o 0
+GC m 72 g 57 n out72-12 o 1
+GC m 72 g 58 n in72-13 o 0
+GC m 72 g 61 n out72-13 o 1
+MC id 72 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 10 n nic cm 1
+MS id 72 d p=60,166;i=block/ifcard
+GC m 73 g 0 n upperGateIn o 0
+GC m 73 g 3 n upperGateOut o 1
+GC m 73 g 4 n upperControlIn o 0
+GC m 73 g 7 n upperControlOut o 1
+GC m 73 g 8 n lowerGateIn o 0
+GC m 73 g 11 n lowerGateOut o 1
+GC m 73 g 12 n lowerControlIn o 0
+GC m 73 g 15 n lowerControlOut o 1
+MC id 73 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 72 n mac
+MS id 73 d p=96,87;i=block/layer
+GC m 74 g 0 n upperGateIn o 0
+GC m 74 g 3 n upperGateOut o 1
+GC m 74 g 4 n upperControlIn o 0
+GC m 74 g 7 n upperControlOut o 1
+GC m 74 g 8 n radioIn o 0
+GC m 74 g 11 n out72-1 o 1
+GC m 74 g 12 n in72-1 o 0
+GC m 74 g 15 n out72-2 o 1
+GC m 74 g 16 n in72-2 o 0
+GC m 74 g 19 n out72-3 o 1
+GC m 74 g 20 n in72-3 o 0
+GC m 74 g 23 n out72-4 o 1
+GC m 74 g 24 n in72-4 o 0
+GC m 74 g 27 n out72-5 o 1
+GC m 74 g 28 n in72-5 o 0
+GC m 74 g 31 n out72-6 o 1
+GC m 74 g 32 n in72-6 o 0
+GC m 74 g 34 n in72-7 o 0
+GC m 74 g 37 n out72-7 o 1
+GC m 74 g 38 n in72-8 o 0
+GC m 74 g 41 n out72-8 o 1
+GC m 74 g 42 n in72-9 o 0
+GC m 74 g 45 n out72-9 o 1
+GC m 74 g 46 n in72-10 o 0
+GC m 74 g 49 n out72-10 o 1
+GC m 74 g 50 n in72-11 o 0
+GC m 74 g 53 n out72-11 o 1
+GC m 74 g 54 n in72-12 o 0
+GC m 74 g 57 n out72-12 o 1
+GC m 74 g 58 n in72-13 o 0
+GC m 74 g 61 n out72-13 o 1
+MC id 74 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 72 n phy
+MS id 74 d p=96,157;i=block/process_s
+GC m 11 g 0 n radioIn o 0
+GC m 11 g 3 n out80-1 o 1
+GC m 11 g 4 n in80-1 o 0
+GC m 11 g 7 n out80-2 o 1
+GC m 11 g 8 n in80-2 o 0
+GC m 11 g 11 n out80-3 o 1
+GC m 11 g 12 n in80-3 o 0
+GC m 11 g 15 n out80-4 o 1
+GC m 11 g 16 n in80-4 o 0
+GC m 11 g 19 n out80-5 o 1
+GC m 11 g 20 n in80-5 o 0
+GC m 11 g 23 n out80-6 o 1
+GC m 11 g 24 n in80-6 o 0
+GC m 11 g 27 n out80-7 o 1
+GC m 11 g 28 n in80-7 o 0
+GC m 11 g 30 n in80-8 o 0
+GC m 11 g 33 n out80-8 o 1
+GC m 11 g 34 n in80-9 o 0
+GC m 11 g 37 n out80-9 o 1
+GC m 11 g 38 n in80-10 o 0
+GC m 11 g 41 n out80-10 o 1
+GC m 11 g 42 n in80-11 o 0
+GC m 11 g 45 n out80-11 o 1
+GC m 11 g 46 n in80-12 o 0
+GC m 11 g 49 n out80-12 o 1
+GC m 11 g 50 n in80-13 o 0
+GC m 11 g 53 n out80-13 o 1
+MC id 11 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[7] cm 1
+MS id 11 d b=8,8,oval,red;p=189,728;bgb=,,white,,
+MC id 75 c BaseUtility t org.mixim.base.modules.BaseUtility pid 11 n utility
+MS id 75 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 76 c BaseArp t org.mixim.base.modules.BaseArp pid 11 n arp
+MS id 76 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 77 c MoBANLocal t moban.mobility.MoBANLocal pid 11 n mobility
+MS id 77 d p=130,172;i=block/cogwheel
+GC m 78 g 0 n lowerGateIn o 0
+GC m 78 g 3 n lowerGateOut o 1
+GC m 78 g 4 n lowerControlIn o 0
+GC m 78 g 7 n lowerControlOut o 1
+MC id 78 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 11 n appl
+MS id 78 d p=60,50;i=app
+GC m 79 g 0 n upperGateIn o 0
+GC m 79 g 3 n upperGateOut o 1
+GC m 79 g 4 n upperControlIn o 0
+GC m 79 g 7 n upperControlOut o 1
+GC m 79 g 8 n lowerGateIn o 0
+GC m 79 g 11 n lowerGateOut o 1
+GC m 79 g 12 n lowerControlIn o 0
+GC m 79 g 15 n lowerControlOut o 1
+MC id 79 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 11 n net
+MS id 79 d p=60,108;i=block/layer
+GC m 80 g 0 n upperGateIn o 0
+GC m 80 g 3 n upperGateOut o 1
+GC m 80 g 5 n upperControlOut o 1
+GC m 80 g 6 n upperControlIn o 0
+GC m 80 g 8 n radioIn o 0
+GC m 80 g 11 n out80-1 o 1
+GC m 80 g 12 n in80-1 o 0
+GC m 80 g 15 n out80-2 o 1
+GC m 80 g 16 n in80-2 o 0
+GC m 80 g 19 n out80-3 o 1
+GC m 80 g 20 n in80-3 o 0
+GC m 80 g 23 n out80-4 o 1
+GC m 80 g 24 n in80-4 o 0
+GC m 80 g 27 n out80-5 o 1
+GC m 80 g 28 n in80-5 o 0
+GC m 80 g 31 n out80-6 o 1
+GC m 80 g 32 n in80-6 o 0
+GC m 80 g 35 n out80-7 o 1
+GC m 80 g 36 n in80-7 o 0
+GC m 80 g 38 n in80-8 o 0
+GC m 80 g 41 n out80-8 o 1
+GC m 80 g 42 n in80-9 o 0
+GC m 80 g 45 n out80-9 o 1
+GC m 80 g 46 n in80-10 o 0
+GC m 80 g 49 n out80-10 o 1
+GC m 80 g 50 n in80-11 o 0
+GC m 80 g 53 n out80-11 o 1
+GC m 80 g 54 n in80-12 o 0
+GC m 80 g 57 n out80-12 o 1
+GC m 80 g 58 n in80-13 o 0
+GC m 80 g 61 n out80-13 o 1
+MC id 80 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 11 n nic cm 1
+MS id 80 d p=60,166;i=block/ifcard
+GC m 81 g 0 n upperGateIn o 0
+GC m 81 g 3 n upperGateOut o 1
+GC m 81 g 4 n upperControlIn o 0
+GC m 81 g 7 n upperControlOut o 1
+GC m 81 g 8 n lowerGateIn o 0
+GC m 81 g 11 n lowerGateOut o 1
+GC m 81 g 12 n lowerControlIn o 0
+GC m 81 g 15 n lowerControlOut o 1
+MC id 81 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 80 n mac
+MS id 81 d p=96,87;i=block/layer
+GC m 82 g 0 n upperGateIn o 0
+GC m 82 g 3 n upperGateOut o 1
+GC m 82 g 4 n upperControlIn o 0
+GC m 82 g 7 n upperControlOut o 1
+GC m 82 g 8 n radioIn o 0
+GC m 82 g 11 n out80-1 o 1
+GC m 82 g 12 n in80-1 o 0
+GC m 82 g 15 n out80-2 o 1
+GC m 82 g 16 n in80-2 o 0
+GC m 82 g 19 n out80-3 o 1
+GC m 82 g 20 n in80-3 o 0
+GC m 82 g 23 n out80-4 o 1
+GC m 82 g 24 n in80-4 o 0
+GC m 82 g 27 n out80-5 o 1
+GC m 82 g 28 n in80-5 o 0
+GC m 82 g 31 n out80-6 o 1
+GC m 82 g 32 n in80-6 o 0
+GC m 82 g 35 n out80-7 o 1
+GC m 82 g 36 n in80-7 o 0
+GC m 82 g 38 n in80-8 o 0
+GC m 82 g 41 n out80-8 o 1
+GC m 82 g 42 n in80-9 o 0
+GC m 82 g 45 n out80-9 o 1
+GC m 82 g 46 n in80-10 o 0
+GC m 82 g 49 n out80-10 o 1
+GC m 82 g 50 n in80-11 o 0
+GC m 82 g 53 n out80-11 o 1
+GC m 82 g 54 n in80-12 o 0
+GC m 82 g 57 n out80-12 o 1
+GC m 82 g 58 n in80-13 o 0
+GC m 82 g 61 n out80-13 o 1
+MC id 82 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 80 n phy
+MS id 82 d p=96,157;i=block/process_s
+GC m 12 g 0 n radioIn o 0
+GC m 12 g 3 n out88-1 o 1
+GC m 12 g 4 n in88-1 o 0
+GC m 12 g 7 n out88-2 o 1
+GC m 12 g 8 n in88-2 o 0
+GC m 12 g 11 n out88-3 o 1
+GC m 12 g 12 n in88-3 o 0
+GC m 12 g 15 n out88-4 o 1
+GC m 12 g 16 n in88-4 o 0
+GC m 12 g 19 n out88-5 o 1
+GC m 12 g 20 n in88-5 o 0
+GC m 12 g 23 n out88-6 o 1
+GC m 12 g 24 n in88-6 o 0
+GC m 12 g 27 n out88-7 o 1
+GC m 12 g 28 n in88-7 o 0
+GC m 12 g 31 n out88-8 o 1
+GC m 12 g 32 n in88-8 o 0
+GC m 12 g 34 n in88-9 o 0
+GC m 12 g 37 n out88-9 o 1
+GC m 12 g 38 n in88-10 o 0
+GC m 12 g 41 n out88-10 o 1
+GC m 12 g 42 n in88-11 o 0
+GC m 12 g 45 n out88-11 o 1
+GC m 12 g 46 n in88-12 o 0
+GC m 12 g 49 n out88-12 o 1
+GC m 12 g 50 n in88-13 o 0
+GC m 12 g 53 n out88-13 o 1
+MC id 12 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[8] cm 1
+MS id 12 d b=8,8,oval,red;p=215,715;bgb=,,white,,
+MC id 83 c BaseUtility t org.mixim.base.modules.BaseUtility pid 12 n utility
+MS id 83 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 84 c BaseArp t org.mixim.base.modules.BaseArp pid 12 n arp
+MS id 84 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 85 c MoBANLocal t moban.mobility.MoBANLocal pid 12 n mobility
+MS id 85 d p=130,172;i=block/cogwheel
+GC m 86 g 0 n lowerGateIn o 0
+GC m 86 g 3 n lowerGateOut o 1
+GC m 86 g 4 n lowerControlIn o 0
+GC m 86 g 7 n lowerControlOut o 1
+MC id 86 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 12 n appl
+MS id 86 d p=60,50;i=app
+GC m 87 g 0 n upperGateIn o 0
+GC m 87 g 3 n upperGateOut o 1
+GC m 87 g 4 n upperControlIn o 0
+GC m 87 g 7 n upperControlOut o 1
+GC m 87 g 8 n lowerGateIn o 0
+GC m 87 g 11 n lowerGateOut o 1
+GC m 87 g 12 n lowerControlIn o 0
+GC m 87 g 15 n lowerControlOut o 1
+MC id 87 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 12 n net
+MS id 87 d p=60,108;i=block/layer
+GC m 88 g 0 n upperGateIn o 0
+GC m 88 g 3 n upperGateOut o 1
+GC m 88 g 5 n upperControlOut o 1
+GC m 88 g 6 n upperControlIn o 0
+GC m 88 g 8 n radioIn o 0
+GC m 88 g 11 n out88-1 o 1
+GC m 88 g 12 n in88-1 o 0
+GC m 88 g 15 n out88-2 o 1
+GC m 88 g 16 n in88-2 o 0
+GC m 88 g 19 n out88-3 o 1
+GC m 88 g 20 n in88-3 o 0
+GC m 88 g 23 n out88-4 o 1
+GC m 88 g 24 n in88-4 o 0
+GC m 88 g 27 n out88-5 o 1
+GC m 88 g 28 n in88-5 o 0
+GC m 88 g 31 n out88-6 o 1
+GC m 88 g 32 n in88-6 o 0
+GC m 88 g 35 n out88-7 o 1
+GC m 88 g 36 n in88-7 o 0
+GC m 88 g 39 n out88-8 o 1
+GC m 88 g 40 n in88-8 o 0
+GC m 88 g 42 n in88-9 o 0
+GC m 88 g 45 n out88-9 o 1
+GC m 88 g 46 n in88-10 o 0
+GC m 88 g 49 n out88-10 o 1
+GC m 88 g 50 n in88-11 o 0
+GC m 88 g 53 n out88-11 o 1
+GC m 88 g 54 n in88-12 o 0
+GC m 88 g 57 n out88-12 o 1
+GC m 88 g 58 n in88-13 o 0
+GC m 88 g 61 n out88-13 o 1
+MC id 88 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 12 n nic cm 1
+MS id 88 d p=60,166;i=block/ifcard
+GC m 89 g 0 n upperGateIn o 0
+GC m 89 g 3 n upperGateOut o 1
+GC m 89 g 4 n upperControlIn o 0
+GC m 89 g 7 n upperControlOut o 1
+GC m 89 g 8 n lowerGateIn o 0
+GC m 89 g 11 n lowerGateOut o 1
+GC m 89 g 12 n lowerControlIn o 0
+GC m 89 g 15 n lowerControlOut o 1
+MC id 89 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 88 n mac
+MS id 89 d p=96,87;i=block/layer
+GC m 90 g 0 n upperGateIn o 0
+GC m 90 g 3 n upperGateOut o 1
+GC m 90 g 4 n upperControlIn o 0
+GC m 90 g 7 n upperControlOut o 1
+GC m 90 g 8 n radioIn o 0
+GC m 90 g 11 n out88-1 o 1
+GC m 90 g 12 n in88-1 o 0
+GC m 90 g 15 n out88-2 o 1
+GC m 90 g 16 n in88-2 o 0
+GC m 90 g 19 n out88-3 o 1
+GC m 90 g 20 n in88-3 o 0
+GC m 90 g 23 n out88-4 o 1
+GC m 90 g 24 n in88-4 o 0
+GC m 90 g 27 n out88-5 o 1
+GC m 90 g 28 n in88-5 o 0
+GC m 90 g 31 n out88-6 o 1
+GC m 90 g 32 n in88-6 o 0
+GC m 90 g 35 n out88-7 o 1
+GC m 90 g 36 n in88-7 o 0
+GC m 90 g 39 n out88-8 o 1
+GC m 90 g 40 n in88-8 o 0
+GC m 90 g 42 n in88-9 o 0
+GC m 90 g 45 n out88-9 o 1
+GC m 90 g 46 n in88-10 o 0
+GC m 90 g 49 n out88-10 o 1
+GC m 90 g 50 n in88-11 o 0
+GC m 90 g 53 n out88-11 o 1
+GC m 90 g 54 n in88-12 o 0
+GC m 90 g 57 n out88-12 o 1
+GC m 90 g 58 n in88-13 o 0
+GC m 90 g 61 n out88-13 o 1
+MC id 90 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 88 n phy
+MS id 90 d p=96,157;i=block/process_s
+GC m 13 g 0 n radioIn o 0
+GC m 13 g 3 n out96-1 o 1
+GC m 13 g 4 n in96-1 o 0
+GC m 13 g 7 n out96-2 o 1
+GC m 13 g 8 n in96-2 o 0
+GC m 13 g 11 n out96-3 o 1
+GC m 13 g 12 n in96-3 o 0
+GC m 13 g 15 n out96-4 o 1
+GC m 13 g 16 n in96-4 o 0
+GC m 13 g 19 n out96-5 o 1
+GC m 13 g 20 n in96-5 o 0
+GC m 13 g 23 n out96-6 o 1
+GC m 13 g 24 n in96-6 o 0
+GC m 13 g 27 n out96-7 o 1
+GC m 13 g 28 n in96-7 o 0
+GC m 13 g 31 n out96-8 o 1
+GC m 13 g 32 n in96-8 o 0
+GC m 13 g 35 n out96-9 o 1
+GC m 13 g 36 n in96-9 o 0
+GC m 13 g 38 n in96-10 o 0
+GC m 13 g 41 n out96-10 o 1
+GC m 13 g 42 n in96-11 o 0
+GC m 13 g 45 n out96-11 o 1
+GC m 13 g 46 n in96-12 o 0
+GC m 13 g 49 n out96-12 o 1
+GC m 13 g 50 n in96-13 o 0
+GC m 13 g 53 n out96-13 o 1
+MC id 13 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[9] cm 1
+MS id 13 d b=8,8,oval,red;p=227,681;bgb=,,white,,
+MC id 91 c BaseUtility t org.mixim.base.modules.BaseUtility pid 13 n utility
+MS id 91 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 92 c BaseArp t org.mixim.base.modules.BaseArp pid 13 n arp
+MS id 92 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 93 c MoBANLocal t moban.mobility.MoBANLocal pid 13 n mobility
+MS id 93 d p=130,172;i=block/cogwheel
+GC m 94 g 0 n lowerGateIn o 0
+GC m 94 g 3 n lowerGateOut o 1
+GC m 94 g 4 n lowerControlIn o 0
+GC m 94 g 7 n lowerControlOut o 1
+MC id 94 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 13 n appl
+MS id 94 d p=60,50;i=app
+GC m 95 g 0 n upperGateIn o 0
+GC m 95 g 3 n upperGateOut o 1
+GC m 95 g 4 n upperControlIn o 0
+GC m 95 g 7 n upperControlOut o 1
+GC m 95 g 8 n lowerGateIn o 0
+GC m 95 g 11 n lowerGateOut o 1
+GC m 95 g 12 n lowerControlIn o 0
+GC m 95 g 15 n lowerControlOut o 1
+MC id 95 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 13 n net
+MS id 95 d p=60,108;i=block/layer
+GC m 96 g 0 n upperGateIn o 0
+GC m 96 g 3 n upperGateOut o 1
+GC m 96 g 5 n upperControlOut o 1
+GC m 96 g 6 n upperControlIn o 0
+GC m 96 g 8 n radioIn o 0
+GC m 96 g 11 n out96-1 o 1
+GC m 96 g 12 n in96-1 o 0
+GC m 96 g 15 n out96-2 o 1
+GC m 96 g 16 n in96-2 o 0
+GC m 96 g 19 n out96-3 o 1
+GC m 96 g 20 n in96-3 o 0
+GC m 96 g 23 n out96-4 o 1
+GC m 96 g 24 n in96-4 o 0
+GC m 96 g 27 n out96-5 o 1
+GC m 96 g 28 n in96-5 o 0
+GC m 96 g 31 n out96-6 o 1
+GC m 96 g 32 n in96-6 o 0
+GC m 96 g 35 n out96-7 o 1
+GC m 96 g 36 n in96-7 o 0
+GC m 96 g 39 n out96-8 o 1
+GC m 96 g 40 n in96-8 o 0
+GC m 96 g 43 n out96-9 o 1
+GC m 96 g 44 n in96-9 o 0
+GC m 96 g 46 n in96-10 o 0
+GC m 96 g 49 n out96-10 o 1
+GC m 96 g 50 n in96-11 o 0
+GC m 96 g 53 n out96-11 o 1
+GC m 96 g 54 n in96-12 o 0
+GC m 96 g 57 n out96-12 o 1
+GC m 96 g 58 n in96-13 o 0
+GC m 96 g 61 n out96-13 o 1
+MC id 96 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 13 n nic cm 1
+MS id 96 d p=60,166;i=block/ifcard
+GC m 97 g 0 n upperGateIn o 0
+GC m 97 g 3 n upperGateOut o 1
+GC m 97 g 4 n upperControlIn o 0
+GC m 97 g 7 n upperControlOut o 1
+GC m 97 g 8 n lowerGateIn o 0
+GC m 97 g 11 n lowerGateOut o 1
+GC m 97 g 12 n lowerControlIn o 0
+GC m 97 g 15 n lowerControlOut o 1
+MC id 97 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 96 n mac
+MS id 97 d p=96,87;i=block/layer
+GC m 98 g 0 n upperGateIn o 0
+GC m 98 g 3 n upperGateOut o 1
+GC m 98 g 4 n upperControlIn o 0
+GC m 98 g 7 n upperControlOut o 1
+GC m 98 g 8 n radioIn o 0
+GC m 98 g 11 n out96-1 o 1
+GC m 98 g 12 n in96-1 o 0
+GC m 98 g 15 n out96-2 o 1
+GC m 98 g 16 n in96-2 o 0
+GC m 98 g 19 n out96-3 o 1
+GC m 98 g 20 n in96-3 o 0
+GC m 98 g 23 n out96-4 o 1
+GC m 98 g 24 n in96-4 o 0
+GC m 98 g 27 n out96-5 o 1
+GC m 98 g 28 n in96-5 o 0
+GC m 98 g 31 n out96-6 o 1
+GC m 98 g 32 n in96-6 o 0
+GC m 98 g 35 n out96-7 o 1
+GC m 98 g 36 n in96-7 o 0
+GC m 98 g 39 n out96-8 o 1
+GC m 98 g 40 n in96-8 o 0
+GC m 98 g 43 n out96-9 o 1
+GC m 98 g 44 n in96-9 o 0
+GC m 98 g 46 n in96-10 o 0
+GC m 98 g 49 n out96-10 o 1
+GC m 98 g 50 n in96-11 o 0
+GC m 98 g 53 n out96-11 o 1
+GC m 98 g 54 n in96-12 o 0
+GC m 98 g 57 n out96-12 o 1
+GC m 98 g 58 n in96-13 o 0
+GC m 98 g 61 n out96-13 o 1
+MC id 98 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 96 n phy
+MS id 98 d p=96,157;i=block/process_s
+GC m 14 g 0 n radioIn o 0
+GC m 14 g 3 n out104-1 o 1
+GC m 14 g 4 n in104-1 o 0
+GC m 14 g 7 n out104-2 o 1
+GC m 14 g 8 n in104-2 o 0
+GC m 14 g 11 n out104-3 o 1
+GC m 14 g 12 n in104-3 o 0
+GC m 14 g 15 n out104-4 o 1
+GC m 14 g 16 n in104-4 o 0
+GC m 14 g 19 n out104-5 o 1
+GC m 14 g 20 n in104-5 o 0
+GC m 14 g 23 n out104-6 o 1
+GC m 14 g 24 n in104-6 o 0
+GC m 14 g 27 n out104-7 o 1
+GC m 14 g 28 n in104-7 o 0
+GC m 14 g 31 n out104-8 o 1
+GC m 14 g 32 n in104-8 o 0
+GC m 14 g 35 n out104-9 o 1
+GC m 14 g 36 n in104-9 o 0
+GC m 14 g 39 n out104-10 o 1
+GC m 14 g 40 n in104-10 o 0
+GC m 14 g 42 n in104-11 o 0
+GC m 14 g 45 n out104-11 o 1
+GC m 14 g 46 n in104-12 o 0
+GC m 14 g 49 n out104-12 o 1
+GC m 14 g 50 n in104-13 o 0
+GC m 14 g 53 n out104-13 o 1
+MC id 14 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[10] cm 1
+MS id 14 d b=8,8,oval,red;p=182,662;bgb=,,white,,
+MC id 99 c BaseUtility t org.mixim.base.modules.BaseUtility pid 14 n utility
+MS id 99 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 100 c BaseArp t org.mixim.base.modules.BaseArp pid 14 n arp
+MS id 100 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 101 c MoBANLocal t moban.mobility.MoBANLocal pid 14 n mobility
+MS id 101 d p=130,172;i=block/cogwheel
+GC m 102 g 0 n lowerGateIn o 0
+GC m 102 g 3 n lowerGateOut o 1
+GC m 102 g 4 n lowerControlIn o 0
+GC m 102 g 7 n lowerControlOut o 1
+MC id 102 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 14 n appl
+MS id 102 d p=60,50;i=app
+GC m 103 g 0 n upperGateIn o 0
+GC m 103 g 3 n upperGateOut o 1
+GC m 103 g 4 n upperControlIn o 0
+GC m 103 g 7 n upperControlOut o 1
+GC m 103 g 8 n lowerGateIn o 0
+GC m 103 g 11 n lowerGateOut o 1
+GC m 103 g 12 n lowerControlIn o 0
+GC m 103 g 15 n lowerControlOut o 1
+MC id 103 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 14 n net
+MS id 103 d p=60,108;i=block/layer
+GC m 104 g 0 n upperGateIn o 0
+GC m 104 g 3 n upperGateOut o 1
+GC m 104 g 5 n upperControlOut o 1
+GC m 104 g 6 n upperControlIn o 0
+GC m 104 g 8 n radioIn o 0
+GC m 104 g 11 n out104-1 o 1
+GC m 104 g 12 n in104-1 o 0
+GC m 104 g 15 n out104-2 o 1
+GC m 104 g 16 n in104-2 o 0
+GC m 104 g 19 n out104-3 o 1
+GC m 104 g 20 n in104-3 o 0
+GC m 104 g 23 n out104-4 o 1
+GC m 104 g 24 n in104-4 o 0
+GC m 104 g 27 n out104-5 o 1
+GC m 104 g 28 n in104-5 o 0
+GC m 104 g 31 n out104-6 o 1
+GC m 104 g 32 n in104-6 o 0
+GC m 104 g 35 n out104-7 o 1
+GC m 104 g 36 n in104-7 o 0
+GC m 104 g 39 n out104-8 o 1
+GC m 104 g 40 n in104-8 o 0
+GC m 104 g 43 n out104-9 o 1
+GC m 104 g 44 n in104-9 o 0
+GC m 104 g 47 n out104-10 o 1
+GC m 104 g 48 n in104-10 o 0
+GC m 104 g 50 n in104-11 o 0
+GC m 104 g 53 n out104-11 o 1
+GC m 104 g 54 n in104-12 o 0
+GC m 104 g 57 n out104-12 o 1
+GC m 104 g 58 n in104-13 o 0
+GC m 104 g 61 n out104-13 o 1
+MC id 104 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 14 n nic cm 1
+MS id 104 d p=60,166;i=block/ifcard
+GC m 105 g 0 n upperGateIn o 0
+GC m 105 g 3 n upperGateOut o 1
+GC m 105 g 4 n upperControlIn o 0
+GC m 105 g 7 n upperControlOut o 1
+GC m 105 g 8 n lowerGateIn o 0
+GC m 105 g 11 n lowerGateOut o 1
+GC m 105 g 12 n lowerControlIn o 0
+GC m 105 g 15 n lowerControlOut o 1
+MC id 105 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 104 n mac
+MS id 105 d p=96,87;i=block/layer
+GC m 106 g 0 n upperGateIn o 0
+GC m 106 g 3 n upperGateOut o 1
+GC m 106 g 4 n upperControlIn o 0
+GC m 106 g 7 n upperControlOut o 1
+GC m 106 g 8 n radioIn o 0
+GC m 106 g 11 n out104-1 o 1
+GC m 106 g 12 n in104-1 o 0
+GC m 106 g 15 n out104-2 o 1
+GC m 106 g 16 n in104-2 o 0
+GC m 106 g 19 n out104-3 o 1
+GC m 106 g 20 n in104-3 o 0
+GC m 106 g 23 n out104-4 o 1
+GC m 106 g 24 n in104-4 o 0
+GC m 106 g 27 n out104-5 o 1
+GC m 106 g 28 n in104-5 o 0
+GC m 106 g 31 n out104-6 o 1
+GC m 106 g 32 n in104-6 o 0
+GC m 106 g 35 n out104-7 o 1
+GC m 106 g 36 n in104-7 o 0
+GC m 106 g 39 n out104-8 o 1
+GC m 106 g 40 n in104-8 o 0
+GC m 106 g 43 n out104-9 o 1
+GC m 106 g 44 n in104-9 o 0
+GC m 106 g 47 n out104-10 o 1
+GC m 106 g 48 n in104-10 o 0
+GC m 106 g 50 n in104-11 o 0
+GC m 106 g 53 n out104-11 o 1
+GC m 106 g 54 n in104-12 o 0
+GC m 106 g 57 n out104-12 o 1
+GC m 106 g 58 n in104-13 o 0
+GC m 106 g 61 n out104-13 o 1
+MC id 106 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 104 n phy
+MS id 106 d p=96,157;i=block/process_s
+GC m 15 g 0 n radioIn o 0
+GC m 15 g 3 n out112-1 o 1
+GC m 15 g 4 n in112-1 o 0
+GC m 15 g 7 n out112-2 o 1
+GC m 15 g 8 n in112-2 o 0
+GC m 15 g 11 n out112-3 o 1
+GC m 15 g 12 n in112-3 o 0
+GC m 15 g 15 n out112-4 o 1
+GC m 15 g 16 n in112-4 o 0
+GC m 15 g 19 n out112-5 o 1
+GC m 15 g 20 n in112-5 o 0
+GC m 15 g 23 n out112-6 o 1
+GC m 15 g 24 n in112-6 o 0
+GC m 15 g 27 n out112-7 o 1
+GC m 15 g 28 n in112-7 o 0
+GC m 15 g 31 n out112-8 o 1
+GC m 15 g 32 n in112-8 o 0
+GC m 15 g 35 n out112-9 o 1
+GC m 15 g 36 n in112-9 o 0
+GC m 15 g 39 n out112-10 o 1
+GC m 15 g 40 n in112-10 o 0
+GC m 15 g 43 n out112-11 o 1
+GC m 15 g 44 n in112-11 o 0
+GC m 15 g 46 n in112-12 o 0
+GC m 15 g 49 n out112-12 o 1
+GC m 15 g 50 n in112-13 o 0
+GC m 15 g 53 n out112-13 o 1
+MC id 15 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[11] cm 1
+MS id 15 d b=8,8,oval,red;p=-2147483648,-2147483648;bgb=,,white,,
+MC id 107 c BaseUtility t org.mixim.base.modules.BaseUtility pid 15 n utility
+MS id 107 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 108 c BaseArp t org.mixim.base.modules.BaseArp pid 15 n arp
+MS id 108 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 109 c MoBANLocal t moban.mobility.MoBANLocal pid 15 n mobility
+MS id 109 d p=130,172;i=block/cogwheel
+GC m 110 g 0 n lowerGateIn o 0
+GC m 110 g 3 n lowerGateOut o 1
+GC m 110 g 4 n lowerControlIn o 0
+GC m 110 g 7 n lowerControlOut o 1
+MC id 110 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 15 n appl
+MS id 110 d p=60,50;i=app
+GC m 111 g 0 n upperGateIn o 0
+GC m 111 g 3 n upperGateOut o 1
+GC m 111 g 4 n upperControlIn o 0
+GC m 111 g 7 n upperControlOut o 1
+GC m 111 g 8 n lowerGateIn o 0
+GC m 111 g 11 n lowerGateOut o 1
+GC m 111 g 12 n lowerControlIn o 0
+GC m 111 g 15 n lowerControlOut o 1
+MC id 111 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 15 n net
+MS id 111 d p=60,108;i=block/layer
+GC m 112 g 0 n upperGateIn o 0
+GC m 112 g 3 n upperGateOut o 1
+GC m 112 g 5 n upperControlOut o 1
+GC m 112 g 6 n upperControlIn o 0
+GC m 112 g 8 n radioIn o 0
+GC m 112 g 11 n out112-1 o 1
+GC m 112 g 12 n in112-1 o 0
+GC m 112 g 15 n out112-2 o 1
+GC m 112 g 16 n in112-2 o 0
+GC m 112 g 19 n out112-3 o 1
+GC m 112 g 20 n in112-3 o 0
+GC m 112 g 23 n out112-4 o 1
+GC m 112 g 24 n in112-4 o 0
+GC m 112 g 27 n out112-5 o 1
+GC m 112 g 28 n in112-5 o 0
+GC m 112 g 31 n out112-6 o 1
+GC m 112 g 32 n in112-6 o 0
+GC m 112 g 35 n out112-7 o 1
+GC m 112 g 36 n in112-7 o 0
+GC m 112 g 39 n out112-8 o 1
+GC m 112 g 40 n in112-8 o 0
+GC m 112 g 43 n out112-9 o 1
+GC m 112 g 44 n in112-9 o 0
+GC m 112 g 47 n out112-10 o 1
+GC m 112 g 48 n in112-10 o 0
+GC m 112 g 51 n out112-11 o 1
+GC m 112 g 52 n in112-11 o 0
+GC m 112 g 54 n in112-12 o 0
+GC m 112 g 57 n out112-12 o 1
+GC m 112 g 58 n in112-13 o 0
+GC m 112 g 61 n out112-13 o 1
+MC id 112 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 15 n nic cm 1
+MS id 112 d p=60,166;i=block/ifcard
+GC m 113 g 0 n upperGateIn o 0
+GC m 113 g 3 n upperGateOut o 1
+GC m 113 g 4 n upperControlIn o 0
+GC m 113 g 7 n upperControlOut o 1
+GC m 113 g 8 n lowerGateIn o 0
+GC m 113 g 11 n lowerGateOut o 1
+GC m 113 g 12 n lowerControlIn o 0
+GC m 113 g 15 n lowerControlOut o 1
+MC id 113 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 112 n mac
+MS id 113 d p=96,87;i=block/layer
+GC m 114 g 0 n upperGateIn o 0
+GC m 114 g 3 n upperGateOut o 1
+GC m 114 g 4 n upperControlIn o 0
+GC m 114 g 7 n upperControlOut o 1
+GC m 114 g 8 n radioIn o 0
+GC m 114 g 11 n out112-1 o 1
+GC m 114 g 12 n in112-1 o 0
+GC m 114 g 15 n out112-2 o 1
+GC m 114 g 16 n in112-2 o 0
+GC m 114 g 19 n out112-3 o 1
+GC m 114 g 20 n in112-3 o 0
+GC m 114 g 23 n out112-4 o 1
+GC m 114 g 24 n in112-4 o 0
+GC m 114 g 27 n out112-5 o 1
+GC m 114 g 28 n in112-5 o 0
+GC m 114 g 31 n out112-6 o 1
+GC m 114 g 32 n in112-6 o 0
+GC m 114 g 35 n out112-7 o 1
+GC m 114 g 36 n in112-7 o 0
+GC m 114 g 39 n out112-8 o 1
+GC m 114 g 40 n in112-8 o 0
+GC m 114 g 43 n out112-9 o 1
+GC m 114 g 44 n in112-9 o 0
+GC m 114 g 47 n out112-10 o 1
+GC m 114 g 48 n in112-10 o 0
+GC m 114 g 51 n out112-11 o 1
+GC m 114 g 52 n in112-11 o 0
+GC m 114 g 54 n in112-12 o 0
+GC m 114 g 57 n out112-12 o 1
+GC m 114 g 58 n in112-13 o 0
+GC m 114 g 61 n out112-13 o 1
+MC id 114 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 112 n phy
+MS id 114 d p=96,157;i=block/process_s
+GC m 16 g 0 n radioIn o 0
+GC m 16 g 3 n out120-1 o 1
+GC m 16 g 4 n in120-1 o 0
+GC m 16 g 7 n out120-2 o 1
+GC m 16 g 8 n in120-2 o 0
+GC m 16 g 11 n out120-3 o 1
+GC m 16 g 12 n in120-3 o 0
+GC m 16 g 15 n out120-4 o 1
+GC m 16 g 16 n in120-4 o 0
+GC m 16 g 19 n out120-5 o 1
+GC m 16 g 20 n in120-5 o 0
+GC m 16 g 23 n out120-6 o 1
+GC m 16 g 24 n in120-6 o 0
+GC m 16 g 27 n out120-7 o 1
+GC m 16 g 28 n in120-7 o 0
+GC m 16 g 31 n out120-8 o 1
+GC m 16 g 32 n in120-8 o 0
+GC m 16 g 35 n out120-9 o 1
+GC m 16 g 36 n in120-9 o 0
+GC m 16 g 39 n out120-10 o 1
+GC m 16 g 40 n in120-10 o 0
+GC m 16 g 43 n out120-11 o 1
+GC m 16 g 44 n in120-11 o 0
+GC m 16 g 47 n out120-12 o 1
+GC m 16 g 48 n in120-12 o 0
+GC m 16 g 50 n in120-13 o 0
+GC m 16 g 53 n out120-13 o 1
+MC id 16 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[12] cm 1
+MS id 16 d b=8,8,oval,red;p=-2147483648,-2147483648;bgb=,,white,,
+MC id 115 c BaseUtility t org.mixim.base.modules.BaseUtility pid 16 n utility
+MS id 115 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 116 c BaseArp t org.mixim.base.modules.BaseArp pid 16 n arp
+MS id 116 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 117 c MoBANLocal t moban.mobility.MoBANLocal pid 16 n mobility
+MS id 117 d p=130,172;i=block/cogwheel
+GC m 118 g 0 n lowerGateIn o 0
+GC m 118 g 3 n lowerGateOut o 1
+GC m 118 g 4 n lowerControlIn o 0
+GC m 118 g 7 n lowerControlOut o 1
+MC id 118 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 16 n appl
+MS id 118 d p=60,50;i=app
+GC m 119 g 0 n upperGateIn o 0
+GC m 119 g 3 n upperGateOut o 1
+GC m 119 g 4 n upperControlIn o 0
+GC m 119 g 7 n upperControlOut o 1
+GC m 119 g 8 n lowerGateIn o 0
+GC m 119 g 11 n lowerGateOut o 1
+GC m 119 g 12 n lowerControlIn o 0
+GC m 119 g 15 n lowerControlOut o 1
+MC id 119 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 16 n net
+MS id 119 d p=60,108;i=block/layer
+GC m 120 g 0 n upperGateIn o 0
+GC m 120 g 3 n upperGateOut o 1
+GC m 120 g 5 n upperControlOut o 1
+GC m 120 g 6 n upperControlIn o 0
+GC m 120 g 8 n radioIn o 0
+GC m 120 g 11 n out120-1 o 1
+GC m 120 g 12 n in120-1 o 0
+GC m 120 g 15 n out120-2 o 1
+GC m 120 g 16 n in120-2 o 0
+GC m 120 g 19 n out120-3 o 1
+GC m 120 g 20 n in120-3 o 0
+GC m 120 g 23 n out120-4 o 1
+GC m 120 g 24 n in120-4 o 0
+GC m 120 g 27 n out120-5 o 1
+GC m 120 g 28 n in120-5 o 0
+GC m 120 g 31 n out120-6 o 1
+GC m 120 g 32 n in120-6 o 0
+GC m 120 g 35 n out120-7 o 1
+GC m 120 g 36 n in120-7 o 0
+GC m 120 g 39 n out120-8 o 1
+GC m 120 g 40 n in120-8 o 0
+GC m 120 g 43 n out120-9 o 1
+GC m 120 g 44 n in120-9 o 0
+GC m 120 g 47 n out120-10 o 1
+GC m 120 g 48 n in120-10 o 0
+GC m 120 g 51 n out120-11 o 1
+GC m 120 g 52 n in120-11 o 0
+GC m 120 g 55 n out120-12 o 1
+GC m 120 g 56 n in120-12 o 0
+GC m 120 g 58 n in120-13 o 0
+GC m 120 g 61 n out120-13 o 1
+MC id 120 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 16 n nic cm 1
+MS id 120 d p=60,166;i=block/ifcard
+GC m 121 g 0 n upperGateIn o 0
+GC m 121 g 3 n upperGateOut o 1
+GC m 121 g 4 n upperControlIn o 0
+GC m 121 g 7 n upperControlOut o 1
+GC m 121 g 8 n lowerGateIn o 0
+GC m 121 g 11 n lowerGateOut o 1
+GC m 121 g 12 n lowerControlIn o 0
+GC m 121 g 15 n lowerControlOut o 1
+MC id 121 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 120 n mac
+MS id 121 d p=96,87;i=block/layer
+GC m 122 g 0 n upperGateIn o 0
+GC m 122 g 3 n upperGateOut o 1
+GC m 122 g 4 n upperControlIn o 0
+GC m 122 g 7 n upperControlOut o 1
+GC m 122 g 8 n radioIn o 0
+GC m 122 g 11 n out120-1 o 1
+GC m 122 g 12 n in120-1 o 0
+GC m 122 g 15 n out120-2 o 1
+GC m 122 g 16 n in120-2 o 0
+GC m 122 g 19 n out120-3 o 1
+GC m 122 g 20 n in120-3 o 0
+GC m 122 g 23 n out120-4 o 1
+GC m 122 g 24 n in120-4 o 0
+GC m 122 g 27 n out120-5 o 1
+GC m 122 g 28 n in120-5 o 0
+GC m 122 g 31 n out120-6 o 1
+GC m 122 g 32 n in120-6 o 0
+GC m 122 g 35 n out120-7 o 1
+GC m 122 g 36 n in120-7 o 0
+GC m 122 g 39 n out120-8 o 1
+GC m 122 g 40 n in120-8 o 0
+GC m 122 g 43 n out120-9 o 1
+GC m 122 g 44 n in120-9 o 0
+GC m 122 g 47 n out120-10 o 1
+GC m 122 g 48 n in120-10 o 0
+GC m 122 g 51 n out120-11 o 1
+GC m 122 g 52 n in120-11 o 0
+GC m 122 g 55 n out120-12 o 1
+GC m 122 g 56 n in120-12 o 0
+GC m 122 g 58 n in120-13 o 0
+GC m 122 g 61 n out120-13 o 1
+MC id 122 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 120 n phy
+MS id 122 d p=96,157;i=block/process_s
+GC m 17 g 0 n radioIn o 0
+GC m 17 g 3 n out128-1 o 1
+GC m 17 g 4 n in128-1 o 0
+GC m 17 g 7 n out128-2 o 1
+GC m 17 g 8 n in128-2 o 0
+GC m 17 g 11 n out128-3 o 1
+GC m 17 g 12 n in128-3 o 0
+GC m 17 g 15 n out128-4 o 1
+GC m 17 g 16 n in128-4 o 0
+GC m 17 g 19 n out128-5 o 1
+GC m 17 g 20 n in128-5 o 0
+GC m 17 g 23 n out128-6 o 1
+GC m 17 g 24 n in128-6 o 0
+GC m 17 g 27 n out128-7 o 1
+GC m 17 g 28 n in128-7 o 0
+GC m 17 g 31 n out128-8 o 1
+GC m 17 g 32 n in128-8 o 0
+GC m 17 g 35 n out128-9 o 1
+GC m 17 g 36 n in128-9 o 0
+GC m 17 g 39 n out128-10 o 1
+GC m 17 g 40 n in128-10 o 0
+GC m 17 g 43 n out128-11 o 1
+GC m 17 g 44 n in128-11 o 0
+GC m 17 g 47 n out128-12 o 1
+GC m 17 g 48 n in128-12 o 0
+GC m 17 g 51 n out128-13 o 1
+GC m 17 g 52 n in128-13 o 0
+MC id 17 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNode pid 1 n node[13] cm 1
+MS id 17 d b=8,8,oval,red;p=200,598;bgb=,,white,,
+MC id 123 c BaseUtility t org.mixim.base.modules.BaseUtility pid 17 n utility
+MS id 123 d b=24,24,rect,black;p=130,38;i=block/blackboard
+MC id 124 c BaseArp t org.mixim.base.modules.BaseArp pid 17 n arp
+MS id 124 d p=130,108;b=24,24,rect,blue;i=block/process
+MC id 125 c MoBANLocal t moban.mobility.MoBANLocal pid 17 n mobility
+MS id 125 d p=130,172;i=block/cogwheel
+GC m 126 g 0 n lowerGateIn o 0
+GC m 126 g 3 n lowerGateOut o 1
+GC m 126 g 4 n lowerControlIn o 0
+GC m 126 g 7 n lowerControlOut o 1
+MC id 126 c BurstApplLayer t org.mixim.modules.application.BurstApplLayer pid 17 n appl
+MS id 126 d p=60,50;i=app
+GC m 127 g 0 n upperGateIn o 0
+GC m 127 g 3 n upperGateOut o 1
+GC m 127 g 4 n upperControlIn o 0
+GC m 127 g 7 n upperControlOut o 1
+GC m 127 g 8 n lowerGateIn o 0
+GC m 127 g 11 n lowerGateOut o 1
+GC m 127 g 12 n lowerControlIn o 0
+GC m 127 g 15 n lowerControlOut o 1
+MC id 127 c BaseNetwLayer t org.mixim.base.modules.BaseNetwLayer pid 17 n net
+MS id 127 d p=60,108;i=block/layer
+GC m 128 g 0 n upperGateIn o 0
+GC m 128 g 3 n upperGateOut o 1
+GC m 128 g 5 n upperControlOut o 1
+GC m 128 g 6 n upperControlIn o 0
+GC m 128 g 8 n radioIn o 0
+GC m 128 g 11 n out128-1 o 1
+GC m 128 g 12 n in128-1 o 0
+GC m 128 g 15 n out128-2 o 1
+GC m 128 g 16 n in128-2 o 0
+GC m 128 g 19 n out128-3 o 1
+GC m 128 g 20 n in128-3 o 0
+GC m 128 g 23 n out128-4 o 1
+GC m 128 g 24 n in128-4 o 0
+GC m 128 g 27 n out128-5 o 1
+GC m 128 g 28 n in128-5 o 0
+GC m 128 g 31 n out128-6 o 1
+GC m 128 g 32 n in128-6 o 0
+GC m 128 g 35 n out128-7 o 1
+GC m 128 g 36 n in128-7 o 0
+GC m 128 g 39 n out128-8 o 1
+GC m 128 g 40 n in128-8 o 0
+GC m 128 g 43 n out128-9 o 1
+GC m 128 g 44 n in128-9 o 0
+GC m 128 g 47 n out128-10 o 1
+GC m 128 g 48 n in128-10 o 0
+GC m 128 g 51 n out128-11 o 1
+GC m 128 g 52 n in128-11 o 0
+GC m 128 g 55 n out128-12 o 1
+GC m 128 g 56 n in128-12 o 0
+GC m 128 g 59 n out128-13 o 1
+GC m 128 g 60 n in128-13 o 0
+MC id 128 c cCompoundModule t org.mixim.examples.baseNetwork.BaseNic pid 17 n nic cm 1
+MS id 128 d p=60,166;i=block/ifcard
+GC m 129 g 0 n upperGateIn o 0
+GC m 129 g 3 n upperGateOut o 1
+GC m 129 g 4 n upperControlIn o 0
+GC m 129 g 7 n upperControlOut o 1
+GC m 129 g 8 n lowerGateIn o 0
+GC m 129 g 11 n lowerGateOut o 1
+GC m 129 g 12 n lowerControlIn o 0
+GC m 129 g 15 n lowerControlOut o 1
+MC id 129 c CSMAMacLayer t org.mixim.modules.mac.CSMAMacLayer pid 128 n mac
+MS id 129 d p=96,87;i=block/layer
+GC m 130 g 0 n upperGateIn o 0
+GC m 130 g 3 n upperGateOut o 1
+GC m 130 g 4 n upperControlIn o 0
+GC m 130 g 7 n upperControlOut o 1
+GC m 130 g 8 n radioIn o 0
+GC m 130 g 11 n out128-1 o 1
+GC m 130 g 12 n in128-1 o 0
+GC m 130 g 15 n out128-2 o 1
+GC m 130 g 16 n in128-2 o 0
+GC m 130 g 19 n out128-3 o 1
+GC m 130 g 20 n in128-3 o 0
+GC m 130 g 23 n out128-4 o 1
+GC m 130 g 24 n in128-4 o 0
+GC m 130 g 27 n out128-5 o 1
+GC m 130 g 28 n in128-5 o 0
+GC m 130 g 31 n out128-6 o 1
+GC m 130 g 32 n in128-6 o 0
+GC m 130 g 35 n out128-7 o 1
+GC m 130 g 36 n in128-7 o 0
+GC m 130 g 39 n out128-8 o 1
+GC m 130 g 40 n in128-8 o 0
+GC m 130 g 43 n out128-9 o 1
+GC m 130 g 44 n in128-9 o 0
+GC m 130 g 47 n out128-10 o 1
+GC m 130 g 48 n in128-10 o 0
+GC m 130 g 51 n out128-11 o 1
+GC m 130 g 52 n in128-11 o 0
+GC m 130 g 55 n out128-12 o 1
+GC m 130 g 56 n in128-12 o 0
+GC m 130 g 59 n out128-13 o 1
+GC m 130 g 60 n in128-13 o 0
+MC id 130 c PhyLayer t org.mixim.modules.phy.PhyLayer pid 128 n phy
+MS id 130 d p=96,157;i=block/process_s
+MC id 18 c MoBANCoordinator t moban.mobility.MoBANCoordinator pid 1 n MoBANCoor[0]
+MS id 18 d "p=1010.000000,50;i=block/wheelbarrow;is=vs;t=WALKING Duration:106.653478"
+CC sm 4 sg 0 dm 24 dg 8
+CC sm 4 sg 2 dm 24 dg 10
+CC sm 4 sg 5 dm 5 dg 4
+CC sm 4 sg 6 dm 24 dg 14
+CC sm 4 sg 9 dm 6 dg 4
+CC sm 4 sg 10 dm 24 dg 18
+CC sm 4 sg 13 dm 7 dg 4
+CC sm 4 sg 14 dm 24 dg 22
+CC sm 4 sg 17 dm 8 dg 4
+CC sm 4 sg 18 dm 24 dg 26
+CC sm 4 sg 21 dm 9 dg 4
+CC sm 4 sg 22 dm 24 dg 30
+CC sm 4 sg 25 dm 10 dg 4
+CC sm 4 sg 26 dm 24 dg 34
+CC sm 4 sg 29 dm 11 dg 4
+CC sm 4 sg 30 dm 24 dg 38
+CC sm 4 sg 33 dm 12 dg 4
+CC sm 4 sg 34 dm 24 dg 42
+CC sm 4 sg 37 dm 13 dg 4
+CC sm 4 sg 38 dm 24 dg 46
+CC sm 4 sg 41 dm 14 dg 4
+CC sm 4 sg 42 dm 24 dg 50
+CC sm 4 sg 46 dm 24 dg 54
+CC sm 4 sg 50 dm 24 dg 58
+CC sm 4 sg 53 dm 17 dg 4
+CC sm 22 sg 3 dm 23 dg 0
+CC sm 22 sg 7 dm 23 dg 4
+CS sm 22 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 23 sg 3 dm 22 dg 0
+CC sm 23 sg 7 dm 22 dg 4
+CS sm 23 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 23 sg 11 dm 24 dg 0
+CC sm 23 sg 15 dm 24 dg 6
+CS sm 23 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 24 sg 0 dm 25 dg 0
+CS sm 24 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 24 sg 3 dm 23 dg 8
+CC sm 24 sg 5 dm 23 dg 12
+CS sm 24 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 24 sg 6 dm 25 dg 4
+CS sm 24 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 24 sg 8 dm 26 dg 8
+CC sm 24 sg 10 dm 26 dg 10
+CC sm 24 sg 13 dm 4 dg 5
+CC sm 24 sg 14 dm 26 dg 14
+CC sm 24 sg 17 dm 4 dg 9
+CC sm 24 sg 18 dm 26 dg 18
+CC sm 24 sg 21 dm 4 dg 13
+CC sm 24 sg 22 dm 26 dg 22
+CC sm 24 sg 25 dm 4 dg 17
+CC sm 24 sg 26 dm 26 dg 26
+CC sm 24 sg 29 dm 4 dg 21
+CC sm 24 sg 30 dm 26 dg 30
+CC sm 24 sg 33 dm 4 dg 25
+CC sm 24 sg 34 dm 26 dg 34
+CC sm 24 sg 37 dm 4 dg 29
+CC sm 24 sg 38 dm 26 dg 38
+CC sm 24 sg 41 dm 4 dg 33
+CC sm 24 sg 42 dm 26 dg 42
+CC sm 24 sg 45 dm 4 dg 37
+CC sm 24 sg 46 dm 26 dg 46
+CC sm 24 sg 49 dm 4 dg 41
+CC sm 24 sg 50 dm 26 dg 50
+CC sm 24 sg 53 dm 4 dg 45
+CC sm 24 sg 54 dm 26 dg 54
+CC sm 24 sg 57 dm 4 dg 49
+CC sm 24 sg 58 dm 26 dg 58
+CC sm 24 sg 61 dm 4 dg 53
+CC sm 25 sg 3 dm 24 dg 3
+CS sm 25 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 25 sg 7 dm 24 dg 5
+CS sm 25 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 25 sg 11 dm 26 dg 0
+CS sm 25 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 25 sg 15 dm 26 dg 4
+CS sm 25 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 26 sg 3 dm 25 dg 8
+CS sm 26 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 26 sg 7 dm 25 dg 12
+CS sm 26 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 26 sg 13 dm 24 dg 13
+CC sm 26 sg 17 dm 24 dg 17
+CC sm 26 sg 21 dm 24 dg 21
+CC sm 26 sg 25 dm 24 dg 25
+CC sm 26 sg 29 dm 24 dg 29
+CC sm 26 sg 33 dm 24 dg 33
+CC sm 26 sg 37 dm 24 dg 37
+CC sm 26 sg 41 dm 24 dg 41
+CC sm 26 sg 45 dm 24 dg 45
+CC sm 26 sg 49 dm 24 dg 49
+CC sm 26 sg 53 dm 24 dg 53
+CC sm 26 sg 57 dm 24 dg 57
+CC sm 26 sg 61 dm 24 dg 61
+CC sm 5 sg 0 dm 32 dg 8
+CC sm 5 sg 3 dm 4 dg 2
+CC sm 5 sg 4 dm 32 dg 12
+CC sm 5 sg 6 dm 32 dg 14
+CC sm 5 sg 9 dm 6 dg 8
+CC sm 5 sg 10 dm 32 dg 18
+CC sm 5 sg 13 dm 7 dg 8
+CC sm 5 sg 14 dm 32 dg 22
+CC sm 5 sg 17 dm 8 dg 8
+CC sm 5 sg 18 dm 32 dg 26
+CC sm 5 sg 21 dm 9 dg 8
+CC sm 5 sg 22 dm 32 dg 30
+CC sm 5 sg 25 dm 10 dg 8
+CC sm 5 sg 26 dm 32 dg 34
+CC sm 5 sg 29 dm 11 dg 8
+CC sm 5 sg 30 dm 32 dg 38
+CC sm 5 sg 33 dm 12 dg 8
+CC sm 5 sg 34 dm 32 dg 42
+CC sm 5 sg 37 dm 13 dg 8
+CC sm 5 sg 38 dm 32 dg 46
+CC sm 5 sg 41 dm 14 dg 8
+CC sm 5 sg 42 dm 32 dg 50
+CC sm 5 sg 46 dm 32 dg 54
+CC sm 5 sg 50 dm 32 dg 58
+CC sm 5 sg 53 dm 17 dg 8
+CC sm 30 sg 3 dm 31 dg 0
+CC sm 30 sg 7 dm 31 dg 4
+CS sm 30 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 31 sg 3 dm 30 dg 0
+CC sm 31 sg 7 dm 30 dg 4
+CS sm 31 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 31 sg 11 dm 32 dg 0
+CC sm 31 sg 15 dm 32 dg 6
+CS sm 31 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 32 sg 0 dm 33 dg 0
+CS sm 32 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 32 sg 3 dm 31 dg 8
+CC sm 32 sg 5 dm 31 dg 12
+CS sm 32 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 32 sg 6 dm 33 dg 4
+CS sm 32 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 32 sg 8 dm 34 dg 8
+CC sm 32 sg 11 dm 5 dg 3
+CC sm 32 sg 12 dm 34 dg 12
+CC sm 32 sg 14 dm 34 dg 14
+CC sm 32 sg 17 dm 5 dg 9
+CC sm 32 sg 18 dm 34 dg 18
+CC sm 32 sg 21 dm 5 dg 13
+CC sm 32 sg 22 dm 34 dg 22
+CC sm 32 sg 25 dm 5 dg 17
+CC sm 32 sg 26 dm 34 dg 26
+CC sm 32 sg 29 dm 5 dg 21
+CC sm 32 sg 30 dm 34 dg 30
+CC sm 32 sg 33 dm 5 dg 25
+CC sm 32 sg 34 dm 34 dg 34
+CC sm 32 sg 37 dm 5 dg 29
+CC sm 32 sg 38 dm 34 dg 38
+CC sm 32 sg 41 dm 5 dg 33
+CC sm 32 sg 42 dm 34 dg 42
+CC sm 32 sg 45 dm 5 dg 37
+CC sm 32 sg 46 dm 34 dg 46
+CC sm 32 sg 49 dm 5 dg 41
+CC sm 32 sg 50 dm 34 dg 50
+CC sm 32 sg 53 dm 5 dg 45
+CC sm 32 sg 54 dm 34 dg 54
+CC sm 32 sg 57 dm 5 dg 49
+CC sm 32 sg 58 dm 34 dg 58
+CC sm 32 sg 61 dm 5 dg 53
+CC sm 33 sg 3 dm 32 dg 3
+CS sm 33 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 33 sg 7 dm 32 dg 5
+CS sm 33 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 33 sg 11 dm 34 dg 0
+CS sm 33 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 33 sg 15 dm 34 dg 4
+CS sm 33 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 34 sg 3 dm 33 dg 8
+CS sm 34 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 34 sg 7 dm 33 dg 12
+CS sm 34 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 34 sg 11 dm 32 dg 11
+CC sm 34 sg 17 dm 32 dg 17
+CC sm 34 sg 21 dm 32 dg 21
+CC sm 34 sg 25 dm 32 dg 25
+CC sm 34 sg 29 dm 32 dg 29
+CC sm 34 sg 33 dm 32 dg 33
+CC sm 34 sg 37 dm 32 dg 37
+CC sm 34 sg 41 dm 32 dg 41
+CC sm 34 sg 45 dm 32 dg 45
+CC sm 34 sg 49 dm 32 dg 49
+CC sm 34 sg 53 dm 32 dg 53
+CC sm 34 sg 57 dm 32 dg 57
+CC sm 34 sg 61 dm 32 dg 61
+CC sm 6 sg 0 dm 40 dg 8
+CC sm 6 sg 3 dm 4 dg 6
+CC sm 6 sg 4 dm 40 dg 12
+CC sm 6 sg 7 dm 5 dg 6
+CC sm 6 sg 8 dm 40 dg 16
+CC sm 6 sg 10 dm 40 dg 18
+CC sm 6 sg 13 dm 7 dg 12
+CC sm 6 sg 14 dm 40 dg 22
+CC sm 6 sg 17 dm 8 dg 12
+CC sm 6 sg 18 dm 40 dg 26
+CC sm 6 sg 21 dm 9 dg 12
+CC sm 6 sg 22 dm 40 dg 30
+CC sm 6 sg 25 dm 10 dg 12
+CC sm 6 sg 26 dm 40 dg 34
+CC sm 6 sg 29 dm 11 dg 12
+CC sm 6 sg 30 dm 40 dg 38
+CC sm 6 sg 33 dm 12 dg 12
+CC sm 6 sg 34 dm 40 dg 42
+CC sm 6 sg 37 dm 13 dg 12
+CC sm 6 sg 38 dm 40 dg 46
+CC sm 6 sg 41 dm 14 dg 12
+CC sm 6 sg 42 dm 40 dg 50
+CC sm 6 sg 46 dm 40 dg 54
+CC sm 6 sg 50 dm 40 dg 58
+CC sm 6 sg 53 dm 17 dg 12
+CC sm 38 sg 3 dm 39 dg 0
+CC sm 38 sg 7 dm 39 dg 4
+CS sm 38 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 39 sg 3 dm 38 dg 0
+CC sm 39 sg 7 dm 38 dg 4
+CS sm 39 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 39 sg 11 dm 40 dg 0
+CC sm 39 sg 15 dm 40 dg 6
+CS sm 39 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 40 sg 0 dm 41 dg 0
+CS sm 40 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 40 sg 3 dm 39 dg 8
+CC sm 40 sg 5 dm 39 dg 12
+CS sm 40 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 40 sg 6 dm 41 dg 4
+CS sm 40 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 40 sg 8 dm 42 dg 8
+CC sm 40 sg 11 dm 6 dg 3
+CC sm 40 sg 12 dm 42 dg 12
+CC sm 40 sg 15 dm 6 dg 7
+CC sm 40 sg 16 dm 42 dg 16
+CC sm 40 sg 18 dm 42 dg 18
+CC sm 40 sg 21 dm 6 dg 13
+CC sm 40 sg 22 dm 42 dg 22
+CC sm 40 sg 25 dm 6 dg 17
+CC sm 40 sg 26 dm 42 dg 26
+CC sm 40 sg 29 dm 6 dg 21
+CC sm 40 sg 30 dm 42 dg 30
+CC sm 40 sg 33 dm 6 dg 25
+CC sm 40 sg 34 dm 42 dg 34
+CC sm 40 sg 37 dm 6 dg 29
+CC sm 40 sg 38 dm 42 dg 38
+CC sm 40 sg 41 dm 6 dg 33
+CC sm 40 sg 42 dm 42 dg 42
+CC sm 40 sg 45 dm 6 dg 37
+CC sm 40 sg 46 dm 42 dg 46
+CC sm 40 sg 49 dm 6 dg 41
+CC sm 40 sg 50 dm 42 dg 50
+CC sm 40 sg 53 dm 6 dg 45
+CC sm 40 sg 54 dm 42 dg 54
+CC sm 40 sg 57 dm 6 dg 49
+CC sm 40 sg 58 dm 42 dg 58
+CC sm 40 sg 61 dm 6 dg 53
+CC sm 41 sg 3 dm 40 dg 3
+CS sm 41 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 41 sg 7 dm 40 dg 5
+CS sm 41 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 41 sg 11 dm 42 dg 0
+CS sm 41 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 41 sg 15 dm 42 dg 4
+CS sm 41 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 42 sg 3 dm 41 dg 8
+CS sm 42 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 42 sg 7 dm 41 dg 12
+CS sm 42 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 42 sg 11 dm 40 dg 11
+CC sm 42 sg 15 dm 40 dg 15
+CC sm 42 sg 21 dm 40 dg 21
+CC sm 42 sg 25 dm 40 dg 25
+CC sm 42 sg 29 dm 40 dg 29
+CC sm 42 sg 33 dm 40 dg 33
+CC sm 42 sg 37 dm 40 dg 37
+CC sm 42 sg 41 dm 40 dg 41
+CC sm 42 sg 45 dm 40 dg 45
+CC sm 42 sg 49 dm 40 dg 49
+CC sm 42 sg 53 dm 40 dg 53
+CC sm 42 sg 57 dm 40 dg 57
+CC sm 42 sg 61 dm 40 dg 61
+CC sm 7 sg 0 dm 48 dg 8
+CC sm 7 sg 3 dm 4 dg 10
+CC sm 7 sg 4 dm 48 dg 12
+CC sm 7 sg 7 dm 5 dg 10
+CC sm 7 sg 8 dm 48 dg 16
+CC sm 7 sg 11 dm 6 dg 10
+CC sm 7 sg 12 dm 48 dg 20
+CC sm 7 sg 14 dm 48 dg 22
+CC sm 7 sg 17 dm 8 dg 16
+CC sm 7 sg 18 dm 48 dg 26
+CC sm 7 sg 21 dm 9 dg 16
+CC sm 7 sg 22 dm 48 dg 30
+CC sm 7 sg 25 dm 10 dg 16
+CC sm 7 sg 26 dm 48 dg 34
+CC sm 7 sg 29 dm 11 dg 16
+CC sm 7 sg 30 dm 48 dg 38
+CC sm 7 sg 33 dm 12 dg 16
+CC sm 7 sg 34 dm 48 dg 42
+CC sm 7 sg 37 dm 13 dg 16
+CC sm 7 sg 38 dm 48 dg 46
+CC sm 7 sg 41 dm 14 dg 16
+CC sm 7 sg 42 dm 48 dg 50
+CC sm 7 sg 46 dm 48 dg 54
+CC sm 7 sg 50 dm 48 dg 58
+CC sm 7 sg 53 dm 17 dg 16
+CC sm 46 sg 3 dm 47 dg 0
+CC sm 46 sg 7 dm 47 dg 4
+CS sm 46 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 47 sg 3 dm 46 dg 0
+CC sm 47 sg 7 dm 46 dg 4
+CS sm 47 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 47 sg 11 dm 48 dg 0
+CC sm 47 sg 15 dm 48 dg 6
+CS sm 47 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 48 sg 0 dm 49 dg 0
+CS sm 48 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 48 sg 3 dm 47 dg 8
+CC sm 48 sg 5 dm 47 dg 12
+CS sm 48 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 48 sg 6 dm 49 dg 4
+CS sm 48 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 48 sg 8 dm 50 dg 8
+CC sm 48 sg 11 dm 7 dg 3
+CC sm 48 sg 12 dm 50 dg 12
+CC sm 48 sg 15 dm 7 dg 7
+CC sm 48 sg 16 dm 50 dg 16
+CC sm 48 sg 19 dm 7 dg 11
+CC sm 48 sg 20 dm 50 dg 20
+CC sm 48 sg 22 dm 50 dg 22
+CC sm 48 sg 25 dm 7 dg 17
+CC sm 48 sg 26 dm 50 dg 26
+CC sm 48 sg 29 dm 7 dg 21
+CC sm 48 sg 30 dm 50 dg 30
+CC sm 48 sg 33 dm 7 dg 25
+CC sm 48 sg 34 dm 50 dg 34
+CC sm 48 sg 37 dm 7 dg 29
+CC sm 48 sg 38 dm 50 dg 38
+CC sm 48 sg 41 dm 7 dg 33
+CC sm 48 sg 42 dm 50 dg 42
+CC sm 48 sg 45 dm 7 dg 37
+CC sm 48 sg 46 dm 50 dg 46
+CC sm 48 sg 49 dm 7 dg 41
+CC sm 48 sg 50 dm 50 dg 50
+CC sm 48 sg 53 dm 7 dg 45
+CC sm 48 sg 54 dm 50 dg 54
+CC sm 48 sg 57 dm 7 dg 49
+CC sm 48 sg 58 dm 50 dg 58
+CC sm 48 sg 61 dm 7 dg 53
+CC sm 49 sg 3 dm 48 dg 3
+CS sm 49 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 49 sg 7 dm 48 dg 5
+CS sm 49 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 49 sg 11 dm 50 dg 0
+CS sm 49 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 49 sg 15 dm 50 dg 4
+CS sm 49 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 50 sg 3 dm 49 dg 8
+CS sm 50 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 50 sg 7 dm 49 dg 12
+CS sm 50 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 50 sg 11 dm 48 dg 11
+CC sm 50 sg 15 dm 48 dg 15
+CC sm 50 sg 19 dm 48 dg 19
+CC sm 50 sg 25 dm 48 dg 25
+CC sm 50 sg 29 dm 48 dg 29
+CC sm 50 sg 33 dm 48 dg 33
+CC sm 50 sg 37 dm 48 dg 37
+CC sm 50 sg 41 dm 48 dg 41
+CC sm 50 sg 45 dm 48 dg 45
+CC sm 50 sg 49 dm 48 dg 49
+CC sm 50 sg 53 dm 48 dg 53
+CC sm 50 sg 57 dm 48 dg 57
+CC sm 50 sg 61 dm 48 dg 61
+CC sm 8 sg 0 dm 56 dg 8
+CC sm 8 sg 3 dm 4 dg 14
+CC sm 8 sg 4 dm 56 dg 12
+CC sm 8 sg 7 dm 5 dg 14
+CC sm 8 sg 8 dm 56 dg 16
+CC sm 8 sg 11 dm 6 dg 14
+CC sm 8 sg 12 dm 56 dg 20
+CC sm 8 sg 15 dm 7 dg 14
+CC sm 8 sg 16 dm 56 dg 24
+CC sm 8 sg 18 dm 56 dg 26
+CC sm 8 sg 21 dm 9 dg 20
+CC sm 8 sg 22 dm 56 dg 30
+CC sm 8 sg 25 dm 10 dg 20
+CC sm 8 sg 26 dm 56 dg 34
+CC sm 8 sg 29 dm 11 dg 20
+CC sm 8 sg 30 dm 56 dg 38
+CC sm 8 sg 33 dm 12 dg 20
+CC sm 8 sg 34 dm 56 dg 42
+CC sm 8 sg 37 dm 13 dg 20
+CC sm 8 sg 38 dm 56 dg 46
+CC sm 8 sg 41 dm 14 dg 20
+CC sm 8 sg 42 dm 56 dg 50
+CC sm 8 sg 46 dm 56 dg 54
+CC sm 8 sg 50 dm 56 dg 58
+CC sm 8 sg 53 dm 17 dg 20
+CC sm 54 sg 3 dm 55 dg 0
+CC sm 54 sg 7 dm 55 dg 4
+CS sm 54 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 55 sg 3 dm 54 dg 0
+CC sm 55 sg 7 dm 54 dg 4
+CS sm 55 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 55 sg 11 dm 56 dg 0
+CC sm 55 sg 15 dm 56 dg 6
+CS sm 55 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 56 sg 0 dm 57 dg 0
+CS sm 56 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 56 sg 3 dm 55 dg 8
+CC sm 56 sg 5 dm 55 dg 12
+CS sm 56 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 56 sg 6 dm 57 dg 4
+CS sm 56 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 56 sg 8 dm 58 dg 8
+CC sm 56 sg 11 dm 8 dg 3
+CC sm 56 sg 12 dm 58 dg 12
+CC sm 56 sg 15 dm 8 dg 7
+CC sm 56 sg 16 dm 58 dg 16
+CC sm 56 sg 19 dm 8 dg 11
+CC sm 56 sg 20 dm 58 dg 20
+CC sm 56 sg 23 dm 8 dg 15
+CC sm 56 sg 24 dm 58 dg 24
+CC sm 56 sg 26 dm 58 dg 26
+CC sm 56 sg 29 dm 8 dg 21
+CC sm 56 sg 30 dm 58 dg 30
+CC sm 56 sg 33 dm 8 dg 25
+CC sm 56 sg 34 dm 58 dg 34
+CC sm 56 sg 37 dm 8 dg 29
+CC sm 56 sg 38 dm 58 dg 38
+CC sm 56 sg 41 dm 8 dg 33
+CC sm 56 sg 42 dm 58 dg 42
+CC sm 56 sg 45 dm 8 dg 37
+CC sm 56 sg 46 dm 58 dg 46
+CC sm 56 sg 49 dm 8 dg 41
+CC sm 56 sg 50 dm 58 dg 50
+CC sm 56 sg 53 dm 8 dg 45
+CC sm 56 sg 54 dm 58 dg 54
+CC sm 56 sg 57 dm 8 dg 49
+CC sm 56 sg 58 dm 58 dg 58
+CC sm 56 sg 61 dm 8 dg 53
+CC sm 57 sg 3 dm 56 dg 3
+CS sm 57 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 57 sg 7 dm 56 dg 5
+CS sm 57 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 57 sg 11 dm 58 dg 0
+CS sm 57 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 57 sg 15 dm 58 dg 4
+CS sm 57 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 58 sg 3 dm 57 dg 8
+CS sm 58 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 58 sg 7 dm 57 dg 12
+CS sm 58 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 58 sg 11 dm 56 dg 11
+CC sm 58 sg 15 dm 56 dg 15
+CC sm 58 sg 19 dm 56 dg 19
+CC sm 58 sg 23 dm 56 dg 23
+CC sm 58 sg 29 dm 56 dg 29
+CC sm 58 sg 33 dm 56 dg 33
+CC sm 58 sg 37 dm 56 dg 37
+CC sm 58 sg 41 dm 56 dg 41
+CC sm 58 sg 45 dm 56 dg 45
+CC sm 58 sg 49 dm 56 dg 49
+CC sm 58 sg 53 dm 56 dg 53
+CC sm 58 sg 57 dm 56 dg 57
+CC sm 58 sg 61 dm 56 dg 61
+CC sm 9 sg 0 dm 64 dg 8
+CC sm 9 sg 3 dm 4 dg 18
+CC sm 9 sg 4 dm 64 dg 12
+CC sm 9 sg 7 dm 5 dg 18
+CC sm 9 sg 8 dm 64 dg 16
+CC sm 9 sg 11 dm 6 dg 18
+CC sm 9 sg 12 dm 64 dg 20
+CC sm 9 sg 15 dm 7 dg 18
+CC sm 9 sg 16 dm 64 dg 24
+CC sm 9 sg 19 dm 8 dg 18
+CC sm 9 sg 20 dm 64 dg 28
+CC sm 9 sg 22 dm 64 dg 30
+CC sm 9 sg 25 dm 10 dg 24
+CC sm 9 sg 26 dm 64 dg 34
+CC sm 9 sg 29 dm 11 dg 24
+CC sm 9 sg 30 dm 64 dg 38
+CC sm 9 sg 33 dm 12 dg 24
+CC sm 9 sg 34 dm 64 dg 42
+CC sm 9 sg 37 dm 13 dg 24
+CC sm 9 sg 38 dm 64 dg 46
+CC sm 9 sg 41 dm 14 dg 24
+CC sm 9 sg 42 dm 64 dg 50
+CC sm 9 sg 46 dm 64 dg 54
+CC sm 9 sg 50 dm 64 dg 58
+CC sm 9 sg 53 dm 17 dg 24
+CC sm 62 sg 3 dm 63 dg 0
+CC sm 62 sg 7 dm 63 dg 4
+CS sm 62 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 63 sg 3 dm 62 dg 0
+CC sm 63 sg 7 dm 62 dg 4
+CS sm 63 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 63 sg 11 dm 64 dg 0
+CC sm 63 sg 15 dm 64 dg 6
+CS sm 63 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 64 sg 0 dm 65 dg 0
+CS sm 64 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 64 sg 3 dm 63 dg 8
+CC sm 64 sg 5 dm 63 dg 12
+CS sm 64 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 64 sg 6 dm 65 dg 4
+CS sm 64 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 64 sg 8 dm 66 dg 8
+CC sm 64 sg 11 dm 9 dg 3
+CC sm 64 sg 12 dm 66 dg 12
+CC sm 64 sg 15 dm 9 dg 7
+CC sm 64 sg 16 dm 66 dg 16
+CC sm 64 sg 19 dm 9 dg 11
+CC sm 64 sg 20 dm 66 dg 20
+CC sm 64 sg 23 dm 9 dg 15
+CC sm 64 sg 24 dm 66 dg 24
+CC sm 64 sg 27 dm 9 dg 19
+CC sm 64 sg 28 dm 66 dg 28
+CC sm 64 sg 30 dm 66 dg 30
+CC sm 64 sg 33 dm 9 dg 25
+CC sm 64 sg 34 dm 66 dg 34
+CC sm 64 sg 37 dm 9 dg 29
+CC sm 64 sg 38 dm 66 dg 38
+CC sm 64 sg 41 dm 9 dg 33
+CC sm 64 sg 42 dm 66 dg 42
+CC sm 64 sg 45 dm 9 dg 37
+CC sm 64 sg 46 dm 66 dg 46
+CC sm 64 sg 49 dm 9 dg 41
+CC sm 64 sg 50 dm 66 dg 50
+CC sm 64 sg 53 dm 9 dg 45
+CC sm 64 sg 54 dm 66 dg 54
+CC sm 64 sg 57 dm 9 dg 49
+CC sm 64 sg 58 dm 66 dg 58
+CC sm 64 sg 61 dm 9 dg 53
+CC sm 65 sg 3 dm 64 dg 3
+CS sm 65 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 65 sg 7 dm 64 dg 5
+CS sm 65 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 65 sg 11 dm 66 dg 0
+CS sm 65 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 65 sg 15 dm 66 dg 4
+CS sm 65 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 66 sg 3 dm 65 dg 8
+CS sm 66 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 66 sg 7 dm 65 dg 12
+CS sm 66 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 66 sg 11 dm 64 dg 11
+CC sm 66 sg 15 dm 64 dg 15
+CC sm 66 sg 19 dm 64 dg 19
+CC sm 66 sg 23 dm 64 dg 23
+CC sm 66 sg 27 dm 64 dg 27
+CC sm 66 sg 33 dm 64 dg 33
+CC sm 66 sg 37 dm 64 dg 37
+CC sm 66 sg 41 dm 64 dg 41
+CC sm 66 sg 45 dm 64 dg 45
+CC sm 66 sg 49 dm 64 dg 49
+CC sm 66 sg 53 dm 64 dg 53
+CC sm 66 sg 57 dm 64 dg 57
+CC sm 66 sg 61 dm 64 dg 61
+CC sm 10 sg 0 dm 72 dg 8
+CC sm 10 sg 3 dm 4 dg 22
+CC sm 10 sg 4 dm 72 dg 12
+CC sm 10 sg 7 dm 5 dg 22
+CC sm 10 sg 8 dm 72 dg 16
+CC sm 10 sg 11 dm 6 dg 22
+CC sm 10 sg 12 dm 72 dg 20
+CC sm 10 sg 15 dm 7 dg 22
+CC sm 10 sg 16 dm 72 dg 24
+CC sm 10 sg 19 dm 8 dg 22
+CC sm 10 sg 20 dm 72 dg 28
+CC sm 10 sg 23 dm 9 dg 22
+CC sm 10 sg 24 dm 72 dg 32
+CC sm 10 sg 26 dm 72 dg 34
+CC sm 10 sg 29 dm 11 dg 28
+CC sm 10 sg 30 dm 72 dg 38
+CC sm 10 sg 33 dm 12 dg 28
+CC sm 10 sg 34 dm 72 dg 42
+CC sm 10 sg 37 dm 13 dg 28
+CC sm 10 sg 38 dm 72 dg 46
+CC sm 10 sg 41 dm 14 dg 28
+CC sm 10 sg 42 dm 72 dg 50
+CC sm 10 sg 46 dm 72 dg 54
+CC sm 10 sg 50 dm 72 dg 58
+CC sm 10 sg 53 dm 17 dg 28
+CC sm 70 sg 3 dm 71 dg 0
+CC sm 70 sg 7 dm 71 dg 4
+CS sm 70 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 71 sg 3 dm 70 dg 0
+CC sm 71 sg 7 dm 70 dg 4
+CS sm 71 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 71 sg 11 dm 72 dg 0
+CC sm 71 sg 15 dm 72 dg 6
+CS sm 71 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 72 sg 0 dm 73 dg 0
+CS sm 72 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 72 sg 3 dm 71 dg 8
+CC sm 72 sg 5 dm 71 dg 12
+CS sm 72 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 72 sg 6 dm 73 dg 4
+CS sm 72 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 72 sg 8 dm 74 dg 8
+CC sm 72 sg 11 dm 10 dg 3
+CC sm 72 sg 12 dm 74 dg 12
+CC sm 72 sg 15 dm 10 dg 7
+CC sm 72 sg 16 dm 74 dg 16
+CC sm 72 sg 19 dm 10 dg 11
+CC sm 72 sg 20 dm 74 dg 20
+CC sm 72 sg 23 dm 10 dg 15
+CC sm 72 sg 24 dm 74 dg 24
+CC sm 72 sg 27 dm 10 dg 19
+CC sm 72 sg 28 dm 74 dg 28
+CC sm 72 sg 31 dm 10 dg 23
+CC sm 72 sg 32 dm 74 dg 32
+CC sm 72 sg 34 dm 74 dg 34
+CC sm 72 sg 37 dm 10 dg 29
+CC sm 72 sg 38 dm 74 dg 38
+CC sm 72 sg 41 dm 10 dg 33
+CC sm 72 sg 42 dm 74 dg 42
+CC sm 72 sg 45 dm 10 dg 37
+CC sm 72 sg 46 dm 74 dg 46
+CC sm 72 sg 49 dm 10 dg 41
+CC sm 72 sg 50 dm 74 dg 50
+CC sm 72 sg 53 dm 10 dg 45
+CC sm 72 sg 54 dm 74 dg 54
+CC sm 72 sg 57 dm 10 dg 49
+CC sm 72 sg 58 dm 74 dg 58
+CC sm 72 sg 61 dm 10 dg 53
+CC sm 73 sg 3 dm 72 dg 3
+CS sm 73 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 73 sg 7 dm 72 dg 5
+CS sm 73 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 73 sg 11 dm 74 dg 0
+CS sm 73 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 73 sg 15 dm 74 dg 4
+CS sm 73 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 74 sg 3 dm 73 dg 8
+CS sm 74 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 74 sg 7 dm 73 dg 12
+CS sm 74 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 74 sg 11 dm 72 dg 11
+CC sm 74 sg 15 dm 72 dg 15
+CC sm 74 sg 19 dm 72 dg 19
+CC sm 74 sg 23 dm 72 dg 23
+CC sm 74 sg 27 dm 72 dg 27
+CC sm 74 sg 31 dm 72 dg 31
+CC sm 74 sg 37 dm 72 dg 37
+CC sm 74 sg 41 dm 72 dg 41
+CC sm 74 sg 45 dm 72 dg 45
+CC sm 74 sg 49 dm 72 dg 49
+CC sm 74 sg 53 dm 72 dg 53
+CC sm 74 sg 57 dm 72 dg 57
+CC sm 74 sg 61 dm 72 dg 61
+CC sm 11 sg 0 dm 80 dg 8
+CC sm 11 sg 3 dm 4 dg 26
+CC sm 11 sg 4 dm 80 dg 12
+CC sm 11 sg 7 dm 5 dg 26
+CC sm 11 sg 8 dm 80 dg 16
+CC sm 11 sg 11 dm 6 dg 26
+CC sm 11 sg 12 dm 80 dg 20
+CC sm 11 sg 15 dm 7 dg 26
+CC sm 11 sg 16 dm 80 dg 24
+CC sm 11 sg 19 dm 8 dg 26
+CC sm 11 sg 20 dm 80 dg 28
+CC sm 11 sg 23 dm 9 dg 26
+CC sm 11 sg 24 dm 80 dg 32
+CC sm 11 sg 27 dm 10 dg 26
+CC sm 11 sg 28 dm 80 dg 36
+CC sm 11 sg 30 dm 80 dg 38
+CC sm 11 sg 33 dm 12 dg 32
+CC sm 11 sg 34 dm 80 dg 42
+CC sm 11 sg 37 dm 13 dg 32
+CC sm 11 sg 38 dm 80 dg 46
+CC sm 11 sg 41 dm 14 dg 32
+CC sm 11 sg 42 dm 80 dg 50
+CC sm 11 sg 46 dm 80 dg 54
+CC sm 11 sg 50 dm 80 dg 58
+CC sm 11 sg 53 dm 17 dg 32
+CC sm 78 sg 3 dm 79 dg 0
+CC sm 78 sg 7 dm 79 dg 4
+CS sm 78 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 79 sg 3 dm 78 dg 0
+CC sm 79 sg 7 dm 78 dg 4
+CS sm 79 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 79 sg 11 dm 80 dg 0
+CC sm 79 sg 15 dm 80 dg 6
+CS sm 79 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 80 sg 0 dm 81 dg 0
+CS sm 80 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 80 sg 3 dm 79 dg 8
+CC sm 80 sg 5 dm 79 dg 12
+CS sm 80 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 80 sg 6 dm 81 dg 4
+CS sm 80 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 80 sg 8 dm 82 dg 8
+CC sm 80 sg 11 dm 11 dg 3
+CC sm 80 sg 12 dm 82 dg 12
+CC sm 80 sg 15 dm 11 dg 7
+CC sm 80 sg 16 dm 82 dg 16
+CC sm 80 sg 19 dm 11 dg 11
+CC sm 80 sg 20 dm 82 dg 20
+CC sm 80 sg 23 dm 11 dg 15
+CC sm 80 sg 24 dm 82 dg 24
+CC sm 80 sg 27 dm 11 dg 19
+CC sm 80 sg 28 dm 82 dg 28
+CC sm 80 sg 31 dm 11 dg 23
+CC sm 80 sg 32 dm 82 dg 32
+CC sm 80 sg 35 dm 11 dg 27
+CC sm 80 sg 36 dm 82 dg 36
+CC sm 80 sg 38 dm 82 dg 38
+CC sm 80 sg 41 dm 11 dg 33
+CC sm 80 sg 42 dm 82 dg 42
+CC sm 80 sg 45 dm 11 dg 37
+CC sm 80 sg 46 dm 82 dg 46
+CC sm 80 sg 49 dm 11 dg 41
+CC sm 80 sg 50 dm 82 dg 50
+CC sm 80 sg 53 dm 11 dg 45
+CC sm 80 sg 54 dm 82 dg 54
+CC sm 80 sg 57 dm 11 dg 49
+CC sm 80 sg 58 dm 82 dg 58
+CC sm 80 sg 61 dm 11 dg 53
+CC sm 81 sg 3 dm 80 dg 3
+CS sm 81 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 81 sg 7 dm 80 dg 5
+CS sm 81 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 81 sg 11 dm 82 dg 0
+CS sm 81 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 81 sg 15 dm 82 dg 4
+CS sm 81 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 82 sg 3 dm 81 dg 8
+CS sm 82 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 82 sg 7 dm 81 dg 12
+CS sm 82 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 82 sg 11 dm 80 dg 11
+CC sm 82 sg 15 dm 80 dg 15
+CC sm 82 sg 19 dm 80 dg 19
+CC sm 82 sg 23 dm 80 dg 23
+CC sm 82 sg 27 dm 80 dg 27
+CC sm 82 sg 31 dm 80 dg 31
+CC sm 82 sg 35 dm 80 dg 35
+CC sm 82 sg 41 dm 80 dg 41
+CC sm 82 sg 45 dm 80 dg 45
+CC sm 82 sg 49 dm 80 dg 49
+CC sm 82 sg 53 dm 80 dg 53
+CC sm 82 sg 57 dm 80 dg 57
+CC sm 82 sg 61 dm 80 dg 61
+CC sm 12 sg 0 dm 88 dg 8
+CC sm 12 sg 3 dm 4 dg 30
+CC sm 12 sg 4 dm 88 dg 12
+CC sm 12 sg 7 dm 5 dg 30
+CC sm 12 sg 8 dm 88 dg 16
+CC sm 12 sg 11 dm 6 dg 30
+CC sm 12 sg 12 dm 88 dg 20
+CC sm 12 sg 15 dm 7 dg 30
+CC sm 12 sg 16 dm 88 dg 24
+CC sm 12 sg 19 dm 8 dg 30
+CC sm 12 sg 20 dm 88 dg 28
+CC sm 12 sg 23 dm 9 dg 30
+CC sm 12 sg 24 dm 88 dg 32
+CC sm 12 sg 27 dm 10 dg 30
+CC sm 12 sg 28 dm 88 dg 36
+CC sm 12 sg 31 dm 11 dg 30
+CC sm 12 sg 32 dm 88 dg 40
+CC sm 12 sg 34 dm 88 dg 42
+CC sm 12 sg 37 dm 13 dg 36
+CC sm 12 sg 38 dm 88 dg 46
+CC sm 12 sg 41 dm 14 dg 36
+CC sm 12 sg 42 dm 88 dg 50
+CC sm 12 sg 46 dm 88 dg 54
+CC sm 12 sg 50 dm 88 dg 58
+CC sm 12 sg 53 dm 17 dg 36
+CC sm 86 sg 3 dm 87 dg 0
+CC sm 86 sg 7 dm 87 dg 4
+CS sm 86 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 87 sg 3 dm 86 dg 0
+CC sm 87 sg 7 dm 86 dg 4
+CS sm 87 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 87 sg 11 dm 88 dg 0
+CC sm 87 sg 15 dm 88 dg 6
+CS sm 87 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 88 sg 0 dm 89 dg 0
+CS sm 88 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 88 sg 3 dm 87 dg 8
+CC sm 88 sg 5 dm 87 dg 12
+CS sm 88 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 88 sg 6 dm 89 dg 4
+CS sm 88 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 88 sg 8 dm 90 dg 8
+CC sm 88 sg 11 dm 12 dg 3
+CC sm 88 sg 12 dm 90 dg 12
+CC sm 88 sg 15 dm 12 dg 7
+CC sm 88 sg 16 dm 90 dg 16
+CC sm 88 sg 19 dm 12 dg 11
+CC sm 88 sg 20 dm 90 dg 20
+CC sm 88 sg 23 dm 12 dg 15
+CC sm 88 sg 24 dm 90 dg 24
+CC sm 88 sg 27 dm 12 dg 19
+CC sm 88 sg 28 dm 90 dg 28
+CC sm 88 sg 31 dm 12 dg 23
+CC sm 88 sg 32 dm 90 dg 32
+CC sm 88 sg 35 dm 12 dg 27
+CC sm 88 sg 36 dm 90 dg 36
+CC sm 88 sg 39 dm 12 dg 31
+CC sm 88 sg 40 dm 90 dg 40
+CC sm 88 sg 42 dm 90 dg 42
+CC sm 88 sg 45 dm 12 dg 37
+CC sm 88 sg 46 dm 90 dg 46
+CC sm 88 sg 49 dm 12 dg 41
+CC sm 88 sg 50 dm 90 dg 50
+CC sm 88 sg 53 dm 12 dg 45
+CC sm 88 sg 54 dm 90 dg 54
+CC sm 88 sg 57 dm 12 dg 49
+CC sm 88 sg 58 dm 90 dg 58
+CC sm 88 sg 61 dm 12 dg 53
+CC sm 89 sg 3 dm 88 dg 3
+CS sm 89 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 89 sg 7 dm 88 dg 5
+CS sm 89 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 89 sg 11 dm 90 dg 0
+CS sm 89 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 89 sg 15 dm 90 dg 4
+CS sm 89 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 90 sg 3 dm 89 dg 8
+CS sm 90 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 90 sg 7 dm 89 dg 12
+CS sm 90 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 90 sg 11 dm 88 dg 11
+CC sm 90 sg 15 dm 88 dg 15
+CC sm 90 sg 19 dm 88 dg 19
+CC sm 90 sg 23 dm 88 dg 23
+CC sm 90 sg 27 dm 88 dg 27
+CC sm 90 sg 31 dm 88 dg 31
+CC sm 90 sg 35 dm 88 dg 35
+CC sm 90 sg 39 dm 88 dg 39
+CC sm 90 sg 45 dm 88 dg 45
+CC sm 90 sg 49 dm 88 dg 49
+CC sm 90 sg 53 dm 88 dg 53
+CC sm 90 sg 57 dm 88 dg 57
+CC sm 90 sg 61 dm 88 dg 61
+CC sm 13 sg 0 dm 96 dg 8
+CC sm 13 sg 3 dm 4 dg 34
+CC sm 13 sg 4 dm 96 dg 12
+CC sm 13 sg 7 dm 5 dg 34
+CC sm 13 sg 8 dm 96 dg 16
+CC sm 13 sg 11 dm 6 dg 34
+CC sm 13 sg 12 dm 96 dg 20
+CC sm 13 sg 15 dm 7 dg 34
+CC sm 13 sg 16 dm 96 dg 24
+CC sm 13 sg 19 dm 8 dg 34
+CC sm 13 sg 20 dm 96 dg 28
+CC sm 13 sg 23 dm 9 dg 34
+CC sm 13 sg 24 dm 96 dg 32
+CC sm 13 sg 27 dm 10 dg 34
+CC sm 13 sg 28 dm 96 dg 36
+CC sm 13 sg 31 dm 11 dg 34
+CC sm 13 sg 32 dm 96 dg 40
+CC sm 13 sg 35 dm 12 dg 34
+CC sm 13 sg 36 dm 96 dg 44
+CC sm 13 sg 38 dm 96 dg 46
+CC sm 13 sg 41 dm 14 dg 40
+CC sm 13 sg 42 dm 96 dg 50
+CC sm 13 sg 46 dm 96 dg 54
+CC sm 13 sg 50 dm 96 dg 58
+CC sm 13 sg 53 dm 17 dg 40
+CC sm 94 sg 3 dm 95 dg 0
+CC sm 94 sg 7 dm 95 dg 4
+CS sm 94 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 95 sg 3 dm 94 dg 0
+CC sm 95 sg 7 dm 94 dg 4
+CS sm 95 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 95 sg 11 dm 96 dg 0
+CC sm 95 sg 15 dm 96 dg 6
+CS sm 95 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 96 sg 0 dm 97 dg 0
+CS sm 96 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 96 sg 3 dm 95 dg 8
+CC sm 96 sg 5 dm 95 dg 12
+CS sm 96 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 96 sg 6 dm 97 dg 4
+CS sm 96 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 96 sg 8 dm 98 dg 8
+CC sm 96 sg 11 dm 13 dg 3
+CC sm 96 sg 12 dm 98 dg 12
+CC sm 96 sg 15 dm 13 dg 7
+CC sm 96 sg 16 dm 98 dg 16
+CC sm 96 sg 19 dm 13 dg 11
+CC sm 96 sg 20 dm 98 dg 20
+CC sm 96 sg 23 dm 13 dg 15
+CC sm 96 sg 24 dm 98 dg 24
+CC sm 96 sg 27 dm 13 dg 19
+CC sm 96 sg 28 dm 98 dg 28
+CC sm 96 sg 31 dm 13 dg 23
+CC sm 96 sg 32 dm 98 dg 32
+CC sm 96 sg 35 dm 13 dg 27
+CC sm 96 sg 36 dm 98 dg 36
+CC sm 96 sg 39 dm 13 dg 31
+CC sm 96 sg 40 dm 98 dg 40
+CC sm 96 sg 43 dm 13 dg 35
+CC sm 96 sg 44 dm 98 dg 44
+CC sm 96 sg 46 dm 98 dg 46
+CC sm 96 sg 49 dm 13 dg 41
+CC sm 96 sg 50 dm 98 dg 50
+CC sm 96 sg 53 dm 13 dg 45
+CC sm 96 sg 54 dm 98 dg 54
+CC sm 96 sg 57 dm 13 dg 49
+CC sm 96 sg 58 dm 98 dg 58
+CC sm 96 sg 61 dm 13 dg 53
+CC sm 97 sg 3 dm 96 dg 3
+CS sm 97 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 97 sg 7 dm 96 dg 5
+CS sm 97 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 97 sg 11 dm 98 dg 0
+CS sm 97 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 97 sg 15 dm 98 dg 4
+CS sm 97 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 98 sg 3 dm 97 dg 8
+CS sm 98 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 98 sg 7 dm 97 dg 12
+CS sm 98 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 98 sg 11 dm 96 dg 11
+CC sm 98 sg 15 dm 96 dg 15
+CC sm 98 sg 19 dm 96 dg 19
+CC sm 98 sg 23 dm 96 dg 23
+CC sm 98 sg 27 dm 96 dg 27
+CC sm 98 sg 31 dm 96 dg 31
+CC sm 98 sg 35 dm 96 dg 35
+CC sm 98 sg 39 dm 96 dg 39
+CC sm 98 sg 43 dm 96 dg 43
+CC sm 98 sg 49 dm 96 dg 49
+CC sm 98 sg 53 dm 96 dg 53
+CC sm 98 sg 57 dm 96 dg 57
+CC sm 98 sg 61 dm 96 dg 61
+CC sm 14 sg 0 dm 104 dg 8
+CC sm 14 sg 3 dm 4 dg 38
+CC sm 14 sg 4 dm 104 dg 12
+CC sm 14 sg 7 dm 5 dg 38
+CC sm 14 sg 8 dm 104 dg 16
+CC sm 14 sg 11 dm 6 dg 38
+CC sm 14 sg 12 dm 104 dg 20
+CC sm 14 sg 15 dm 7 dg 38
+CC sm 14 sg 16 dm 104 dg 24
+CC sm 14 sg 19 dm 8 dg 38
+CC sm 14 sg 20 dm 104 dg 28
+CC sm 14 sg 23 dm 9 dg 38
+CC sm 14 sg 24 dm 104 dg 32
+CC sm 14 sg 27 dm 10 dg 38
+CC sm 14 sg 28 dm 104 dg 36
+CC sm 14 sg 31 dm 11 dg 38
+CC sm 14 sg 32 dm 104 dg 40
+CC sm 14 sg 35 dm 12 dg 38
+CC sm 14 sg 36 dm 104 dg 44
+CC sm 14 sg 39 dm 13 dg 38
+CC sm 14 sg 40 dm 104 dg 48
+CC sm 14 sg 42 dm 104 dg 50
+CC sm 14 sg 46 dm 104 dg 54
+CC sm 14 sg 50 dm 104 dg 58
+CC sm 14 sg 53 dm 17 dg 44
+CC sm 102 sg 3 dm 103 dg 0
+CC sm 102 sg 7 dm 103 dg 4
+CS sm 102 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 103 sg 3 dm 102 dg 0
+CC sm 103 sg 7 dm 102 dg 4
+CS sm 103 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 103 sg 11 dm 104 dg 0
+CC sm 103 sg 15 dm 104 dg 6
+CS sm 103 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 104 sg 0 dm 105 dg 0
+CS sm 104 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 104 sg 3 dm 103 dg 8
+CC sm 104 sg 5 dm 103 dg 12
+CS sm 104 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 104 sg 6 dm 105 dg 4
+CS sm 104 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 104 sg 8 dm 106 dg 8
+CC sm 104 sg 11 dm 14 dg 3
+CC sm 104 sg 12 dm 106 dg 12
+CC sm 104 sg 15 dm 14 dg 7
+CC sm 104 sg 16 dm 106 dg 16
+CC sm 104 sg 19 dm 14 dg 11
+CC sm 104 sg 20 dm 106 dg 20
+CC sm 104 sg 23 dm 14 dg 15
+CC sm 104 sg 24 dm 106 dg 24
+CC sm 104 sg 27 dm 14 dg 19
+CC sm 104 sg 28 dm 106 dg 28
+CC sm 104 sg 31 dm 14 dg 23
+CC sm 104 sg 32 dm 106 dg 32
+CC sm 104 sg 35 dm 14 dg 27
+CC sm 104 sg 36 dm 106 dg 36
+CC sm 104 sg 39 dm 14 dg 31
+CC sm 104 sg 40 dm 106 dg 40
+CC sm 104 sg 43 dm 14 dg 35
+CC sm 104 sg 44 dm 106 dg 44
+CC sm 104 sg 47 dm 14 dg 39
+CC sm 104 sg 48 dm 106 dg 48
+CC sm 104 sg 50 dm 106 dg 50
+CC sm 104 sg 53 dm 14 dg 45
+CC sm 104 sg 54 dm 106 dg 54
+CC sm 104 sg 57 dm 14 dg 49
+CC sm 104 sg 58 dm 106 dg 58
+CC sm 104 sg 61 dm 14 dg 53
+CC sm 105 sg 3 dm 104 dg 3
+CS sm 105 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 105 sg 7 dm 104 dg 5
+CS sm 105 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 105 sg 11 dm 106 dg 0
+CS sm 105 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 105 sg 15 dm 106 dg 4
+CS sm 105 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 106 sg 3 dm 105 dg 8
+CS sm 106 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 106 sg 7 dm 105 dg 12
+CS sm 106 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 106 sg 11 dm 104 dg 11
+CC sm 106 sg 15 dm 104 dg 15
+CC sm 106 sg 19 dm 104 dg 19
+CC sm 106 sg 23 dm 104 dg 23
+CC sm 106 sg 27 dm 104 dg 27
+CC sm 106 sg 31 dm 104 dg 31
+CC sm 106 sg 35 dm 104 dg 35
+CC sm 106 sg 39 dm 104 dg 39
+CC sm 106 sg 43 dm 104 dg 43
+CC sm 106 sg 47 dm 104 dg 47
+CC sm 106 sg 53 dm 104 dg 53
+CC sm 106 sg 57 dm 104 dg 57
+CC sm 106 sg 61 dm 104 dg 61
+CC sm 15 sg 0 dm 112 dg 8
+CC sm 15 sg 4 dm 112 dg 12
+CC sm 15 sg 8 dm 112 dg 16
+CC sm 15 sg 12 dm 112 dg 20
+CC sm 15 sg 16 dm 112 dg 24
+CC sm 15 sg 20 dm 112 dg 28
+CC sm 15 sg 24 dm 112 dg 32
+CC sm 15 sg 28 dm 112 dg 36
+CC sm 15 sg 32 dm 112 dg 40
+CC sm 15 sg 36 dm 112 dg 44
+CC sm 15 sg 40 dm 112 dg 48
+CC sm 15 sg 44 dm 112 dg 52
+CC sm 15 sg 46 dm 112 dg 54
+CC sm 15 sg 50 dm 112 dg 58
+CC sm 110 sg 3 dm 111 dg 0
+CC sm 110 sg 7 dm 111 dg 4
+CS sm 110 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 111 sg 3 dm 110 dg 0
+CC sm 111 sg 7 dm 110 dg 4
+CS sm 111 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 111 sg 11 dm 112 dg 0
+CC sm 111 sg 15 dm 112 dg 6
+CS sm 111 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 112 sg 0 dm 113 dg 0
+CS sm 112 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 112 sg 3 dm 111 dg 8
+CC sm 112 sg 5 dm 111 dg 12
+CS sm 112 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 112 sg 6 dm 113 dg 4
+CS sm 112 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 112 sg 8 dm 114 dg 8
+CC sm 112 sg 11 dm 15 dg 3
+CC sm 112 sg 12 dm 114 dg 12
+CC sm 112 sg 15 dm 15 dg 7
+CC sm 112 sg 16 dm 114 dg 16
+CC sm 112 sg 19 dm 15 dg 11
+CC sm 112 sg 20 dm 114 dg 20
+CC sm 112 sg 23 dm 15 dg 15
+CC sm 112 sg 24 dm 114 dg 24
+CC sm 112 sg 27 dm 15 dg 19
+CC sm 112 sg 28 dm 114 dg 28
+CC sm 112 sg 31 dm 15 dg 23
+CC sm 112 sg 32 dm 114 dg 32
+CC sm 112 sg 35 dm 15 dg 27
+CC sm 112 sg 36 dm 114 dg 36
+CC sm 112 sg 39 dm 15 dg 31
+CC sm 112 sg 40 dm 114 dg 40
+CC sm 112 sg 43 dm 15 dg 35
+CC sm 112 sg 44 dm 114 dg 44
+CC sm 112 sg 47 dm 15 dg 39
+CC sm 112 sg 48 dm 114 dg 48
+CC sm 112 sg 51 dm 15 dg 43
+CC sm 112 sg 52 dm 114 dg 52
+CC sm 112 sg 54 dm 114 dg 54
+CC sm 112 sg 57 dm 15 dg 49
+CC sm 112 sg 58 dm 114 dg 58
+CC sm 112 sg 61 dm 15 dg 53
+CC sm 113 sg 3 dm 112 dg 3
+CS sm 113 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 113 sg 7 dm 112 dg 5
+CS sm 113 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 113 sg 11 dm 114 dg 0
+CS sm 113 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 113 sg 15 dm 114 dg 4
+CS sm 113 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 114 sg 3 dm 113 dg 8
+CS sm 114 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 114 sg 7 dm 113 dg 12
+CS sm 114 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 114 sg 11 dm 112 dg 11
+CC sm 114 sg 15 dm 112 dg 15
+CC sm 114 sg 19 dm 112 dg 19
+CC sm 114 sg 23 dm 112 dg 23
+CC sm 114 sg 27 dm 112 dg 27
+CC sm 114 sg 31 dm 112 dg 31
+CC sm 114 sg 35 dm 112 dg 35
+CC sm 114 sg 39 dm 112 dg 39
+CC sm 114 sg 43 dm 112 dg 43
+CC sm 114 sg 47 dm 112 dg 47
+CC sm 114 sg 51 dm 112 dg 51
+CC sm 114 sg 57 dm 112 dg 57
+CC sm 114 sg 61 dm 112 dg 61
+CC sm 16 sg 0 dm 120 dg 8
+CC sm 16 sg 4 dm 120 dg 12
+CC sm 16 sg 8 dm 120 dg 16
+CC sm 16 sg 12 dm 120 dg 20
+CC sm 16 sg 16 dm 120 dg 24
+CC sm 16 sg 20 dm 120 dg 28
+CC sm 16 sg 24 dm 120 dg 32
+CC sm 16 sg 28 dm 120 dg 36
+CC sm 16 sg 32 dm 120 dg 40
+CC sm 16 sg 36 dm 120 dg 44
+CC sm 16 sg 40 dm 120 dg 48
+CC sm 16 sg 44 dm 120 dg 52
+CC sm 16 sg 48 dm 120 dg 56
+CC sm 16 sg 50 dm 120 dg 58
+CC sm 118 sg 3 dm 119 dg 0
+CC sm 118 sg 7 dm 119 dg 4
+CS sm 118 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 119 sg 3 dm 118 dg 0
+CC sm 119 sg 7 dm 118 dg 4
+CS sm 119 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 119 sg 11 dm 120 dg 0
+CC sm 119 sg 15 dm 120 dg 6
+CS sm 119 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 120 sg 0 dm 121 dg 0
+CS sm 120 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 120 sg 3 dm 119 dg 8
+CC sm 120 sg 5 dm 119 dg 12
+CS sm 120 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 120 sg 6 dm 121 dg 4
+CS sm 120 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 120 sg 8 dm 122 dg 8
+CC sm 120 sg 11 dm 16 dg 3
+CC sm 120 sg 12 dm 122 dg 12
+CC sm 120 sg 15 dm 16 dg 7
+CC sm 120 sg 16 dm 122 dg 16
+CC sm 120 sg 19 dm 16 dg 11
+CC sm 120 sg 20 dm 122 dg 20
+CC sm 120 sg 23 dm 16 dg 15
+CC sm 120 sg 24 dm 122 dg 24
+CC sm 120 sg 27 dm 16 dg 19
+CC sm 120 sg 28 dm 122 dg 28
+CC sm 120 sg 31 dm 16 dg 23
+CC sm 120 sg 32 dm 122 dg 32
+CC sm 120 sg 35 dm 16 dg 27
+CC sm 120 sg 36 dm 122 dg 36
+CC sm 120 sg 39 dm 16 dg 31
+CC sm 120 sg 40 dm 122 dg 40
+CC sm 120 sg 43 dm 16 dg 35
+CC sm 120 sg 44 dm 122 dg 44
+CC sm 120 sg 47 dm 16 dg 39
+CC sm 120 sg 48 dm 122 dg 48
+CC sm 120 sg 51 dm 16 dg 43
+CC sm 120 sg 52 dm 122 dg 52
+CC sm 120 sg 55 dm 16 dg 47
+CC sm 120 sg 56 dm 122 dg 56
+CC sm 120 sg 58 dm 122 dg 58
+CC sm 120 sg 61 dm 16 dg 53
+CC sm 121 sg 3 dm 120 dg 3
+CS sm 121 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 121 sg 7 dm 120 dg 5
+CS sm 121 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 121 sg 11 dm 122 dg 0
+CS sm 121 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 121 sg 15 dm 122 dg 4
+CS sm 121 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 122 sg 3 dm 121 dg 8
+CS sm 122 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 122 sg 7 dm 121 dg 12
+CS sm 122 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 122 sg 11 dm 120 dg 11
+CC sm 122 sg 15 dm 120 dg 15
+CC sm 122 sg 19 dm 120 dg 19
+CC sm 122 sg 23 dm 120 dg 23
+CC sm 122 sg 27 dm 120 dg 27
+CC sm 122 sg 31 dm 120 dg 31
+CC sm 122 sg 35 dm 120 dg 35
+CC sm 122 sg 39 dm 120 dg 39
+CC sm 122 sg 43 dm 120 dg 43
+CC sm 122 sg 47 dm 120 dg 47
+CC sm 122 sg 51 dm 120 dg 51
+CC sm 122 sg 55 dm 120 dg 55
+CC sm 122 sg 61 dm 120 dg 61
+CC sm 17 sg 0 dm 128 dg 8
+CC sm 17 sg 3 dm 4 dg 50
+CC sm 17 sg 4 dm 128 dg 12
+CC sm 17 sg 7 dm 5 dg 50
+CC sm 17 sg 8 dm 128 dg 16
+CC sm 17 sg 11 dm 6 dg 50
+CC sm 17 sg 12 dm 128 dg 20
+CC sm 17 sg 15 dm 7 dg 50
+CC sm 17 sg 16 dm 128 dg 24
+CC sm 17 sg 19 dm 8 dg 50
+CC sm 17 sg 20 dm 128 dg 28
+CC sm 17 sg 23 dm 9 dg 50
+CC sm 17 sg 24 dm 128 dg 32
+CC sm 17 sg 27 dm 10 dg 50
+CC sm 17 sg 28 dm 128 dg 36
+CC sm 17 sg 31 dm 11 dg 50
+CC sm 17 sg 32 dm 128 dg 40
+CC sm 17 sg 35 dm 12 dg 50
+CC sm 17 sg 36 dm 128 dg 44
+CC sm 17 sg 39 dm 13 dg 50
+CC sm 17 sg 40 dm 128 dg 48
+CC sm 17 sg 43 dm 14 dg 50
+CC sm 17 sg 44 dm 128 dg 52
+CC sm 17 sg 48 dm 128 dg 56
+CC sm 17 sg 52 dm 128 dg 60
+CC sm 126 sg 3 dm 127 dg 0
+CC sm 126 sg 7 dm 127 dg 4
+CS sm 126 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 127 sg 3 dm 126 dg 0
+CC sm 127 sg 7 dm 126 dg 4
+CS sm 127 sg 7 d ls=red;m=m,70,0,70,0
+CC sm 127 sg 11 dm 128 dg 0
+CC sm 127 sg 15 dm 128 dg 6
+CS sm 127 sg 15 d ls=red;m=m,70,0,70,0
+CC sm 128 sg 0 dm 129 dg 0
+CS sm 128 sg 0 d ls=black;m=m,15,50,15,0
+CC sm 128 sg 3 dm 127 dg 8
+CC sm 128 sg 5 dm 127 dg 12
+CS sm 128 sg 5 d ls=red;m=m,70,0,70,0
+CC sm 128 sg 6 dm 129 dg 4
+CS sm 128 sg 6 d ls=red;m=m,85,0,85,0
+CC sm 128 sg 8 dm 130 dg 8
+CC sm 128 sg 11 dm 17 dg 3
+CC sm 128 sg 12 dm 130 dg 12
+CC sm 128 sg 15 dm 17 dg 7
+CC sm 128 sg 16 dm 130 dg 16
+CC sm 128 sg 19 dm 17 dg 11
+CC sm 128 sg 20 dm 130 dg 20
+CC sm 128 sg 23 dm 17 dg 15
+CC sm 128 sg 24 dm 130 dg 24
+CC sm 128 sg 27 dm 17 dg 19
+CC sm 128 sg 28 dm 130 dg 28
+CC sm 128 sg 31 dm 17 dg 23
+CC sm 128 sg 32 dm 130 dg 32
+CC sm 128 sg 35 dm 17 dg 27
+CC sm 128 sg 36 dm 130 dg 36
+CC sm 128 sg 39 dm 17 dg 31
+CC sm 128 sg 40 dm 130 dg 40
+CC sm 128 sg 43 dm 17 dg 35
+CC sm 128 sg 44 dm 130 dg 44
+CC sm 128 sg 47 dm 17 dg 39
+CC sm 128 sg 48 dm 130 dg 48
+CC sm 128 sg 51 dm 17 dg 43
+CC sm 128 sg 52 dm 130 dg 52
+CC sm 128 sg 55 dm 17 dg 47
+CC sm 128 sg 56 dm 130 dg 56
+CC sm 128 sg 59 dm 17 dg 51
+CC sm 128 sg 60 dm 130 dg 60
+CC sm 129 sg 3 dm 128 dg 3
+CS sm 129 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 129 sg 7 dm 128 dg 5
+CS sm 129 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 129 sg 11 dm 130 dg 0
+CS sm 129 sg 11 d ls=black;m=m,15,50,15,0
+CC sm 129 sg 15 dm 130 dg 4
+CS sm 129 sg 15 d ls=red;m=m,85,0,85,0
+CC sm 130 sg 3 dm 129 dg 8
+CS sm 130 sg 3 d ls=black;m=m,25,50,25,0
+CC sm 130 sg 7 dm 129 dg 12
+CS sm 130 sg 7 d ls=red;m=m,75,50,75,0
+CC sm 130 sg 11 dm 128 dg 11
+CC sm 130 sg 15 dm 128 dg 15
+CC sm 130 sg 19 dm 128 dg 19
+CC sm 130 sg 23 dm 128 dg 23
+CC sm 130 sg 27 dm 128 dg 27
+CC sm 130 sg 31 dm 128 dg 31
+CC sm 130 sg 35 dm 128 dg 35
+CC sm 130 sg 39 dm 128 dg 39
+CC sm 130 sg 43 dm 128 dg 43
+CC sm 130 sg 47 dm 128 dg 47
+CC sm 130 sg 51 dm 128 dg 51
+CC sm 130 sg 55 dm 128 dg 55
+CC sm 130 sg 59 dm 128 dg 59
+SB v 1025 rid General-0-20160712-21:26:04-3612
+
+E # 0 t 0 m 1 msg -1
+MB sm 1 tm 54 m initialize
+BS id 12 tid 12 eid 12 etid 12 c cMessage n delay-timer pe 0 k 25000
+ES t 3.595079020597
+ME
+MB sm 1 tm 126 m initialize
+BS id 39 tid 39 eid 39 etid 39 c cMessage n delay-timer pe 0 k 25000
+ES t 3.637107734102
+ME
+MB sm 1 tm 62 m initialize
+BS id 15 tid 15 eid 15 etid 15 c cMessage n delay-timer pe 0 k 25000
+ES t 4.370319526642
+ME
+MB sm 1 tm 22 m initialize
+BS id 0 tid 0 eid 0 etid 0 c cMessage n delay-timer pe 0 k 25000
+ES t 6.120957224629
+ME
+MB sm 1 tm 30 m initialize
+BS id 3 tid 3 eid 3 etid 3 c cMessage n delay-timer pe 0 k 25000
+ES t 6.169339986518
+ME
+MB sm 1 tm 86 m initialize
+BS id 24 tid 24 eid 24 etid 24 c cMessage n delay-timer pe 0 k 25000
+ES t 6.667667112778
+ME
+MB sm 1 tm 94 m initialize
+BS id 27 tid 27 eid 27 etid 27 c cMessage n delay-timer pe 0 k 25000
+ES t 6.706378736998
+ME
+MB sm 1 tm 46 m initialize
+BS id 9 tid 9 eid 9 etid 9 c cMessage n delay-timer pe 0 k 25000
+ES t 6.818202978465
+ME
+MB sm 1 tm 70 m initialize
+BS id 18 tid 18 eid 18 etid 18 c cMessage n delay-timer pe 0 k 25000
+ES t 6.976311954203
+ME
+MB sm 1 tm 38 m initialize
+BS id 6 tid 6 eid 6 etid 6 c cMessage n delay-timer pe 0 k 25000
+ES t 9.437480752822
+ME
+
+E # 825 t 2.720502012913 m 113 msg -1
+BS id 34 tid 34 eid 34 etid 34 c cMessage n backoff pe 825
+ES t 3.255282954593
+
+E # 955 t 2.825360128875 m 89 msg -1
+BS id 25 tid 25 eid 25 etid 25 c cMessage n backoff pe 955
+ES t 3.663578766151
+
+E # 957 t 2.825496110946 m 73 msg -1
+BS id 19 tid 19 eid 19 etid 19 c cMessage n backoff pe 957
+ES t 3.626865947509
+
+E # 961 t 2.826435481698 m 25 msg -1
+BS id 1 tid 1 eid 1 etid 1 c cMessage n backoff pe 961
+ES t 3.417698750725
+
+E # 963 t 2.826695520812 m 97 msg -1
+BS id 28 tid 28 eid 28 etid 28 c cMessage n backoff pe 963
+ES t 3.637332740313
+
+E # 965 t 2.828177880167 m 65 msg -1
+BS id 16 tid 16 eid 16 etid 16 c cMessage n backoff pe 965
+ES t 3.353995304468
+
+E # 967 t 2.828749942199 m 49 msg -1
+BS id 10 tid 10 eid 10 etid 10 c cMessage n backoff pe 967
+ES t 3.348465409825
+
+E # 973 t 2.83286117098 m 57 msg -1
+BS id 13 tid 13 eid 13 etid 13 c cMessage n backoff pe 973
+ES t 3.472722805418
+
+E # 1082 t 2.972964737286 m 105 msg -1
+BS id 31 tid 31 eid 31 etid 31 c cMessage n backoff pe 1082
+ES t 3.455998740988
+
+E # 1151 t 2.982805040335 m 33 msg -1
+BS id 4 tid 4 eid 4 etid 4 c cMessage n backoff pe 1151
+ES t 3.245124536404
+
+E # 1191 t 3.120480335839 m 41 msg -1
+BS id 7 tid 7 eid 7 etid 7 c cMessage n backoff pe 1191
+ES t 3.573201481262
+
+E # 1235 t 3.144994998956 m 53 msg -1
+BS id 55 tid 55 eid 55 etid 55 c cMessage n move pe 1235 k 21311
+ES t 3.244994998956
+
+E # 1240 t 3.154283496551 m 121 msg -1
+BS id 37 tid 37 eid 37 etid 37 c cMessage n backoff pe 1240
+ES t 3.781229627355
+
+E # 1243 t 3.16078306667 m 125 msg -1
+BS id 82 tid 82 eid 82 etid 82 c cMessage n move pe 1243 k 21311
+ES t 3.26078306667
+
+E # 1244 t 3.161306346184 m 61 msg -1
+BS id 58 tid 58 eid 58 etid 58 c cMessage n move pe 1244 k 21311
+ES t 3.261306346184
+
+E # 1245 t 3.165314003219 m 93 msg -1
+BS id 70 tid 70 eid 70 etid 70 c cMessage n move pe 1245 k 21311
+ES t 3.265314003219
+
+E # 1247 t 3.165634865685 m 81 msg -1
+BS id 22 tid 22 eid 22 etid 22 c cMessage n backoff pe 1247
+ES t 3.729902163537
+
+E # 1304 t 3.175068613886 m 117 msg -1
+BS id 79 tid 79 eid 79 etid 79 c cMessage n move pe 1304 k 21311
+ES t 3.275068613886
+
+E # 1307 t 3.19023485782 m 69 msg -1
+BS id 61 tid 61 eid 61 etid 61 c cMessage n move pe 1307 k 21311
+ES t 3.29023485782
+
+E # 1308 t 3.190259847138 m 45 msg -1
+BS id 52 tid 52 eid 52 etid 52 c cMessage n move pe 1308 k 21311
+ES t 3.290259847138
+
+E # 1309 t 3.196980906859 m 85 msg -1
+BS id 67 tid 67 eid 67 etid 67 c cMessage n move pe 1309 k 21311
+ES t 3.296980906859
+
+E # 1310 t 3.2 m 18 msg -1
+BS id 42 tid 42 eid 42 etid 42 c cMessage n Move pe 1310
+ES t 3.3
+
+E # 1311 t 3.209928035154 m 77 msg -1
+BS id 64 tid 64 eid 64 etid 64 c cMessage n move pe 1311 k 21311
+ES t 3.309928035154
+
+E # 1312 t 3.214967486378 m 21 msg -1
+BS id 43 tid 43 eid 43 etid 43 c cMessage n move pe 1312 k 21311
+ES t 3.314967486378
+
+E # 1313 t 3.217090958612 m 101 msg -1
+BS id 73 tid 73 eid 73 etid 73 c cMessage n move pe 1313 k 21311
+ES t 3.317090958612
+
+E # 1314 t 3.222232138551 m 29 msg -1
+BS id 46 tid 46 eid 46 etid 46 c cMessage n move pe 1314 k 21311
+ES t 3.322232138551
+
+E # 1315 t 3.235815217019 m 109 msg -1
+BS id 76 tid 76 eid 76 etid 76 c cMessage n move pe 1315 k 21311
+ES t 3.335815217019
+
+E # 1316 t 3.238648897805 m 37 msg -1
+BS id 49 tid 49 eid 49 etid 49 c cMessage n move pe 1316 k 21311
+ES t 3.338648897805
+
+E # 1321 t 3.240167125882 m 130 msg -1
+BS id 608 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 11
+ES t 3.240167125882
+BS id 609 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 15
+ES t 3.240167125882
+BS id 610 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 19
+ES t 3.240167125882
+BS id 611 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 23
+ES t 3.240167125882
+BS id 612 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 27
+ES t 3.240167125882
+BS id 613 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 31
+ES t 3.240167125882
+BS id 614 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 35
+ES t 3.240167125882
+BS id 615 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 39
+ES t 3.240167125882
+BS id 616 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 43
+ES t 3.240167125882
+BS id 617 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 47
+ES t 3.240167125882
+BS id 607 tid 607 eid 309 etid 309 c AirFrame n BROADCAST_REPLY_MESSAGE pe 1321 k 22003 p 10 l 568
+SH sm 130 sg 51
+ES t 3.240167125882
+BS id 84 tid 84 eid 84 etid 84 c cMessage n "transmission over" pe 1321 k 22000
+ES t 3.277146292548
+CE id 42 pe 1310
+DM id 42 pe 1322
+SE

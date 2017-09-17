@@ -1,0 +1,34 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2>XML File for MoBAN Configuration</h2>
+<p>This XML file provides the configuration options for the MOBAN model. The parameters that might be set in this file are as follows.
+<li> <b>Initial posture of the WBAN</b></li> optional</p>
+<p><li> <b>Initial position of the WBAN in the simulation area</b></li>optional</p>
+<p><li> <b>Duration range for the postures</b></li>(optional) A uniform random value is selected whenever a new stable posture is selected. If lower bound is equal to the upper
+bound, the constant duration is always used. Note that the various length of different postures is implied in the Markov model which might be specified. This duration
+determines the length of one state in the Markov Model.</p>
+<p><li> <b>A list of Markov transition matrices</b></li> Any number of Markov transition matrices for posture selection can be separately defined. If no matrix is given,
+a uniform random strategy is used for posture selection. If posture selection is done in the same way with no spatial or temporal correlation, just one matrix is 
+enough. </p>
+<p>In the case that spatial or time correlation is required, several matrices can be defined among which one should have the Attribute 'type' with value "default". 
+The default matrix is firstly used for the positions or time instances that no specific matrix is set. Moreover, there is the possibility that a steady state is defined 
+instead of specifying the whole Markov transition matrix. In this case, MoBAN extract the closest Markov model to the default matrix which satisfies
+the given steady vector. This is considered as a simpler way of assigning different posture patterns for different time and space domains.</p>
+<p>Note that each markovMatrix in the input xml file should be either a square matrix with dimensions equal to the number of postures, or a vector with the 
+number of elements equal to the number of postures (steady state vector). It is clear that the default matrix cannot be a steady state vector and should be
+a square matrix.  </p>
+<p>A unique name should be given to each matrix, which will be used for specifying the matrix for particular time or area domain.</p>
+<p><li> <b>A list of area types</b></li>. It is necessary, if spatial correlation is required for posture selection. If so, any number of area type can be defined each with a unique name.
+For each area type, a set of area boundaries can be set that determine the part of the simulation area that is of that area type. At the moment, just rectangular parts are supported.</p>
+<p><li> <b>A list of time domains</b></li>. It is necessary, if temporal correlation is required for posture selection. If so, any number of time domains can be defined each with a unique name.
+For each time domain, a set of time boundaries can be set that determine the time durations of the whole simulation run of that time domain. </p>
+<p><li> <b>A list of space nad/or time combinations</b></li>. Using this tag in the XML file, we specify which matrix should be used for 
+each combination of the space and/or time. If in a combination, no time is specified, it means that it is the case for the whole simulation time. The</p>
+<p>An XML schema shows the acceptable format of input XML file for posture specification. <a href="../Figures/configureMoBAN.xsd" target="_blanc"> <b>Download XML schema</b></a>.
+An example of xml file for posture specification is given <a href="../Figures/configureMoBAN.xml" target="_blanc">here</a>.</p>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    	
+
+	<posture name="RUNNING" postureID="0" minSpeed="50" maxSpeed="50">
+	<nodeParameters positionX="500.0" positionY="540.0" positionZ= "100.00" radius="0.01" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="520.0" positionZ= "100.00" radius="0.01" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="520.0" positionZ= "100.00" radius="0.01" speed="1500" />
+	<nodeParameters positionX="490.0" positionY="575.0" positionZ= "100.00" radius="0.01" speed="1500" />
+    <nodeParameters positionX="510.0" positionY="575.0" positionZ= "100.00" radius="0.01" speed="1500" />
+	<nodeParameters positionX="478.85" positionY="549.12" positionZ= "84.52" radius="0.01" speed="1500" />
+	<nodeParameters positionX="529.10" positionY="549.41" positionZ= "88.12" radius="0.01" speed="1500" />
+	<nodeParameters positionX="492.70" positionY="613.57" positionZ= "118.81" radius="0.01" speed="1500" />
+	<nodeParameters positionX="508.50" positionY="617.65" positionZ= "94.76" radius="0.01" speed="1500" />
+	<nodeParameters positionX="482.33" positionY="553.42" positionZ= "108.90" radius="0.01" speed="1500" />
+	<nodeParameters positionX="523.90" positionY="561.64" positionZ= "109.29" radius="0.01" speed="1500" />
+	<nodeParameters positionX="495.98" positionY="659.26" positionZ= "108.27" radius="0.01" speed="1500" />
+	<nodeParameters positionX="508.50" positionY="618.47" positionZ= "47.77" radius="0.01" speed="1500" />
+	<nodeParameters positionX="500.0" positionY="500.0" positionZ= "100.00" radius="0.01" speed="1500" />
+	</posture>
+	
+	<posture name="WALKING" postureID="1" minSpeed="10" maxSpeed="12">
+	<nodeParameters positionX="500.0" positionY="540.0" positionZ= "100.00" radius="1" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="520.0" positionZ= "100.00" radius="1" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="510.0" positionZ= "100.00" radius="1" speed="1500" />
+	<nodeParameters positionX="490.0" positionY="560.0" positionZ= "100.00" radius="1" speed="1500" />
+    <nodeParameters positionX="510.0" positionY="560.0" positionZ= "100.00" radius="1" speed="1500" />
+	<nodeParameters positionX="474.84" positionY="548.78" positionZ= "115.30" radius="1" speed="1500" />
+	<nodeParameters positionX="518.27" positionY="550.97" positionZ= "88.73" radius="1" speed="1500" />
+	<nodeParameters positionX="485.51" positionY="597.04" positionZ= "78.62" radius="1" speed="1500" />
+	<nodeParameters positionX="506.25" positionY="597.10" positionZ= "121.42" radius="1" speed="1500" />
+	<nodeParameters positionX="480.46" positionY="558.69" positionZ= "137.56" radius="1" speed="1500" />
+	<nodeParameters positionX="521.75" positionY="575.72" positionZ= "88.73" radius="1" speed="1500" />
+	<nodeParameters positionX="489.60" positionY="637.58" positionZ= "55.2" radius="1" speed="1500" />
+	<nodeParameters positionX="504.61" positionY="644.07" positionZ= " 121.42" radius="1" speed="1500" />
+	<nodeParameters positionX="500.0" positionY="500.0" positionZ= "100.00" radius="1" speed="1500" />
+	</posture>
+	
+	<posture name="STANDING" postureID="2" minSpeed="0" maxSpeed="0">
+	<nodeParameters positionX="500.0" positionY="540.0" positionZ= "100.00" radius="5" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="520.0" positionZ= "100.00" radius="3" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="520.0" positionZ= "100.00" radius="3" speed="1500" />
+	<nodeParameters positionX="484.0" positionY="585.0" positionZ= "100.00" radius="3" speed="1500" />
+    <nodeParameters positionX="516.0" positionY="585.0" positionZ= "100.00" radius="3" speed="1500" />
+	<nodeParameters positionX="475.0" positionY="550.0" positionZ= "100.00" radius="5" speed="1500" />
+	<nodeParameters positionX="525.0" positionY="550.0" positionZ= "100.00" radius="5" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="620.0" positionZ= "100.00" radius="5" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="620.0" positionZ= "100.00" radius="5" speed="1500" />
+	<nodeParameters positionX="475.0" positionY="575.0" positionZ= "100.00" radius="10" speed="1500" />
+	<nodeParameters positionX="525.0" positionY="575.0" positionZ= "100.00" radius="10" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="660.0" positionZ= "100.00" radius="10" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="660.0" positionZ= "100.00" radius="10" speed="1500" />
+	<nodeParameters positionX="500.0" positionY="500.0" positionZ= "100.00" radius="3" speed="1500" />
+	</posture>
+	
+	<posture name="SITTING" postureID="3" minSpeed="0" maxSpeed="0">
+	<nodeParameters positionX="500.0" positionY="540.0" positionZ= "100.00" radius="5" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="520.0" positionZ= "100.00" radius="3" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="520.0" positionZ= "100.00" radius="3" speed="1500" />
+	<nodeParameters positionX="484.0" positionY="585.0" positionZ= "100.00" radius="3" speed="1500" />
+    <nodeParameters positionX="516.0" positionY="585.0" positionZ= "100.00" radius="3" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="548.0" positionZ= "116.00" radius="5" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="548.0" positionZ= "116.00" radius="5" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="585.0" positionZ= "145.00" radius="5" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="585.0" positionZ= "145.00" radius="5" speed="1500" />
+	<nodeParameters positionX="475.0" positionY="563.0" positionZ= "136.00" radius="10" speed="1500" />
+	<nodeParameters positionX="525.0" positionY="563.0" positionZ= "136.00" radius="10" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="620.0" positionZ= "140.00" radius="10" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="620.0" positionZ= "140.00" radius="10" speed="1500" />
+	<nodeParameters positionX="500.0" positionY="500.0" positionZ= "100.00" radius="3" speed="1500" />
+	</posture>
+	
+	<posture name="LYING-DOWN" postureID="4" minSpeed="0" maxSpeed="0">
+	<nodeParameters positionX="500.0" positionY="660.0" positionZ= "40.00" radius="5" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="660.0" positionZ= "20.00" radius="3" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="660.0" positionZ= "20.00" radius="3" speed="1500" />
+	<nodeParameters positionX="484.0" positionY="660.0" positionZ= "85.00" radius="3" speed="1500" />
+    <nodeParameters positionX="516.0" positionY="660.0" positionZ= "85.00" radius="3" speed="1500" />
+	<nodeParameters positionX="475.0" positionY="660.0" positionZ= "50.00" radius="5" speed="1500" />
+	<nodeParameters positionX="525.0" positionY="660.0" positionZ= "50.00" radius="5" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="660.0" positionZ= "120.00" radius="5" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="660.0" positionZ= "120.00" radius="5" speed="1500" />
+	<nodeParameters positionX="475.0" positionY="660.0" positionZ= "75.00" radius="10" speed="1500" />
+	<nodeParameters positionX="525.0" positionY="660.0" positionZ= "75.00" radius="10" speed="1500" />
+	<nodeParameters positionX="480.0" positionY="660.0" positionZ= "160.00" radius="10" speed="1500" />
+	<nodeParameters positionX="520.0" positionY="660.0" positionZ= "160.00" radius="10" speed="1500" />
+	<nodeParameters positionX="500.0" positionY="660.0" positionZ= "100.00" radius="3" speed="1500" />
+	</posture>
+
+</root>

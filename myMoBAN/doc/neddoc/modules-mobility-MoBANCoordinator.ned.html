@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">NED File <i>modules/mobility/MoBANCoordinator.ned</i></h2>
+<table class="typetable">
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td>
+      <a href="moban.mobility.MoBANCoordinator.html">MoBANCoordinator</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">package</span><span style="color: #000000; "> </span><span style="color: #000000; ">moban</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">;
+</span><span style="color: #808080; font-style: italic; ">//***************************************************************************
+//* file:        MoBANCoordinator.ned
+//*
+//* author:      Majid Nabi &lt;m.nabi@tue.nl&gt;
+//*
+//* copyright:   (C) 2010 Electronic Systems group(ES),
+//*              Eindhoven University of Technology (TU/e), the Netherlands.
+//*
+//*
+//*              This program is free software; you can redistribute it
+//*              and/or modify it under the terms of the GNU General Public
+//*              License as published by the Free Software Foundation; either
+//*              version 2 of the License, or (at your option) any later
+//*              version.
+//*              For further information see file COPYING
+//*              in the top level directory
+//***************************************************************************
+//* part of:    MoBAN (Mobility Model for wireless Body Area Networks)
+//* description:     Coordinator module of the MoBAN mobility model
+//**************************************************************************/
+</span><span style="color: #000000; ">
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">MoBANCoordinator</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+    	</span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">MoBANCoordinator</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">debug</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">       
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">updateInterval</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Time interval to update the nodes position (seconds).
+</span><span style="color: #000000; ">        
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">numNodes</span><span style="color: #000000; ">;			</span><span style="color: #808080; font-style: italic; ">//Number of sendor nodes belong to this WBAN
+</span><span style="color: #000000; ">        
+        </span><span style="color: #000080; font-weight: bold; ">xml</span><span style="color: #000000; "> </span><span style="color: #000000; ">postureSpecFile</span><span style="color: #000000; ">;    </span><span style="color: #808080; font-style: italic; ">// The input file that includes the specification of all postures
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">xml</span><span style="color: #000000; "> </span><span style="color: #000000; ">configFile</span><span style="color: #000000; ">;     </span><span style="color: #808080; font-style: italic; ">// The configuration file for setting probability vectors, distributions and correlations
+</span><span style="color: #000000; ">        
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">useMobilityPattern</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// Set if the logged mobility pattern is used.
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">mobilityPatternFile</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// The input file for mobility pattern if it is going to be used.
+</span><span style="color: #000000; ">           
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,11 @@
+<area shape="rect" href="moban.examples.BaseMoBANNetwork.BaseMoBANNetwork.html" title="Network BaseMoBANNetwork" alt="BaseMoBANNetwork" coords="179,16,312,40">
+<area shape="rect" href="moban.mobility.MoBANCoordinator.html" title="Simple Module MoBANCoordinator" alt="MoBANCoordinator" coords="7,88,129,112">
+<area shape="rect" href="../../../MiXiM/doc/neddoc/org.mixim.examples.baseNetwork.BaseNode.html" title="Compound Module BaseNode" alt="BaseNode" coords="153,88,225,112">
+<area shape="rect" href="../../../MiXiM/doc/neddoc/org.mixim.base.modules.BaseWorldUtility.html" title="Simple Module BaseWorldUtility" alt="BaseWorldUtility" coords="249,88,356,112">
+<area shape="rect" href="../../../MiXiM/doc/neddoc/org.mixim.base.connectionManager.ConnectionManager.html" title="Simple Module ConnectionManager" alt="ConnectionManager" coords="380,88,505,112">
+<area shape="rect" href="ned.DatarateChannel.html" title="Channel DatarateChannel" alt="DatarateChannel" coords="336,16,443,40">
+<area shape="rect" href="ned.DelayChannel.html" title="Channel DelayChannel" alt="DelayChannel" coords="467,16,557,40">
+<area shape="rect" href="ned.IBidirectionalChannel.html" title="Module Interface IBidirectionalChannel" alt="IBidirectionalChannel" coords="581,16,712,40">
+<area shape="rect" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="IdealChannel" coords="736,16,821,40">
+<area shape="rect" href="ned.IUnidirectionalChannel.html" title="Module Interface IUnidirectionalChannel" alt="IUnidirectionalChannel" coords="845,16,984,40">
+<area shape="rect" href="moban.mobility.MoBANLocal.html" title="Simple Module MoBANLocal" alt="MoBANLocal" coords="1008,16,1093,40">

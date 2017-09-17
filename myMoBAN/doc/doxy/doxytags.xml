@@ -1,0 +1,1117 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+<tagfile>
+  <compound kind="page">
+    <name>main</name>
+    <title></title>
+    <filename>main</filename>
+  </compound>
+  <compound kind="file">
+    <name>MoBANBBItem.h</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_mo_b_a_n_b_b_item_8h</filename>
+    <class kind="class">BBMoBANMessage</class>
+  </compound>
+  <compound kind="file">
+    <name>MoBANCoordinator.cc</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_mo_b_a_n_coordinator_8cc</filename>
+    <includes id="_mo_b_a_n_coordinator_8h" name="MoBANCoordinator.h" local="yes" imported="no">MoBANCoordinator.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>_mo_b_a_n_coordinator_8cc.html</anchorfile>
+      <anchor>1a661d58c16d1aa55eea8b9d0b564de3</anchor>
+      <arglist>(MoBANCoordinator)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>MoBANCoordinator.h</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_mo_b_a_n_coordinator_8h</filename>
+    <includes id="_mo_b_a_n_b_b_item_8h" name="MoBANBBItem.h" local="yes" imported="no">MoBANBBItem.h</includes>
+    <includes id="_posture_8h" name="Posture.h" local="yes" imported="no">Posture.h</includes>
+    <includes id="_posture_transition_8h" name="PostureTransition.h" local="yes" imported="no">PostureTransition.h</includes>
+    <class kind="class">MoBANCoordinator</class>
+    <class kind="struct">MoBANCoordinator::pattern</class>
+  </compound>
+  <compound kind="file">
+    <name>MoBANLocal.cc</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_mo_b_a_n_local_8cc</filename>
+    <includes id="_mo_b_a_n_local_8h" name="MoBANLocal.h" local="yes" imported="no">MoBANLocal.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>_mo_b_a_n_local_8cc.html</anchorfile>
+      <anchor>8f62240b6ee4a66a73bc3c88ed876ed9</anchor>
+      <arglist>(MoBANLocal)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>MoBANLocal.h</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_mo_b_a_n_local_8h</filename>
+    <includes id="_mo_b_a_n_b_b_item_8h" name="MoBANBBItem.h" local="yes" imported="no">MoBANBBItem.h</includes>
+    <class kind="class">MoBANLocal</class>
+  </compound>
+  <compound kind="file">
+    <name>Posture.cc</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_posture_8cc</filename>
+    <includes id="_posture_8h" name="Posture.h" local="yes" imported="no">Posture.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>Posture.h</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_posture_8h</filename>
+    <class kind="class">Posture</class>
+  </compound>
+  <compound kind="file">
+    <name>PostureTransition.cc</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_posture_transition_8cc</filename>
+    <includes id="_posture_transition_8h" name="PostureTransition.h" local="no" imported="no">PostureTransition.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>PostureTransition.h</name>
+    <path>D:/WORK/MyProjects/MoBAN/modules/mobility/</path>
+    <filename>_posture_transition_8h</filename>
+    <class kind="class">PostureTransition</class>
+    <class kind="struct">PostureTransition::TransMatrix</class>
+    <class kind="struct">PostureTransition::AreaBound</class>
+    <class kind="struct">PostureTransition::AreaType</class>
+    <class kind="struct">PostureTransition::TimeBound</class>
+    <class kind="struct">PostureTransition::TimeDomainType</class>
+    <class kind="struct">PostureTransition::CombinationType</class>
+  </compound>
+  <compound kind="class">
+    <name>BBMoBANMessage</name>
+    <filename>class_b_b_mo_b_a_n_message.html</filename>
+    <member kind="variable">
+      <type>Coord</type>
+      <name>position</name>
+      <anchorfile>class_b_b_mo_b_a_n_message.html</anchorfile>
+      <anchor>8b731c314b2e26ca27113f5d2163d704</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>speed</name>
+      <anchorfile>class_b_b_mo_b_a_n_message.html</anchorfile>
+      <anchor>74bd985cd3d8bed6e4119471b5ab6b1d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>radius</name>
+      <anchorfile>class_b_b_mo_b_a_n_message.html</anchorfile>
+      <anchor>d198b298e84b04cebaf36f5b7170ec4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type></type>
+      <name>BBITEM_METAINFO</name>
+      <anchorfile>class_b_b_mo_b_a_n_message.html</anchorfile>
+      <anchor>427a3be208cac5ffa01e25875fc350d6</anchor>
+      <arglist>(BBItem)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MoBANCoordinator</name>
+    <filename>class_mo_b_a_n_coordinator.html</filename>
+    <base>cSimpleModule</base>
+    <class kind="struct">MoBANCoordinator::pattern</class>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>9e116be526a0d4f1f4482728f32c237c</anchor>
+      <arglist>(int)</arglist>
+    </member>
+    <member kind="enumeration">
+      <name>posture_sel_type</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>891080762617c76085a1c4cd618fbb93</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UNIFORM_RANDOM</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>891080762617c76085a1c4cd618fbb9357a18191c1994fee0d7b81c953ff015d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>MARKOV_BASE</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>891080762617c76085a1c4cd618fbb936f0a336baf0f4a679087d3198a9582a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>struct MoBANCoordinator::pattern</type>
+      <name>Pattern</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>ba7c0480967381f3cb5c09b05029abe7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>handleMessage</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>16e49488978538b472692ccd1cd893e9</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>3746b224f6ff4655f5618c5c48bb6c48</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>selectPosture</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>b622d4b167d9d5dbc7529969a6688597</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>Coord</type>
+      <name>selectDestination</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>debee0a447b7e85d444054fa3a4ee013</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>double</type>
+      <name>selectSpeed</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>6d83b8c03d91b0fee3e335b214f51b4c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>simtime_t</type>
+      <name>selectDuration</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>b4f9d86a51c84b083817db1fcbe9dbab</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>mainProcess</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>b69a463af831ecb1c87daa61c09c9509</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>stepMove</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>bfe32e4c7881e7b5d5276e5b90fb82a6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>isInsideWorld</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>a9e9424cb4572715a8f5b042aa4155d0</anchor>
+      <arglist>(Coord)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>readPostureSpecificationFile</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>ab85ba2010884afd66f619718e1194d7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>readConfigurationFile</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>138ebd67882d6cf1154126f47d35d49c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>readMobilityPatternFile</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>31810405333b184c9db891fa9bd8a12a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>publishToNodes</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>7e5b78357b30b23f2f8285dcde5c6dd9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>debug</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>970cba11aaab643710065c962ce626fc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>BaseUtility *</type>
+      <name>utility</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>5350548b74b23200b0ba382f157d334b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>BaseWorldUtility *</type>
+      <name>world</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>19061b8cb8295d5afce5e95bb1c8ea99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cModule *</type>
+      <name>network</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>7ad23bfc4185e34e462e2b06d349a78f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>updateInterval</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>4b679462d1e5489af4b5a5480f22fdaa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>MoveMsg</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>aaf28b9f6f1de9fdf6872f123a7f3d53</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>numNodes</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>92a0e36ffb244bc6ed6beaf98e986c05</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>speed</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>fdfb553fa2576a3e72a6111b12f14a97</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>index</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>5320bb16f51acc82b6419911a280e11d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>FILE *</type>
+      <name>logfile</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>bb700aed062784b7cb21eec3e146c80d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>numPostures</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>3880f0e3e0e489b1edd2692a441b903f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::vector&lt; Posture * &gt;</type>
+      <name>postureList</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>fbb28bcb93bda1faadc7030d86be43b5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Posture *</type>
+      <name>currentPosture</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>19a97a40859c36012f3a63a7c9ef9b46</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>duration</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>e65c511653f346fbb079389ab23b62cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>minDuration</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>ac48e46d43458a8f960cc33e84ac85e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>maxDuration</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>02c4e8d23a6b0b2e1a1d94abe1974b9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int *</type>
+      <name>nodeIndex</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>2066591b0b290550ee350b5a57c0c700</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>logicalCenter</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>2d0384199e2090caae09813e7d7f0d3b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>step</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>c1a5ee7eeedb62fdfcee79fb6234f762</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numSteps</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>f177cb826e1fec16faf7c7cbd0390cf5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>targetPos</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>56143810b39a6031abe1cc59a18136c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>stepTarget</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>25c1728a5480570b4b8fe51b4a4a5f02</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>stepSize</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>56735487e55a96bd1294af15883f2d9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>useMobilityPattern</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>6f67cb3412735ec31734d8a345688e5b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Pattern *</type>
+      <name>mobilityPattern</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>e19a9a2dce220a75c4757381b5f348a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>patternLength</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>00cbcb40ee4039ffd5723ffa4334d88f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>currentPattern</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>eff87bd9af8cb9aa14eada4b73ec4fbe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double **</type>
+      <name>markovMatrix</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>406987de5c4e38c461e0857583c115b2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>posture_sel_type</type>
+      <name>postureSelStrategy</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>626ad8d08de1e3d7fad2c8032f199933</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>PostureTransition *</type>
+      <name>transitions</name>
+      <anchorfile>class_mo_b_a_n_coordinator.html</anchorfile>
+      <anchor>51f9fc44b5168e7ef6e58fd221bf3f0a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>MoBANCoordinator::pattern</name>
+    <filename>struct_mo_b_a_n_coordinator_1_1pattern.html</filename>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>postureID</name>
+      <anchorfile>struct_mo_b_a_n_coordinator_1_1pattern.html</anchorfile>
+      <anchor>59e286ef1ae546090710cfcd2c432c9b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Coord</type>
+      <name>targetPos</name>
+      <anchorfile>struct_mo_b_a_n_coordinator_1_1pattern.html</anchorfile>
+      <anchor>68ade906cd2a8e99513cd8f34e41e06a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>speed</name>
+      <anchorfile>struct_mo_b_a_n_coordinator_1_1pattern.html</anchorfile>
+      <anchor>6956bfc4ee8b53dcc0d13e9a46f4bf96</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>simtime_t</type>
+      <name>duration</name>
+      <anchorfile>struct_mo_b_a_n_coordinator_1_1pattern.html</anchorfile>
+      <anchor>c46502075e05cb35bf6e62d3bc508969</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MoBANLocal</name>
+    <filename>class_mo_b_a_n_local.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>2838f6184efad9d12ec25e6d46494aea</anchor>
+      <arglist>(int)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>makeMove</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>258a0ef18dbf4ac01149186360e6fe45</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setTargetPosition</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>7a181399edf633b6598fad60cf2fbce7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>receiveBBItem</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>ea9de268fb0c1dd51d3af403d2b2ffdf</anchor>
+      <arglist>(int category, const BBItem *details, int scopeModuleId)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>Coord</type>
+      <name>insideWorld</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>4a1125784d786481c4c294e08611e432</anchor>
+      <arglist>(Coord apoint)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>referencePoint</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>628f8fb181849c61bebd69d4f5351f1d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>radius</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>d7c99333da43a55b3c6655a06fc9a325</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>speed</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>4b7f222408bca8188bb9a362d4eeff9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>targetPos</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>aa6b82daba1c4e565dd423c8664a2b8e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>stepTarget</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>bd5c3b29659ab13237020690419920b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>catRefMove</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>7b0903433ee2895e5b44d3b7e78545a2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord</type>
+      <name>stepSize</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>4eb2487496c63ac1efb3299e209975d0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numSteps</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>c998540c2c7448b9cfad9f9f5a3680b5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>step</name>
+      <anchorfile>class_mo_b_a_n_local.html</anchorfile>
+      <anchor>bc9d20b66bc211e3208629c1f6d8f92d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Posture</name>
+    <filename>class_posture.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Posture</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>2220f047525bfaca36d875fe57aef363</anchor>
+      <arglist>(unsigned int, unsigned int)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setPostureName</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>12591a1dc501c32eecd9c422d322dcea</anchor>
+      <arglist>(char *)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setPostureSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>8517a4c793e02f5f4cbf4cd589c2bf39</anchor>
+      <arglist>(double, double)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setRadius</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>38d971ecc896965e6f70564598b53649</anchor>
+      <arglist>(unsigned int, double)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>9a1ae808066c4ffcdf73a7bc683cf456</anchor>
+      <arglist>(unsigned int, double)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setPs</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>c6e3fd122b7b79699a4b30ebe558b087</anchor>
+      <arglist>(unsigned int, Coord)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setAlphaMean</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>4fef8b2a4301bbb7dd23ad64ccc04570</anchor>
+      <arglist>(unsigned int, unsigned int, double)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setAlphaSD</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>01d63cc271da802b847daa39300b363f</anchor>
+      <arglist>(unsigned int, unsigned int, double)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isMobile</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>7057d6de18f8fd8d646e0d370ab8c2a5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getPostureID</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>217bc7334d61b9441c06affd81798445</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>char *</type>
+      <name>getPostureName</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>40dc6d7007b14e779420da389e927aec</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getMaxSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>99d879a60f411811fad6949c3b7811a3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getMinSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>c805f463e2f12178b128f741cfc2f8ec</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getRadius</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>3b0ae5a46b6e562838f968cd1bb06b91</anchor>
+      <arglist>(unsigned int)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>d29284231df7d01bf47f1aaaad192103</anchor>
+      <arglist>(unsigned int)</arglist>
+    </member>
+    <member kind="function">
+      <type>Coord</type>
+      <name>getPs</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>6cce5bfb2a17e71e346d7fd699139820</anchor>
+      <arglist>(unsigned int)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getAlphaMean</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>4ebf4ddceab8eeaf1a2f802e07750540</anchor>
+      <arglist>(unsigned int, unsigned int)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getAlphaSD</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>8e474d473692d0000790db17918e8a2b</anchor>
+      <arglist>(unsigned int, unsigned int)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>numNodes</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>26f00ed7a91cb2212501f96b3dfff654</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>postureID</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>0c4a1ffae7770c12c0cdf627e8874bff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>Coord *</type>
+      <name>nodePs</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>0766a3ff345ed3c738646a0b72bde74a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>char</type>
+      <name>posture_name</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>411eac6d222e4c69eaeb3ae0b914ce12</anchor>
+      <arglist>[50]</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double **</type>
+      <name>alphaMean</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>06c51a1bf4c89b12a3c317f6ae3fc044</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double **</type>
+      <name>alphaSD</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>88871af13632952bcfc8996c5eef3906</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double *</type>
+      <name>nodeRadius</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>fb21a48b225752f643ce8494393a5d1c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double *</type>
+      <name>nodeSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>eb6512db7e7ac1718971b2e777754935</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>postureMaxSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>47998062a2f6823b6e7d8cd1d32ae8b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>postureMinSpeed</name>
+      <anchorfile>class_posture.html</anchorfile>
+      <anchor>4ba7abfd741d5df5049411515f49110e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PostureTransition</name>
+    <filename>class_posture_transition.html</filename>
+    <class kind="struct">PostureTransition::AreaBound</class>
+    <class kind="struct">PostureTransition::AreaType</class>
+    <class kind="struct">PostureTransition::CombinationType</class>
+    <class kind="struct">PostureTransition::TimeBound</class>
+    <class kind="struct">PostureTransition::TimeDomainType</class>
+    <class kind="struct">PostureTransition::TransMatrix</class>
+    <member kind="function">
+      <type></type>
+      <name>PostureTransition</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>4b10c46a88e6be413c7395c06bf65380</anchor>
+      <arglist>(int)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>addMatrix</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>2f02ecf5282c7bd2f124a814c9abaa47</anchor>
+      <arglist>(std::string, double **, bool)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>addSteadyState</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>c5c424a8372a3d6f39ccc06c88d4249f</anchor>
+      <arglist>(std::string, double *)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>addAreaType</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>261ad915b2a9c7cdf7082660360190e4</anchor>
+      <arglist>(std::string)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setAreaBoundry</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>309ed6acf7eca6469f0ea0f06ee41780</anchor>
+      <arglist>(int, Coord, Coord)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>addTimeDomain</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>58c7924dfb8810ba37311217a7ba5c8d</anchor>
+      <arglist>(std::string)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setTimeBoundry</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>f66d8f9dda835d55dc3009cf582f87d8</anchor>
+      <arglist>(int, simtime_t, simtime_t)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>addCombination</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>5b4ab00961c0039aac63143d28e88272</anchor>
+      <arglist>(std::string, std::string, std::string)</arglist>
+    </member>
+    <member kind="function">
+      <type>double **</type>
+      <name>getMatrix</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>1f04b24b643026f15fbc95d175429c5f</anchor>
+      <arglist>(simtime_t, Coord)</arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>std::vector&lt; TransMatrix * &gt;</type>
+      <name>TransMatrixList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>7c9e0f2800e1fa2b681ed55c07eb8046</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>std::vector&lt; AreaType * &gt;</type>
+      <name>AreaTypeList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>98b2ed7203b32614bd82d29079db59cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>std::vector&lt; TimeDomainType * &gt;</type>
+      <name>TimeDomainList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>867c3cd2530e28d6f2953508a700ffec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef" protection="protected">
+      <type>std::vector&lt; CombinationType * &gt;</type>
+      <name>CombinationList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>03a03987992fffd49db8174cf6e83953</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>double **</type>
+      <name>extractMatrixFromSteadyState</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>3ddddcbf58ad8e1edd23cf8023c7b974</anchor>
+      <arglist>(double *)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>findTimeDomain</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>e252301f9e6668f04fad293321f55066</anchor>
+      <arglist>(simtime_t)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>findAreaType</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>299b33afdc27f467b3cdd472a397bb5a</anchor>
+      <arglist>(Coord)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>isMarkovian</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>be806a2afdeb239694094c24446f699f</anchor>
+      <arglist>(double **)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>isMarkovian</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>67a8cc00702db7106fc5b38447398856</anchor>
+      <arglist>(double *)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>multMatrix</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>be7336508b8864deeb66872425662587</anchor>
+      <arglist>(double **, double **, double **)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>addMatrix</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>10abfb612543bbc52f6a13a0e138d822</anchor>
+      <arglist>(double **, double **, double **)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>subtractMatrix</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>f48e8ee3a857b2425a9f1fe6ded08841</anchor>
+      <arglist>(double **, double **, double **)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>multVector</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>2781afe68489f9278e755429787b22ec</anchor>
+      <arglist>(double *, double **)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>numPos</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>88d4a9fb3d68fb6792ebade157067d73</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>defaultMatrixID</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>e24e4f7a9dc7453d935b87669a0edf24</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>TransMatrixList</type>
+      <name>matrixList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>16d12fd657a13f5a43f5b9d1dd6fea7a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>AreaTypeList</type>
+      <name>areaTypeList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>438b1e6813a28c3b9b49ae4ecef1b937</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>TimeDomainList</type>
+      <name>timeDomainList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>0566260a55d34fde7d6e35103f95785a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CombinationList</type>
+      <name>combinationList</name>
+      <anchorfile>class_posture_transition.html</anchorfile>
+      <anchor>b4afd59bcc62d7e198bebff13c873746</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>PostureTransition::AreaBound</name>
+    <filename>struct_posture_transition_1_1_area_bound.html</filename>
+    <member kind="variable">
+      <type>Coord</type>
+      <name>low</name>
+      <anchorfile>struct_posture_transition_1_1_area_bound.html</anchorfile>
+      <anchor>dd5606570fa417da7028df965cc1fa9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Coord</type>
+      <name>high</name>
+      <anchorfile>struct_posture_transition_1_1_area_bound.html</anchorfile>
+      <anchor>03fc1e04e84557e5306aaf27dc2ebf4e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>PostureTransition::AreaType</name>
+    <filename>struct_posture_transition_1_1_area_type.html</filename>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>name</name>
+      <anchorfile>struct_posture_transition_1_1_area_type.html</anchorfile>
+      <anchor>034b5828f054bd45969563779dad15c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::vector&lt; AreaBound * &gt;</type>
+      <name>boundries</name>
+      <anchorfile>struct_posture_transition_1_1_area_type.html</anchorfile>
+      <anchor>aa69008b1faa01cf198b84aa333487d0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>PostureTransition::CombinationType</name>
+    <filename>struct_posture_transition_1_1_combination_type.html</filename>
+    <member kind="variable">
+      <type>int</type>
+      <name>timeID</name>
+      <anchorfile>struct_posture_transition_1_1_combination_type.html</anchorfile>
+      <anchor>4564042e7d786d9fba35e209d2226043</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>areaID</name>
+      <anchorfile>struct_posture_transition_1_1_combination_type.html</anchorfile>
+      <anchor>01951aa952921febc05099eb50019a8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>matrixID</name>
+      <anchorfile>struct_posture_transition_1_1_combination_type.html</anchorfile>
+      <anchor>3bc4b770b76110c261dc9520011b12fb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>PostureTransition::TimeBound</name>
+    <filename>struct_posture_transition_1_1_time_bound.html</filename>
+    <member kind="variable">
+      <type>simtime_t</type>
+      <name>low</name>
+      <anchorfile>struct_posture_transition_1_1_time_bound.html</anchorfile>
+      <anchor>040ae271a53085518ee0636b49179e0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>simtime_t</type>
+      <name>high</name>
+      <anchorfile>struct_posture_transition_1_1_time_bound.html</anchorfile>
+      <anchor>8709f1adcbfd47c0e6e29531b27f72c7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>PostureTransition::TimeDomainType</name>
+    <filename>struct_posture_transition_1_1_time_domain_type.html</filename>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>name</name>
+      <anchorfile>struct_posture_transition_1_1_time_domain_type.html</anchorfile>
+      <anchor>7d151114380a92106d59d8bf068c7059</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::vector&lt; TimeBound * &gt;</type>
+      <name>boundries</name>
+      <anchorfile>struct_posture_transition_1_1_time_domain_type.html</anchorfile>
+      <anchor>998d2d9286f561bdd631d061dcead52e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>PostureTransition::TransMatrix</name>
+    <filename>struct_posture_transition_1_1_trans_matrix.html</filename>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>name</name>
+      <anchorfile>struct_posture_transition_1_1_trans_matrix.html</anchorfile>
+      <anchor>2001d7ee6ea999a74862006357a335dc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double **</type>
+      <name>matrix</name>
+      <anchorfile>struct_posture_transition_1_1_trans_matrix.html</anchorfile>
+      <anchor>807ce24addc211660c041eb2fc964442</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>NEDSupport</name>
+    <filename>namespace_n_e_d_support.html</filename>
+  </compound>
+</tagfile>

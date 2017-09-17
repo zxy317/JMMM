@@ -1,0 +1,151 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2 class="comptitle">Simple Module <i>MoBANCoordinator</i></h2>
+<b>Package:</b> moban.mobility<br/><b>File: <a href="modules-mobility-MoBANCoordinator.ned.html">modules/mobility/MoBANCoordinator.ned</a></b><br/><p><a href="../doxy/class_mo_b_a_n_coordinator.html" target="mainframe"><b>C++ definition</b></a></p>
+<p>(no description)</p><img src="moban.mobility.MoBANCoordinator-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="moban.mobility.MoBANCoordinator.html" title="MoBANCoordinator" alt="MoBANCoordinator" coords="0,0,153,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="moban.mobility.MoBANCoordinator-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="moban.mobility.MoBANCoordinator.html" title="Simple Module MoBANCoordinator" alt="MoBANCoordinator" coords="12,88,135,112">
+<area shape="rect" href="moban.examples.BaseMoBANNetwork.BaseMoBANNetwork.html" title="Network BaseMoBANNetwork" alt="BaseMoBANNetwork" coords="7,16,140,40">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="moban.mobility.MoBANCoordinator-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="moban.mobility.MoBANCoordinator.html" title="Simple Module MoBANCoordinator" alt="MoBANCoordinator" coords="7,16,129,40">
+</map>
+<h3 class="subtitle">Networks:</h3>
+<table>
+<tr>
+   <td>
+      <a href="moban.examples.BaseMoBANNetwork.BaseMoBANNetwork.html">BaseMoBANNetwork</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>This network is exactly the same as baseNetwork existing among the examples of MiXiM, but the desired number of MoBAN coordinator modules have been added.
+Some nodes of type BaseNode use <a href="moban.mobility.MoBANLocal.html">MoBANLocal</a> module as their mobility module. Then those nodes will be considered as WBAN nodes. 
+Those node have a parameter named "coordinatorIndex" that determines to which WBAN (coordinator) the node belongs.  </p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">updateInterval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Time interval to update the nodes position (seconds).</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">numNodes</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Number of sendor nodes belong to this WBAN</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">postureSpecFile</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The input file that includes the specification of all postures</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">configFile</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The configuration file for setting probability vectors, distributions and correlations</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">useMobilityPattern</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Set if the logged mobility pattern is used.</p>
+   </td>
+</tr>
+<tr class="local">
+   <td width="150">mobilityPatternFile</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The input file for mobility pattern if it is going to be used.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>MoBANCoordinator</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">MoBANCoordinator</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">MoBANCoordinator</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">debug</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">updateInterval</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Time interval to update the nodes position (seconds).
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">numNodes</span><span style="color: #000000; ">;			</span><span style="color: #808080; font-style: italic; ">//Number of sendor nodes belong to this WBAN
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">xml</span><span style="color: #000000; "> </span><span style="color: #000000; ">postureSpecFile</span><span style="color: #000000; ">;    </span><span style="color: #808080; font-style: italic; ">// The input file that includes the specification of all postures
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">xml</span><span style="color: #000000; "> </span><span style="color: #000000; ">configFile</span><span style="color: #000000; ">;     </span><span style="color: #808080; font-style: italic; ">// The configuration file for setting probability vectors, distributions and correlations
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">useMobilityPattern</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// Set if the logged mobility pattern is used.
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">mobilityPatternFile</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// The input file for mobility pattern if it is going to be used.
+</span><span style="color: #000000; ">
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="">
+<h2>Using MoBAN in your Simulations</h2>
+<p>This is a short guide for exploiting the MoBAN mobility model in your simulation, if there are some kind of WBAN, or group mobility in your application. Note that
+in the simplest case, MoBAN implements RPGM mobility model, if just one posture is defined in the input posture specification file. However, the appropriate setting is 
+chosen according to the requirements.</p>
+<p>You can use the model either with importing the project into your framework or by importing source files to your project. If your simulation is not done inside 
+the MiXiM project, and you have a separate project for which the MiXiM project is set as a reference project, then you can simply import the MoBAN project and 
+set it as another reference for your project. Now, you can use the MoBAN mobility model inside your project by adding the following line on top of your NED module definitions.</p>
+<p>import moban.mobility.*</p>
+<p>In the case that you are doing simulation within the MiXiM project, it is not possible to use the above method, as recursive reference projects are not allowed.
+Here, you may copy all files in the 'moban/modules/mobility' directory to the 'MiXiM/modules/mobility' directory of the MiXiM project. Then you need to make a 
+change in the NED files as follows:</p>
+<p>In <a href="moban.mobility.MoBANCoordinator.html">MoBANCoordinator</a>.ned and <a href="moban.mobility.MoBANLocal.html">MoBANLocal</a>.ned,       <tt> package moban.mobility; </tt>  ----&gt; <tt> package org.mixim.modules.mobility;</tt>   </p>
+<p>Doing so, the MoBAN mobility model can be used in your simulation model like as any other mobility model existing in the mobility framework in MiXiM.</p>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>
