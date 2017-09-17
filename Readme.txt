@@ -1,3 +1,0 @@
-    The JMMM model is based on MoBAN model code,the operating system is the win7 system,simulation software is the OMNeT++,the model simulates both walking and running postures.
-    (1)Right click myMoBAN/examples/BaseMoBANNetwork/myMoBAN.exe,select Run Configurations in Run As£¬then get a window,double-click OMNeT++Simulation to create a new simulation file,select Ini file(s) for omnetpp.ini,finally click Run to run,in the resulting simulation view,click RUN to get the model running posture£»
-    (2)Into myMoBAN/modules/mobility/MoBANCoordinator.cc,there is one sentence in the code:currentPosture = postureList[0],change '0' to '1',you can get the walking posture after the steps with (1).
